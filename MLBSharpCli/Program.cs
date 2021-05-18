@@ -9,11 +9,18 @@ namespace MLBSharpCli
         {
             string todaysDate = DateTime.Now.ToString("MM-dd-yyyy").Replace("-", "/");
 
-            var dates = Endpoints.Matchups(todaysDate);
+            var upcomingGames =  MlbApi.Matchups(todaysDate);
 
-            foreach (var item in dates)
+            foreach (var game in upcomingGames)
             {
-                Console.WriteLine(item);
+                Console.WriteLine($"{game.AwayTeam} vs {game.HomeTeam} at {game.Ballpark}");
+            }
+
+            var pitching = MlbApi.PitchingReports(todaysDate);
+
+            foreach (var pitcher in pitching)
+            {
+                Console.WriteLine($"Home pitcher: {pitcher.HomeProbablePitcherName}, Notes: {pitcher.HomeProbablePitcherNotes}");
             }
         }
     }

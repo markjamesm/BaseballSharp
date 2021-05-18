@@ -3,14 +3,18 @@
 
 ## About
 
-MLB Sharp is an unofficial C# wrapper for the [MLB API](http://statsapi.mlb.com/). Currently in an early alpha status, MLB Sharp is in active development and is built on .NET 5.0. JSON processing is done using [System.Text.Json](https://docs.microsoft.com/en-us/dotnet/api/system.text.json?view=net-5.0)
+MLB Sharp is an unofficial C# wrapper for the [MLB Stats API](http://statsapi.mlb.com/). Currently in an early alpha status, MLB Sharp is in active development and is built on .NET 5.0.
 
 ## Usage
 
 The solution contains two projects: 
 
-* MLBSharp - The MLB API library wrapper.
+* MLBSharp - The MLB Stats API wrapper library.
 * MLBSharp Cli - A command line app which contains an example implementation of MLB Sharp's features.
+
+## Documentation
+
+Coming soon.
 
 ## Copyright Notice 
 

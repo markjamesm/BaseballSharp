@@ -1,7 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <Version>0.0.1</Version>
+    <Authors>Mark-James McDougall</Authors>
+    <Product>MLBSharp</Product>
+    <Description>MLB Sharp is an unofficial C# wrapper for the MLB Stats API.</Description>
+    <RepositoryUrl>https://github.com/markjamesm/MLB-Sharp</RepositoryUrl>
+    <PackageTags>MLB, Major League Baseball, MLB API, Baseball API</PackageTags>
   </PropertyGroup>
 
 </Project>
