@@ -2,7 +2,7 @@
 
 ## Usage
 
-Clone the repository and reference MLBSharp in your project. Next, import MLB Sharp and then reference it with:
+Clone the repository or install [from Nuget](https://www.nuget.org/packages/MLBSharp). Next, import MLB Sharp into your project:
 
 ```csharp
 using MLBSharp;
