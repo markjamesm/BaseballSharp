@@ -5,6 +5,7 @@ using System.Diagnostics;
 using MLBSharp.Models;
 using MLBSharp.DTO.GameSchedule;
 using MLBSharp.DTO.PitchingReport;
+using MLBSharp.DTO.Teams;
 
 namespace MLBSharp
 {
@@ -16,7 +17,7 @@ namespace MLBSharp
         /// Returns a list of the matchups and ballpark for the specified date.
         /// </summary>
         /// <param name="date">The date (MM/dd/yyyy) to return data for.</param>
-        public static List<UpcomingGames> Matchups(string date)
+        public static List<UpcomingGames> Schedule(string date)
         {
             List<UpcomingGames> upcomingGames = new();
 
@@ -83,6 +84,41 @@ namespace MLBSharp
             }
 
             return pitchingReports;
+        }
+
+        public static List<Models.Team> TeamData()
+        {
+            List<Models.Team> teamsList = new();
+
+            try
+            {
+                WebClient client = new();
+                string jsonResponse = client.DownloadString(_baseUrl + "/teams?sportId=1");
+
+                TeamDto mlbTeams = JsonSerializer.Deserialize<TeamDto>(jsonResponse);
+
+                foreach (var team in mlbTeams.teams)
+                {
+                    teamsList.Add(new Models.Team(team.name, 
+                        team.teamName, 
+                        team.locationName, 
+                        team.id, 
+                        team.league.name, 
+                        team.league.id, 
+                        team.division.name, 
+                        team.division.id, 
+                        team.abbreviation, 
+                        team.venue.name, 
+                        team.venue.id));
+                }
+            }
+
+            catch (WebException ex)
+            {
+                Debug.WriteLine($"Error {ex}");
+            }
+
+            return teamsList;
         }
     }
 }
