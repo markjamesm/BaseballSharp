@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		CHANGELOG.md = CHANGELOG.md
-		Documentation.md = Documentation.md
+		docs\Documentation.md = docs\Documentation.md
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
@@ -15,11 +15,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseballSharpCli", "samples\BaseballSharpCli\BaseballSharpCli.csproj", "{52A4CBA5-209A-49AC-9008-9D76306A8F13}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseballSharp", "src\BaseballSharp.csproj", "{B188B5BF-0708-4F12-BD6A-3A0664BE9172}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{A1F5A352-FC6B-4792-AEAA-D558C8F9552A}"
-	ProjectSection(SolutionItems) = preProject
-		Documentation.md = Documentation.md
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,9 +33,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{A1F5A352-FC6B-4792-AEAA-D558C8F9552A} = {36466C80-C5AF-4F2E-810C-0C2EC8BFD82E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F148DCA3-404F-49F4-911C-DA0D4527054C}
