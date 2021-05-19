@@ -16,7 +16,7 @@ The solution contains two projects:
 
 ## Documentation
 
-Visit the [documentation page](https://github.com/markjamesm/Baseball-Sharp/blob/master/Documentation.md) for a guide with a list of endpoints.
+Visit the [documentation page](https://github.com/markjamesm/Baseball-Sharp/blob/master/docs/Documentation.md) for a guide with a list of endpoints.
 
 ## Planned
 
