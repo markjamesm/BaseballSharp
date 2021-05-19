@@ -84,7 +84,7 @@
           "hash": "7VUFCE3E9oZs0fIWfCqm1JSgSHhkHHUzWlJu1Kv1hcc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ZZB9J9PHUuV37iPZIwC0rnUOd371FuLQH908GEREkzw="
+          "hash": "GWMQJQVANFduGlUEB/seksni5Emc4jo6k1FctN2tNLA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
