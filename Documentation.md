@@ -15,7 +15,7 @@ Currently, the [MlbApi class](https://github.com/markjamesm/MLB-Sharp/blob/maste
 
 Endpoints are limited at the moment, but will be expanding as the library is in active development.
 
-```Schedule(string date)```
+#### ```Schedule(string date)```
 
 Returns a ```list<Schedule>``` of containing games played on the specified date. Dates should be specified in mm/DD/yyyy format. Note: This endpoint is still being worked with plans to obtain game ids and other endpoints.
 
@@ -27,7 +27,7 @@ The list contains:
 * Scheduled innings: The number of scheduled innings for the game.
 
 
-```PitchingReports(date)```
+#### ```PitchingReports(date)```
 
 Returns a ```list<PitchingReport>``` containing the following information for a specified date (mm/DD/yyyy format):
 
@@ -41,7 +41,7 @@ Returns a ```list<PitchingReport>``` containing the following information for a 
 * AwayProbablePitcherId
 
 
-```TeamData()```
+#### ```TeamData()```
 
 Returns a ```list<Team>``` containing the following information:
 
