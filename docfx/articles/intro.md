@@ -15,7 +15,7 @@ You can also see examples of how to use the endpoint functions in the MLBSharpCl
 
 ## Endpoints
 
-Endpoints are limited at the moment, but will be expanding as the library is in active development. The [Api Documentation](http://localhost:8080/api/index.html) section contains the most up to date endpoints reference.
+Endpoints are limited at the moment, but will be expanding as the library is in active development. The [Api Documentation](https://markjames.dev/Baseball-Sharp/api/index.html) section contains the most up to date endpoints reference.
 
 #### ```Schedule(string date)```
 
