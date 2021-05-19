@@ -12,7 +12,7 @@ Baseball Sharp is an unofficial C# wrapper for the public facing (but undocument
 The solution contains two projects: 
 
 * BaseballSharp - The MLB Stats API wrapper library.
-* BaseballSharpCli - Command line app which contains an example implementation of MLB Sharp's features.
+* BaseballSharpCli - Command line app which contains an example implementation of Baseball Sharp's features.
 
 ## Documentation
 
