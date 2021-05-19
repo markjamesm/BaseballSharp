@@ -8,7 +8,9 @@ Clone the repository or install [from Nuget](https://www.nuget.org/packages/MLBS
 using MLBSharp;
 ```
 
-Currently, the [MlbApi class](https://github.com/markjamesm/MLB-Sharp/blob/master/MLBSharp/MlbApi.cs) contains the endpoint functionality. You can see examples of how you can use the endpoint functions in the MLBSharpCli [Program.cs file](https://github.com/markjamesm/MLB-Sharp/blob/master/MLBSharpCli/Program.cs).
+Currently, the [MlbApi class](https://github.com/markjamesm/MLB-Sharp/blob/master/MLBSharp/MlbApi.cs) contains the endpoint functionality. 
+
+You can see examples of how to use the endpoint functions in the MLBSharpCli [Program.cs file](https://github.com/markjamesm/MLB-Sharp/blob/master/MLBSharpCli/Program.cs).
 
 
 ## Endpoints
