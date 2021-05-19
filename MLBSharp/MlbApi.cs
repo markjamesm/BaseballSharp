@@ -17,9 +17,9 @@ namespace MLBSharp
         /// Returns a list of the matchups and ballpark for the specified date.
         /// </summary>
         /// <param name="date">The date (MM/dd/yyyy) to return data for.</param>
-        public static List<UpcomingGames> Schedule(string date)
+        public static List<Schedule> Schedule(string date)
         {
-            List<UpcomingGames> upcomingGames = new();
+            List<Schedule> upcomingGames = new();
 
             try
             {
@@ -32,7 +32,7 @@ namespace MLBSharp
                 {
                     foreach (var game in item.games)
                     {
-                        upcomingGames.Add(new UpcomingGames(game.teams.home.team.name, game.teams.away.team.name, game.venue.name, game.scheduledInnings));
+                        upcomingGames.Add(new Schedule(game.teams.home.team.name, game.teams.away.team.name, game.venue.name, game.scheduledInnings));
                     }
                 }
             }

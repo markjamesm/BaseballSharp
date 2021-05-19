@@ -10,11 +10,17 @@ MLB Sharp is an unofficial C# wrapper for the [MLB Stats API](http://statsapi.ml
 The solution contains two projects: 
 
 * MLBSharp - The MLB Stats API wrapper library.
-* MLBSharp Cli - A command line app which contains an example implementation of MLB Sharp's features.
+* MLBSharp Cli - Command line app which contains an example implementation of MLB Sharp's features.
 
 ## Documentation
 
-Coming soon.
+Visit the (documentation page) for a guide.
+
+## Planned
+
+* Continue implementing API endpoints and helper functions. 
+* Develop MLBSharp CLI example to showcase usage.
+* Setup and create documentation with DocFX.
 
 ## Copyright Notice 
 
