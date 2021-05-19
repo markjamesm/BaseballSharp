@@ -14,7 +14,7 @@ The solution contains two projects:
 
 ## Documentation
 
-Visit the (documentation page) for a guide.
+Visit the (documentation page) for a guide with a list of endpoints.
 
 ## Planned
 
