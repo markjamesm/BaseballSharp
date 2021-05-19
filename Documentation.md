@@ -2,10 +2,10 @@
 
 ## Usage
 
-Clone the repository or install [from Nuget](https://www.nuget.org/packages/MLBSharp). Next, import MLB Sharp into your project:
+Clone the repository or install [from Nuget](https://www.nuget.org/packages/BaseballSharp/0.1.1-alpha). Next, import Baseball Sharp into your project:
 
 ```csharp
-using MLBSharp;
+using BaseballSharp;
 ```
 
 Currently, the [MlbApi class](https://github.com/markjamesm/MLB-Sharp/blob/master/MLBSharp/MlbApi.cs) contains the endpoint functionality. 
