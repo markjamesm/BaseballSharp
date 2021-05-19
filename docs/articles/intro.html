@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Documentation ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="documentation">Documentation</h1>
+
+<h2 id="usage">Usage</h2>
+<p>Clone the repository or install <a href="https://www.nuget.org/packages/BaseballSharp/0.1.1-alpha">from Nuget</a>. Next, import Baseball Sharp into your project:</p>
+<pre><code class="lang-csharp">using BaseballSharp;
+</code></pre>
+<p>Currently, the <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharp/MlbApi.cs">MlbApi class</a> contains the endpoint functionality.</p>
+<p>You can see examples of how to use the endpoint functions in the MLBSharpCli <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharpCli/Program.cs">Program.cs file</a>.</p>
+<h2 id="endpoints">Endpoints</h2>
+<p>Endpoints are limited at the moment, but will be expanding as the library is in active development.</p>
+<h4 id="schedulestring-date"><code>Schedule(string date)</code></h4>
+<p>Returns a <code>list&lt;Schedule&gt;</code> of containing games played on the specified date. Dates should be specified in mm/DD/yyyy format. Note: This endpoint is still being worked with plans to obtain game ids and other endpoints.</p>
+<p>The list contains:</p>
+<ul>
+<li>HomeTeam</li>
+<li>AwayTeam</li>
+<li>BallPark</li>
+<li>Scheduled innings: The number of scheduled innings for the game.</li>
+</ul>
+<h4 id="pitchingreportsstring-date"><code>PitchingReports(string date)</code></h4>
+<p>Returns a <code>list&lt;PitchingReport&gt;</code> containing the following information for a specified date (mm/DD/yyyy format):</p>
+<ul>
+<li>HomeTeam</li>
+<li>HomeProbablePitcherName</li>
+<li>HomeProbablePitcherId</li>
+<li>HomeProbablePitcherNotes</li>
+<li>AwayTeam</li>
+<li>AwayProbablePitcherName</li>
+<li>AwayProbablePitcherNotes</li>
+<li>AwayProbablePitcherId</li>
+</ul>
+<h4 id="teamdata"><code>TeamData()</code></h4>
+<p>Returns a <code>list&lt;Team&gt;</code> of all teams in the league. Contains the following information:</p>
+<ul>
+<li>FullName - Full team name, eg: &quot;Toronto Blue Jays&quot;</li>
+<li>Name - Team name, eg: &quot;Blue Jays&quot;</li>
+<li>Location</li>
+<li>Id</li>
+<li>LeagueName</li>
+<li>Division Name</li>
+<li>DivisionId</li>
+<li>Abbreviation</li>
+<li>VenueName</li>
+<li>VenueId</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/docfx/articles/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+apiRules:
+- exclude:
+    uidRegex: ^BaseballSharp\.DTO.*$
+    type: Namespace

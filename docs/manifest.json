@@ -1,0 +1,198 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/mjmcd/Desktop/Programming Projects/BaseballSharp/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.Api.html",
+          "hash": "/T0WuAemjVKdvRN54+WJ69/36k6Xq2zW70IAJwXbpDw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.Models.PitchingReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.Models.PitchingReport.html",
+          "hash": "Do6RY/Vbhau6WfSX/xckZuQ4a5+8kcTaxDX0Jw23UFk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.Models.Schedule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.Models.Schedule.html",
+          "hash": "gW4SIwfvH2IH6HxlJZ1AVVa01x5nUrHtFSniADTRXOk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.Models.Team.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.Models.Team.html",
+          "hash": "d26okHMlCLUYVZCT3snJx9PKM7ECbBm+7aw1LtU2yFs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.Models.html",
+          "hash": "sG8yEwyHPVrdGc6pBafMzt1Mk5uyTpQzftK1TDNExjU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.html",
+          "hash": "oUB/9OWSPwvBxYTwE2MfmBHnELPWAITodSPBL9fPLG4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "mlPL7uxL2EitB2U2lh5H72nKqu9KfsKHZskat8obnqU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "l98HoNV4/zyHZFYXpMj6oFUXAtfREPbdcb9mLVn5CS8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "n+ULBChFbn6EczENT8S27UB5EoD6GAGeptYCZeXtGY8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BxPyXVWE/+NN8iPdmigDeieIyASdn4RPg7Lky6DbNOU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "dWzLXb9405uKr4KjpG2/ed9a1Hqt4NGwPKBnzjRqNko="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 6
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
