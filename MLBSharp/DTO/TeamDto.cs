@@ -1,4 +1,4 @@
-﻿namespace MLBSharp.DTO.Teams
+﻿namespace BaseballSharp.DTO.Teams
 {
 
     public class TeamDto

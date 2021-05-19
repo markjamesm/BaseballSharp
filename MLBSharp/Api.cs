@@ -2,14 +2,14 @@
 using System.Net;
 using System.Collections.Generic;
 using System.Diagnostics;
-using MLBSharp.Models;
-using MLBSharp.DTO.GameSchedule;
-using MLBSharp.DTO.PitchingReport;
-using MLBSharp.DTO.Teams;
+using BaseballSharp.Models;
+using BaseballSharp.DTO.GameSchedule;
+using BaseballSharp.DTO.PitchingReport;
+using BaseballSharp.DTO.Teams;
 
-namespace MLBSharp
+namespace BaseballSharp
 {
-    public class MlbApi
+    public class Api
     {
         private static readonly string _baseUrl = "http://statsapi.mlb.com/api/v1";
 

@@ -1,5 +1,5 @@
 ﻿using System;
-using MLBSharp;
+using BaseballSharp;
 
 namespace MLBSharpCli
 {
@@ -9,21 +9,21 @@ namespace MLBSharpCli
         {
             string todaysDate = DateTime.Now.ToString("MM-dd-yyyy").Replace("-", "/");
 
-            var upcomingGames =  MlbApi.Schedule(todaysDate);
+            var upcomingGames =  Api.Schedule(todaysDate);
 
             foreach (var game in upcomingGames)
             {
                 Console.WriteLine($"{game.AwayTeam} vs {game.HomeTeam} at {game.Ballpark}");
             }
 
-            var pitching = MlbApi.PitchingReports(todaysDate);
+            var pitching = Api.PitchingReports(todaysDate);
 
             foreach (var pitcher in pitching)
             {
                 Console.WriteLine($"Home pitcher: {pitcher.HomeProbablePitcherName}, Notes: {pitcher.HomeProbablePitcherNotes}");
             }
 
-            var teamsList = MlbApi.TeamData();
+            var teamsList = Api.TeamData();
 
             foreach (var team in teamsList)
             {

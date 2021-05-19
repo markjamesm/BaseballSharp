@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MLBSharp.DTO.GameSchedule
+namespace BaseballSharp.DTO.GameSchedule
 {
     public class ScheduleDto
     {

@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MLBSharp\MLBSharp.csproj" />
+    <ProjectReference Include="..\MLBSharp\BaseballSharp.csproj" />
   </ItemGroup>
 
 </Project>

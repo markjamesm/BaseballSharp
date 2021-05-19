@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MLBSharp.DTO.PitchingReport
+namespace BaseballSharp.DTO.PitchingReport
 {
 
     public class PitchingReportDto

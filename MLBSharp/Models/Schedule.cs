@@ -1,4 +1,4 @@
-﻿namespace MLBSharp.Models
+﻿namespace BaseballSharp.Models
 {
     public class Schedule
     {

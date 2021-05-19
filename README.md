@@ -1,9 +1,9 @@
-# MLB Sharp
+# Baseball Sharp
 [![C#](https://img.shields.io/badge/Language-CSharp-darkgreen.svg)](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)) [![License](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 ## About
 
-MLB Sharp is an unofficial C# wrapper for the public facing (but undocumented) MLB Stats API. Currently in an early alpha status, MLB Sharp is in active development and is built on .NET 5.0. 
+Baseball Sharp is an unofficial C# wrapper for the public facing (but undocumented) MLB Stats API. Currently in an early alpha status, Baseball Sharp is in active development and is built on .NET 5.0. 
 
 * [Nuget Package](https://www.nuget.org/packages/MLBSharp).
 
@@ -11,8 +11,8 @@ MLB Sharp is an unofficial C# wrapper for the public facing (but undocumented) M
 
 The solution contains two projects: 
 
-* MLBSharp - The MLB Stats API wrapper library.
-* MLBSharp Cli - Command line app which contains an example implementation of MLB Sharp's features.
+* BaseballSharp - The MLB Stats API wrapper library.
+* BaseballSharpCli - Command line app which contains an example implementation of MLB Sharp's features.
 
 ## Documentation
 
@@ -21,7 +21,7 @@ Visit the [documentation page](https://github.com/markjamesm/MLB-Sharp/blob/mast
 ## Planned
 
 * Continue implementing API endpoints and helper functions. 
-* Develop MLBSharp CLI example to showcase usage.
+* Develop BaseballSharp CLI example to showcase usage.
 * Setup and create documentation with DocFX.
 
 ## Copyright Notice 
