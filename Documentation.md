@@ -29,7 +29,7 @@ The list contains:
 * Scheduled innings: The number of scheduled innings for the game.
 
 
-#### ```PitchingReports(date)```
+#### ```PitchingReports(string date)```
 
 Returns a ```list<PitchingReport>``` containing the following information for a specified date (mm/DD/yyyy format):
 
