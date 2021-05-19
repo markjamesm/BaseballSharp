@@ -2,20 +2,20 @@
 {
     public class Team
     {
-        public string FullName { get; private set; }
-        public string Name { get; private set; }
-        public string Location { get; private set; }
-        public int Id { get; private set; }
-        public string LeagueName { get; private set; }
-        public int LeagueId { get; private set; }
-        public string DivisionName { get; private set; }
-        public int DivisionId { get; private set; }
-        public string Abbreviation { get; private set; } 
-        public string VenueName { get; private set; }
-        public int VenueId { get; private set; }
+        public string? FullName { get; protected set; }
+        public string? Name { get; protected set; }
+        public string? Location { get; protected set; }
+        public int? Id { get; protected set; }
+        public string? LeagueName { get; protected set; }
+        public int? LeagueId { get; protected set; }
+        public string? DivisionName { get; protected set; }
+        public int? DivisionId { get; protected set; }
+        public string? Abbreviation { get; protected set; } 
+        public string? VenueName { get; protected set; }
+        public int? VenueId { get; protected set; }
 
-        public Team(string fullName, string name, string location, int id, string leagueName, int leagueId, 
-            string divisionName, int divisionId, string abbreviation, string venueName, int venueId)
+        public Team(string? fullName, string? name, string? location, int? id, string? leagueName, int? leagueId, 
+            string? divisionName, int? divisionId, string? abbreviation, string? venueName, int? venueId)
         {
             FullName = fullName;
             Name = name;

@@ -16,6 +16,7 @@
     <PackageTags>MLB, Major League Baseball, MLB API, Baseball API</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageId>BaseballSharp</PackageId>
+	  <Nullable>enable</Nullable> 
   </PropertyGroup>
 
 </Project>

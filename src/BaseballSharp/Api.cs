@@ -26,13 +26,16 @@ namespace BaseballSharp
                 WebClient client = new();
                 string jsonResponse = client.DownloadString(_baseUrl + "/schedule/games/?sportId=1&date=" + date);
 
-                ScheduleDto gameSchedule = JsonSerializer.Deserialize<ScheduleDto>(jsonResponse);
+                ScheduleDto? gameSchedule = JsonSerializer.Deserialize<ScheduleDto>(jsonResponse);
 
                 foreach (var item in gameSchedule.dates)
                 {
                     foreach (var game in item.games)
                     {
-                        upcomingGames.Add(new Schedule(game.teams.home.team.name, game.teams.away.team.name, game.venue.name, game.scheduledInnings));
+                        upcomingGames.Add(new Schedule(game?.teams?.home?.team?.name, 
+                            game?.teams?.away?.team?.name, 
+                            game?.venue?.name, 
+                            game?.scheduledInnings));
                     }
                 }
             }
@@ -60,20 +63,20 @@ namespace BaseballSharp
                     "&fields=dates,date,games,gamePk,gameDate,status,abstractGameState," +
                     "teams,away,home,team,id,name,probablePitcher,id,fullName,note&" + date);
 
-                PitchingReportDto reports = JsonSerializer.Deserialize<PitchingReportDto>(jsonResponse);
+                PitchingReportDto? reports = JsonSerializer.Deserialize<PitchingReportDto>(jsonResponse);
 
                 foreach (var selectedDate in reports.dates)
-                {
+                { 
                     foreach (var game in selectedDate.games)
                     {
-                        pitchingReports.Add(new PitchingReport(game.teams.home.team.name,
-                            game.teams.home.probablePitcher.fullName,
-                            game.teams.home.probablePitcher.id,
-                            game.teams.home.probablePitcher.note,
-                            game.teams.away.team.name,
-                            game.teams.away.probablePitcher.fullName,
-                            game.teams.away.probablePitcher.id,
-                            game.teams.away.probablePitcher.note));
+                        pitchingReports.Add(new PitchingReport(game?.teams?.home?.team?.name,
+                            game?.teams?.home?.probablePitcher?.fullName,
+                            game?.teams?.home?.probablePitcher?.id,
+                            game?.teams?.home?.probablePitcher?.note,
+                            game?.teams?.away?.team?.name,
+                            game?.teams?.away?.probablePitcher?.fullName,
+                            game?.teams?.away?.probablePitcher?.id,
+                            game?.teams?.away?.probablePitcher?.note));
                     }
                 }
             }
@@ -95,21 +98,21 @@ namespace BaseballSharp
                 WebClient client = new();
                 string jsonResponse = client.DownloadString(_baseUrl + "/teams?sportId=1");
 
-                TeamDto mlbTeams = JsonSerializer.Deserialize<TeamDto>(jsonResponse);
+                TeamDto? mlbTeams = JsonSerializer.Deserialize<TeamDto>(jsonResponse);
 
                 foreach (var team in mlbTeams.teams)
                 {
                     teamsList.Add(new Models.Team(team.name, 
-                        team.teamName, 
-                        team.locationName, 
-                        team.id, 
-                        team.league.name, 
-                        team.league.id, 
-                        team.division.name, 
-                        team.division.id, 
-                        team.abbreviation, 
-                        team.venue.name, 
-                        team.venue.id));
+                        team?.teamName, 
+                        team?.locationName, 
+                        team?.id, 
+                        team?.league?.name, 
+                        team?.league?.id, 
+                        team?.division?.name, 
+                        team?.division?.id, 
+                        team?.abbreviation, 
+                        team?.venue?.name, 
+                        team?.venue?.id));
                 }
             }
 
