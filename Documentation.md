@@ -6,9 +6,10 @@ Clone the repository and reference MLBSharp in your project. Next, import MLB Sh
 
 ```csharp
 using MLBSharp;
+```
 
 Currently, the [MlbApi class](https://github.com/markjamesm/MLB-Sharp/blob/master/MLBSharp/MlbApi.cs) contains the endpoint functionality.
-```
+
 
 ## Endpoints
 
