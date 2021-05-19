@@ -16,13 +16,13 @@ The solution contains two projects:
 
 ## Documentation
 
-Visit the [documentation page](https://github.com/markjamesm/Baseball-Sharp/blob/master/docs/Documentation.md) for a guide with a list of endpoints.
+Visit the [documentation site](https://markjames.dev/Baseball-Sharp/articles/intro.html) for a getting started guide and API reference.
 
 ## Planned
 
 * Continue implementing API endpoints and helper functions. 
+* Add unit tests.
 * Develop BaseballSharp CLI example to showcase usage.
-* Setup and create documentation with DocFX.
 
 ## Copyright Notice 
 

@@ -2,20 +2,20 @@
 
 ## Usage
 
-Clone the repository or install [from Nuget](https://www.nuget.org/packages/BaseballSharp/0.1.1-alpha). Next, import Baseball Sharp into your project:
+Clone the repository or install [from Nuget](https://www.nuget.org/packages/BaseballSharp/0.1.1-alpha). Next, import Baseball Sharp into your project with:
 
 ```csharp
 using BaseballSharp;
 ```
 
-Currently, the [MlbApi class](https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharp/MlbApi.cs) contains the endpoint functionality. 
+Currently, the [MlbApi class](https://markjames.dev/Baseball-Sharp/api/index.html) contains all the endpoint functionality. 
 
-You can see examples of how to use the endpoint functions in the MLBSharpCli [Program.cs file](https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharpCli/Program.cs).
+You can also see examples of how to use the endpoint functions in the MLBSharpCli [Program.cs file](https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharpCli/Program.cs).
 
 
 ## Endpoints
 
-Endpoints are limited at the moment, but will be expanding as the library is in active development.
+Endpoints are limited at the moment, but will be expanding as the library is in active development. The [Api Documentation](http://localhost:8080/api/index.html) section contains the most up to date endpoints reference.
 
 #### ```Schedule(string date)```
 

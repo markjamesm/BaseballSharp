@@ -70,13 +70,13 @@
 <h1 id="getting-started">Getting Started</h1>
 
 <h2 id="usage">Usage</h2>
-<p>Clone the repository or install <a href="https://www.nuget.org/packages/BaseballSharp/0.1.1-alpha">from Nuget</a>. Next, import Baseball Sharp into your project:</p>
+<p>Clone the repository or install <a href="https://www.nuget.org/packages/BaseballSharp/0.1.1-alpha">from Nuget</a>. Next, import Baseball Sharp into your project with:</p>
 <pre><code class="lang-csharp">using BaseballSharp;
 </code></pre>
-<p>Currently, the <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharp/MlbApi.cs">MlbApi class</a> contains the endpoint functionality.</p>
-<p>You can see examples of how to use the endpoint functions in the MLBSharpCli <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharpCli/Program.cs">Program.cs file</a>.</p>
+<p>Currently, the <a href="https://markjames.dev/Baseball-Sharp/api/index.html">MlbApi class</a> contains all the endpoint functionality.</p>
+<p>You can also see examples of how to use the endpoint functions in the MLBSharpCli <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharpCli/Program.cs">Program.cs file</a>.</p>
 <h2 id="endpoints">Endpoints</h2>
-<p>Endpoints are limited at the moment, but will be expanding as the library is in active development.</p>
+<p>Endpoints are limited at the moment, but will be expanding as the library is in active development. The <a href="http://localhost:8080/api/index.html">Api Documentation</a> section contains the most up to date endpoints reference.</p>
 <h4 id="schedulestring-date"><code>Schedule(string date)</code></h4>
 <p>Returns a <code>list&lt;Schedule&gt;</code> of containing games played on the specified date. Dates should be specified in mm/DD/yyyy format. Note: This endpoint is still being worked with plans to obtain game ids and other endpoints.</p>
 <p>The list contains:</p>
