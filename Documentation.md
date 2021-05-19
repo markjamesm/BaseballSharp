@@ -45,7 +45,7 @@ Returns a ```list<PitchingReport>``` containing the following information for a 
 
 #### ```TeamData()```
 
-Returns a ```list<Team>``` containing the following information:
+Returns a ```list<Team>``` of all teams in the league. Contains the following information:
 
 * FullName - Full team name, eg: "Toronto Blue Jays"
 * Name - Team name, eg: "Blue Jays"
