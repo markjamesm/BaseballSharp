@@ -5,6 +5,7 @@
     <Version>0.1.0-alpha</Version>
     <Authors>Mark-James McDougall</Authors>
     <Product>MLBSharp</Product>
+	 <Title>MLB Sharp</Title>
     <Description>
 		MLB Sharp is an unofficial C# wrapper for the MLB Stats API.
 		View the documentation - https://github.com/markjamesm/MLB-Sharp/blob/master/Documentation.md
