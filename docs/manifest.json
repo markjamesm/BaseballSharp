@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Api.html",
-          "hash": "RAlAx1waCSZMQCxbJmn9SPh46BpmX1htEQXtn1hKo38="
+          "hash": "dBDyW+Mcr9Aids3KVW3CHEO7pwWI/QqQZb0BjHGSkxk="
         }
       },
       "is_incremental": false,
@@ -24,7 +24,7 @@
           "hash": "kCnL1xX9ADJADs+WDwxGInqTVUkH1lBCj5kWxyweEMo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -36,7 +36,7 @@
           "hash": "37kuFDOJcex20AEJlgpnwuuBTTzO8ndZR/f3nI5lLGs="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "2xjr3KGwwswfCyhy/JMLUAE+d3OScFplJqp3V3QMaOc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "sG8yEwyHPVrdGc6pBafMzt1Mk5uyTpQzftK1TDNExjU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -167,7 +167,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 6,
-          "skipped_file_count": 2
+          "skipped_file_count": 5
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

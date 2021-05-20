@@ -17,6 +17,7 @@ namespace BaseballSharp
         /// Returns a list of the matchups and ballpark for the specified date.
         /// </summary>
         /// <param name="date">The date (MM/dd/yyyy) to return data for.</param>
+        /// <returns>A list of schedule objects.</returns>
         public static List<Schedule> Schedule(string date)
         {
             List<Schedule> upcomingGames = new();
@@ -53,6 +54,7 @@ namespace BaseballSharp
         /// Returns a list of pitchers and their associated game reports.
         /// </summary>
         /// <param name="date">The date (MM/dd/yyyy) to return data for.</param>
+        /// <returns>A list of pitching report objects</returns>
         public static List<PitchingReport> PitchingReports(string date)
         {
             List<PitchingReport> pitchingReports = new();
@@ -94,6 +96,7 @@ namespace BaseballSharp
         /// <summary>
         /// Returns a list of all MLB teams and some associated data. The ID parameters can be used to build other queries.
         /// </summary>
+        /// <returns>A list of team objects.</returns>
         public static List<Models.Team> TeamData()
         {
             List<Models.Team> teamsList = new();
