@@ -2,12 +2,39 @@
 {
     public class Team
     {
+        /// <summary>
+        /// The team's full name. eg: "Toronto Blue Jays"
+        /// </summary>
         public string? FullName { get; protected set; }
+
+        /// <summary>
+        /// The team's name (eg: "Jays"
+        /// </summary>
         public string? Name { get; protected set; }
+
+        /// <summary>
+        /// Team hometown 
+        /// </summary>
         public string? Location { get; protected set; }
+
+        /// <summary>
+        /// Team ID in the API (used for building other calls).
+        /// </summary>
         public int? Id { get; protected set; }
+
+        /// <summary>
+        /// The name of the league that the team plays in.
+        /// </summary>
         public string? LeagueName { get; protected set; }
+
+        /// <summary>
+        /// The league ID (used for building other league calls)
+        /// </summary>
         public int? LeagueId { get; protected set; }
+
+        /// <summary>
+        /// The name of the team's division.
+        /// </summary>
         public string? DivisionName { get; protected set; }
         public int? DivisionId { get; protected set; }
         public string? Abbreviation { get; protected set; } 

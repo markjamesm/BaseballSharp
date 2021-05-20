@@ -42,6 +42,7 @@ namespace BaseballSharp
 
             catch(WebException ex)
             {
+                // Need to change this.
                 Debug.WriteLine($"Error {ex}");
             }
 
@@ -89,6 +90,10 @@ namespace BaseballSharp
             return pitchingReports;
         }
 
+
+        /// <summary>
+        /// Returns a list of all MLB teams and some associated data. The ID parameters can be used to build other queries.
+        /// </summary>
         public static List<Models.Team> TeamData()
         {
             List<Models.Team> teamsList = new();
