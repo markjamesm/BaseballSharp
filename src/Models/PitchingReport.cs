@@ -6,8 +6,16 @@
         public string? AwayTeam { get; protected set; }
         public string? HomeProbablePitcherName { get; protected set; }
         public int? HomeProbablePitcherId { get; protected set; }
+
+        /// <summary>
+        /// Notes on the probable home starting pitcher. Not always available.
+        /// </summary>
         public string? HomeProbablePitcherNotes { get; protected set; }
         public string? AwayProbablePitcherName { get; protected set; }
+
+        /// <summary>
+        /// Notes on the probable away starting pitcher. Not always available.
+        /// </summary>
         public string? AwayProbablePitcherNotes { get; protected set; }
         public int? AwayProbablePitcherId { get; protected set; }
 
