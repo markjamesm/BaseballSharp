@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Api.html",
-          "hash": "/T0WuAemjVKdvRN54+WJ69/36k6Xq2zW70IAJwXbpDw="
+          "hash": "RAlAx1waCSZMQCxbJmn9SPh46BpmX1htEQXtn1hKo38="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.PitchingReport.html",
-          "hash": "Do6RY/Vbhau6WfSX/xckZuQ4a5+8kcTaxDX0Jw23UFk="
+          "hash": "kCnL1xX9ADJADs+WDwxGInqTVUkH1lBCj5kWxyweEMo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.Schedule.html",
-          "hash": "gW4SIwfvH2IH6HxlJZ1AVVa01x5nUrHtFSniADTRXOk="
+          "hash": "37kuFDOJcex20AEJlgpnwuuBTTzO8ndZR/f3nI5lLGs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.Team.html",
-          "hash": "d26okHMlCLUYVZCT3snJx9PKM7ECbBm+7aw1LtU2yFs="
+          "hash": "2xjr3KGwwswfCyhy/JMLUAE+d3OScFplJqp3V3QMaOc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "sG8yEwyHPVrdGc6pBafMzt1Mk5uyTpQzftK1TDNExjU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "oUB/9OWSPwvBxYTwE2MfmBHnELPWAITodSPBL9fPLG4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -132,7 +132,7 @@
           "hash": "GWMQJQVANFduGlUEB/seksni5Emc4jo6k1FctN2tNLA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -161,13 +161,13 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 6,
-          "skipped_file_count": 6
+          "skipped_file_count": 2
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
