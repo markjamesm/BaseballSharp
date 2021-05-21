@@ -30,6 +30,13 @@ namespace MLBSharpCli
                 Console.WriteLine($"{team.FullName}, {team.Id}");
             }
 
+            var teamRoster = Api.TeamRoster(111, 2021);
+
+            foreach (var team in teamRoster)
+            {
+                Console.WriteLine($"{team.PlayerFullName}, {team.PlayerPosition}, {team.StatusCode}");
+            }
+
         }
     }
 }
