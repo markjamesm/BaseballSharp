@@ -4,7 +4,6 @@
 
 - Added TeamRoster() endpoint function.
 
-
 #### V0.1.2-alpha
 
 - Refactored project to use nullable value types in case some data is missing from a JSON response.
