@@ -52,6 +52,19 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Api.TeamData
   nameWithType: Api.TeamData
+- uid: BaseballSharp.Api.TeamRoster(System.Int32,System.Int32)
+  name: TeamRoster(Int32, Int32)
+  href: api/BaseballSharp.Api.html#BaseballSharp_Api_TeamRoster_System_Int32_System_Int32_
+  commentId: M:BaseballSharp.Api.TeamRoster(System.Int32,System.Int32)
+  fullName: BaseballSharp.Api.TeamRoster(System.Int32, System.Int32)
+  nameWithType: Api.TeamRoster(Int32, Int32)
+- uid: BaseballSharp.Api.TeamRoster*
+  name: TeamRoster
+  href: api/BaseballSharp.Api.html#BaseballSharp_Api_TeamRoster_
+  commentId: Overload:BaseballSharp.Api.TeamRoster
+  isSpec: "True"
+  fullName: BaseballSharp.Api.TeamRoster
+  nameWithType: Api.TeamRoster
 - uid: BaseballSharp.Models
   name: BaseballSharp.Models
   href: api/BaseballSharp.Models.html
@@ -423,3 +436,142 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.Team.VenueName
   nameWithType: Team.VenueName
+- uid: BaseballSharp.Models.TeamRoster
+  name: TeamRoster
+  href: api/BaseballSharp.Models.TeamRoster.html
+  commentId: T:BaseballSharp.Models.TeamRoster
+  fullName: BaseballSharp.Models.TeamRoster
+  nameWithType: TeamRoster
+- uid: BaseballSharp.Models.TeamRoster.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String)
+  name: TeamRoster(Nullable<Int32>, String, String, String, String, Nullable<Int32>, String, String, String)
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster__ctor_System_Nullable_System_Int32__System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_String_System_String_System_String_
+  commentId: M:BaseballSharp.Models.TeamRoster.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String)
+  name.vb: TeamRoster(Nullable(Of Int32), String, String, String, String, Nullable(Of Int32), String, String, String)
+  fullName: BaseballSharp.Models.TeamRoster.TeamRoster(System.Nullable<System.Int32>, System.String, System.String, System.String, System.String, System.Nullable<System.Int32>, System.String, System.String, System.String)
+  fullName.vb: BaseballSharp.Models.TeamRoster.TeamRoster(System.Nullable(Of System.Int32), System.String, System.String, System.String, System.String, System.Nullable(Of System.Int32), System.String, System.String, System.String)
+  nameWithType: TeamRoster.TeamRoster(Nullable<Int32>, String, String, String, String, Nullable<Int32>, String, String, String)
+  nameWithType.vb: TeamRoster.TeamRoster(Nullable(Of Int32), String, String, String, String, Nullable(Of Int32), String, String, String)
+- uid: BaseballSharp.Models.TeamRoster.#ctor*
+  name: TeamRoster
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster__ctor_
+  commentId: Overload:BaseballSharp.Models.TeamRoster.#ctor
+  isSpec: "True"
+  fullName: BaseballSharp.Models.TeamRoster.TeamRoster
+  nameWithType: TeamRoster.TeamRoster
+- uid: BaseballSharp.Models.TeamRoster.PlayerFullName
+  name: PlayerFullName
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PlayerFullName
+  commentId: P:BaseballSharp.Models.TeamRoster.PlayerFullName
+  fullName: BaseballSharp.Models.TeamRoster.PlayerFullName
+  nameWithType: TeamRoster.PlayerFullName
+- uid: BaseballSharp.Models.TeamRoster.PlayerFullName*
+  name: PlayerFullName
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PlayerFullName_
+  commentId: Overload:BaseballSharp.Models.TeamRoster.PlayerFullName
+  isSpec: "True"
+  fullName: BaseballSharp.Models.TeamRoster.PlayerFullName
+  nameWithType: TeamRoster.PlayerFullName
+- uid: BaseballSharp.Models.TeamRoster.PlayerId
+  name: PlayerId
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PlayerId
+  commentId: P:BaseballSharp.Models.TeamRoster.PlayerId
+  fullName: BaseballSharp.Models.TeamRoster.PlayerId
+  nameWithType: TeamRoster.PlayerId
+- uid: BaseballSharp.Models.TeamRoster.PlayerId*
+  name: PlayerId
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PlayerId_
+  commentId: Overload:BaseballSharp.Models.TeamRoster.PlayerId
+  isSpec: "True"
+  fullName: BaseballSharp.Models.TeamRoster.PlayerId
+  nameWithType: TeamRoster.PlayerId
+- uid: BaseballSharp.Models.TeamRoster.PlayerPosition
+  name: PlayerPosition
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PlayerPosition
+  commentId: P:BaseballSharp.Models.TeamRoster.PlayerPosition
+  fullName: BaseballSharp.Models.TeamRoster.PlayerPosition
+  nameWithType: TeamRoster.PlayerPosition
+- uid: BaseballSharp.Models.TeamRoster.PlayerPosition*
+  name: PlayerPosition
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PlayerPosition_
+  commentId: Overload:BaseballSharp.Models.TeamRoster.PlayerPosition
+  isSpec: "True"
+  fullName: BaseballSharp.Models.TeamRoster.PlayerPosition
+  nameWithType: TeamRoster.PlayerPosition
+- uid: BaseballSharp.Models.TeamRoster.PlayerType
+  name: PlayerType
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PlayerType
+  commentId: P:BaseballSharp.Models.TeamRoster.PlayerType
+  fullName: BaseballSharp.Models.TeamRoster.PlayerType
+  nameWithType: TeamRoster.PlayerType
+- uid: BaseballSharp.Models.TeamRoster.PlayerType*
+  name: PlayerType
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PlayerType_
+  commentId: Overload:BaseballSharp.Models.TeamRoster.PlayerType
+  isSpec: "True"
+  fullName: BaseballSharp.Models.TeamRoster.PlayerType
+  nameWithType: TeamRoster.PlayerType
+- uid: BaseballSharp.Models.TeamRoster.PositionAbbreviation
+  name: PositionAbbreviation
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PositionAbbreviation
+  commentId: P:BaseballSharp.Models.TeamRoster.PositionAbbreviation
+  fullName: BaseballSharp.Models.TeamRoster.PositionAbbreviation
+  nameWithType: TeamRoster.PositionAbbreviation
+- uid: BaseballSharp.Models.TeamRoster.PositionAbbreviation*
+  name: PositionAbbreviation
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PositionAbbreviation_
+  commentId: Overload:BaseballSharp.Models.TeamRoster.PositionAbbreviation
+  isSpec: "True"
+  fullName: BaseballSharp.Models.TeamRoster.PositionAbbreviation
+  nameWithType: TeamRoster.PositionAbbreviation
+- uid: BaseballSharp.Models.TeamRoster.PositionCode
+  name: PositionCode
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PositionCode
+  commentId: P:BaseballSharp.Models.TeamRoster.PositionCode
+  fullName: BaseballSharp.Models.TeamRoster.PositionCode
+  nameWithType: TeamRoster.PositionCode
+- uid: BaseballSharp.Models.TeamRoster.PositionCode*
+  name: PositionCode
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PositionCode_
+  commentId: Overload:BaseballSharp.Models.TeamRoster.PositionCode
+  isSpec: "True"
+  fullName: BaseballSharp.Models.TeamRoster.PositionCode
+  nameWithType: TeamRoster.PositionCode
+- uid: BaseballSharp.Models.TeamRoster.StatusCode
+  name: StatusCode
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_StatusCode
+  commentId: P:BaseballSharp.Models.TeamRoster.StatusCode
+  fullName: BaseballSharp.Models.TeamRoster.StatusCode
+  nameWithType: TeamRoster.StatusCode
+- uid: BaseballSharp.Models.TeamRoster.StatusCode*
+  name: StatusCode
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_StatusCode_
+  commentId: Overload:BaseballSharp.Models.TeamRoster.StatusCode
+  isSpec: "True"
+  fullName: BaseballSharp.Models.TeamRoster.StatusCode
+  nameWithType: TeamRoster.StatusCode
+- uid: BaseballSharp.Models.TeamRoster.StatusDescription
+  name: StatusDescription
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_StatusDescription
+  commentId: P:BaseballSharp.Models.TeamRoster.StatusDescription
+  fullName: BaseballSharp.Models.TeamRoster.StatusDescription
+  nameWithType: TeamRoster.StatusDescription
+- uid: BaseballSharp.Models.TeamRoster.StatusDescription*
+  name: StatusDescription
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_StatusDescription_
+  commentId: Overload:BaseballSharp.Models.TeamRoster.StatusDescription
+  isSpec: "True"
+  fullName: BaseballSharp.Models.TeamRoster.StatusDescription
+  nameWithType: TeamRoster.StatusDescription
+- uid: BaseballSharp.Models.TeamRoster.TeamId
+  name: TeamId
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_TeamId
+  commentId: P:BaseballSharp.Models.TeamRoster.TeamId
+  fullName: BaseballSharp.Models.TeamRoster.TeamId
+  nameWithType: TeamRoster.TeamId
+- uid: BaseballSharp.Models.TeamRoster.TeamId*
+  name: TeamId
+  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_TeamId_
+  commentId: Overload:BaseballSharp.Models.TeamRoster.TeamId
+  isSpec: "True"
+  fullName: BaseballSharp.Models.TeamRoster.TeamId
+  nameWithType: TeamRoster.TeamId

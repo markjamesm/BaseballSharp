@@ -6,6 +6,7 @@ using BaseballSharp.Models;
 using BaseballSharp.DTO.GameSchedule;
 using BaseballSharp.DTO.PitchingReport;
 using BaseballSharp.DTO.Teams;
+using BaseballSharp.DTO;
 
 namespace BaseballSharp
 {
@@ -33,15 +34,15 @@ namespace BaseballSharp
                 {
                     foreach (var game in item.games)
                     {
-                        upcomingGames.Add(new Schedule(game?.teams?.home?.team?.name, 
-                            game?.teams?.away?.team?.name, 
-                            game?.venue?.name, 
+                        upcomingGames.Add(new Schedule(game?.teams?.home?.team?.name,
+                            game?.teams?.away?.team?.name,
+                            game?.venue?.name,
                             game?.scheduledInnings));
                     }
                 }
             }
 
-            catch(WebException ex)
+            catch (WebException ex)
             {
                 // Need to change this.
                 Debug.WriteLine($"Error {ex}");
@@ -69,7 +70,7 @@ namespace BaseballSharp
                 PitchingReportDto? reports = JsonSerializer.Deserialize<PitchingReportDto>(jsonResponse);
 
                 foreach (var selectedDate in reports.dates)
-                { 
+                {
                     foreach (var game in selectedDate.games)
                     {
                         pitchingReports.Add(new PitchingReport(game?.teams?.home?.team?.name,
@@ -84,7 +85,7 @@ namespace BaseballSharp
                 }
             }
 
-            catch(WebException ex)
+            catch (WebException ex)
             {
                 Debug.WriteLine($"Error {ex}");
             }
@@ -110,16 +111,16 @@ namespace BaseballSharp
 
                 foreach (var team in mlbTeams.teams)
                 {
-                    teamsList.Add(new Models.Team(team.name, 
-                        team?.teamName, 
-                        team?.locationName, 
-                        team?.id, 
-                        team?.league?.name, 
-                        team?.league?.id, 
-                        team?.division?.name, 
-                        team?.division?.id, 
-                        team?.abbreviation, 
-                        team?.venue?.name, 
+                    teamsList.Add(new Models.Team(team.name,
+                        team?.teamName,
+                        team?.locationName,
+                        team?.id,
+                        team?.league?.name,
+                        team?.league?.id,
+                        team?.division?.name,
+                        team?.division?.id,
+                        team?.abbreviation,
+                        team?.venue?.name,
                         team?.venue?.id));
                 }
             }
@@ -130,6 +131,47 @@ namespace BaseballSharp
             }
 
             return teamsList;
+        }
+
+        /// <summary>
+        /// Returns a list of team roster data for a given season.
+        /// Use the TeamData() call to obtain the id numbers needed to satisfy the teamId parameter. 
+        /// </summary>
+        /// <returns>A list of team objects.</returns>
+        /// <param name="teamId">The team's ID number.</param>
+        /// <param name="season">The desired season, eg: 2021.</param>
+        /// <returns>A list of pitching report objects</returns>
+        public static List<TeamRoster> TeamRoster(int teamId, int season)
+        {
+            List<TeamRoster> teamRosters = new();
+
+            try
+            {
+                WebClient client = new();
+                string jsonResponse = client.DownloadString(_baseUrl + "/teams/" + teamId + "/roster/fullRoster?season=" + season);
+
+                TeamRosterDto? teamRostersJson = JsonSerializer.Deserialize<TeamRosterDto>(jsonResponse);
+
+                foreach (var item in teamRostersJson.roster)
+                {
+                    teamRosters.Add(new TeamRoster(
+                        item?.person?.id,
+                        item?.person?.fullName,
+                        item?.position?.name,
+                        item?.position?.type,
+                        item?.position?.code,
+                        teamRostersJson?.teamId,
+                        item?.position?.abbreviation,
+                        item?.status?.code,
+                        item?.status?.description));
+                }
+            }
+            catch (WebException)
+            {
+                throw new WebException();
+            }
+
+            return teamRosters;
         }
     }
 }
