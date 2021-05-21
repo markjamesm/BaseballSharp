@@ -18,7 +18,7 @@
         public string? Location { get; protected set; }
 
         /// <summary>
-        /// Team ID in the API (used for building other calls).
+        /// Team ID from the API (used for building other calls).
         /// </summary>
         public int? Id { get; protected set; }
 
@@ -33,9 +33,13 @@
         public int? LeagueId { get; protected set; }
 
         /// <summary>
-        /// The name of the team's division.
+        /// The name of the team's division, (eg. "American League West).
         /// </summary>
         public string? DivisionName { get; protected set; }
+
+        /// <summary>
+        /// Division ID from the API (used for building other calls).
+        /// </summary>
         public int? DivisionId { get; protected set; }
         public string? Abbreviation { get; protected set; } 
         public string? VenueName { get; protected set; }
