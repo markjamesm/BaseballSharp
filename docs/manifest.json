@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Api.html",
-          "hash": "dBDyW+Mcr9Aids3KVW3CHEO7pwWI/QqQZb0BjHGSkxk="
+          "hash": "jM+rAWm8iQ55gefkxv26gjq6bWNvve2c1gLkiFjPMmM="
         }
       },
       "is_incremental": false,
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.PitchingReport.html",
-          "hash": "kCnL1xX9ADJADs+WDwxGInqTVUkH1lBCj5kWxyweEMo="
+          "hash": "UGS71KE7PemgxMvQc9fJT1Ak2nBdDg0xCTYu5ZooNHo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.Schedule.html",
-          "hash": "37kuFDOJcex20AEJlgpnwuuBTTzO8ndZR/f3nI5lLGs="
+          "hash": "cv2t78Md1Ie24H59/YWYQFtOfpYWPECIIgN+RUY+6tM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +45,22 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.Team.html",
-          "hash": "2xjr3KGwwswfCyhy/JMLUAE+d3OScFplJqp3V3QMaOc="
+          "hash": "wdaMyiGdO9JijJy30SFAZDtwyITwev6YtUlyEMc4HxY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.Models.TeamRoster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.Models.TeamRoster.html",
+          "hash": "9wyrZAruTUSMftYkmGHIbJe51BlbVn6lBbX71ZScZTg="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.html",
-          "hash": "sG8yEwyHPVrdGc6pBafMzt1Mk5uyTpQzftK1TDNExjU="
+          "hash": "xKv4LYfbIlw11hma7YU2ctK9BuojTsUySmd+STsfE9Q="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -84,7 +96,7 @@
           "hash": "7VUFCE3E9oZs0fIWfCqm1JSgSHhkHHUzWlJu1Kv1hcc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "l98HoNV4/zyHZFYXpMj6oFUXAtfREPbdcb9mLVn5CS8="
+          "hash": "xLFTYrOeGihyAvpCcZKRvLGY8PxuOWOyugSOeMal9aE="
         }
       },
       "is_incremental": false,
@@ -166,8 +178,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 6,
-          "skipped_file_count": 5
+          "total_file_count": 7,
+          "skipped_file_count": 1
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
