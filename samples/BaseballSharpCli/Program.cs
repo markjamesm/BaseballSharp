@@ -30,7 +30,8 @@ namespace MLBSharpCli
                 Console.WriteLine($"{team.FullName}, {team.Id}");
             }
 
-            var teamRoster = Api.TeamRoster(111, 2021);
+            // Example of casting the team ids enum to int in the parameter.
+            var teamRoster = Api.TeamRoster((int)eTeamIds.BlueJays, 2021);
 
             foreach (var team in teamRoster)
             {

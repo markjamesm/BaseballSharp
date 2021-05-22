@@ -1,4 +1,4 @@
-﻿namespace BaseballSharp.Enums
+﻿namespace BaseballSharp
 {
     /// <summary>
     /// A list of all team ids in enum format. This can be used
