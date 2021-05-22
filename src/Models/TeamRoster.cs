@@ -57,6 +57,5 @@
             StatusCode = statusCode;
             StatusDescription = statusDescription;
         }
-
     }
 }

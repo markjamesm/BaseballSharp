@@ -1,7 +1,6 @@
 ﻿using System.Text.Json;
 using System.Net;
 using System.Collections.Generic;
-using System.Diagnostics;
 using BaseballSharp.Models;
 using BaseballSharp.DTO.GameSchedule;
 using BaseballSharp.DTO.PitchingReport;
