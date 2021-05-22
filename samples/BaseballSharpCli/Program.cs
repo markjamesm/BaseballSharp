@@ -37,6 +37,7 @@ namespace MLBSharpCli
                 Console.WriteLine($"{team.PlayerFullName}, {team.PlayerPosition}, {team.StatusCode}");
             }
 
+            // Display some basic data from the LineScore endpoint.
             var lineScore = Api.LineScore(529572);
 
             foreach (var inning in lineScore)
