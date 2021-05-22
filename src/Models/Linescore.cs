@@ -68,9 +68,19 @@
         public string? CatcherName { get; protected set; }
 
         /// <summary>
+        /// The ID of the defensive pitcher.
+        /// </summary>
+        public int? CatcherId { get; protected set; }
+
+        /// <summary>
         /// The name of the third baseman.
         /// </summary>
         public string? FirstBasemanName { get; protected set; }
+
+        /// <summary>
+        /// The ID of the defensive pitcher.
+        /// </summary>
+        public int? FirstBasemanId { get; protected set; }
 
         /// <summary>
         /// The name of the second baseman.
@@ -78,9 +88,19 @@
         public string? SecondBasemanName { get; protected set; }
 
         /// <summary>
+        /// The ID of the defensive pitcher.
+        /// </summary>
+        public int? SecondBasemanId { get; protected set; }
+
+        /// <summary>
         /// The name of the third baseman.
         /// </summary>
         public string? ThirdBasemanName { get; protected set; }
+
+        /// <summary>
+        /// The ID of the defensive pitcher.
+        /// </summary>
+        public int? ThirdBasemanId { get; protected set; }
 
         /// <summary>
         /// The name of the third baseman.
@@ -88,9 +108,19 @@
         public string? ShortstopName { get; protected set; }
 
         /// <summary>
+        /// The ID of the defensive pitcher.
+        /// </summary>
+        public int? ShortstopId { get; protected set; }
+
+        /// <summary>
         /// The name of the third baseman.
         /// </summary>
         public string? LeftFielderName { get; protected set; }
+
+        /// <summary>
+        /// The ID of the defensive pitcher.
+        /// </summary>
+        public int? LeftFielderId { get; protected set; }
 
         /// <summary>
         /// The name of the third baseman.
@@ -98,9 +128,19 @@
         public string? CenterFielderName { get; protected set; }
 
         /// <summary>
+        /// The ID of the defensive pitcher.
+        /// </summary>
+        public int? CenterFielderId { get; protected set; }
+
+        /// <summary>
         /// The name of the third baseman.
         /// </summary>
         public string? RightFielderName { get; protected set; }
+
+        /// <summary>
+        /// The ID of the defensive pitcher.
+        /// </summary>
+        public int? RightFielderId { get; protected set; }
 
         /// <summary>
         /// The name of the third baseman.
@@ -108,14 +148,29 @@
         public string? DefensiveBatterName { get; protected set; }
 
         /// <summary>
+        /// The ID of the defensive pitcher.
+        /// </summary>
+        public int? DefensiveBatterId { get; protected set; }
+
+        /// <summary>
         /// The name of the third baseman.
         /// </summary>
         public string? DefensiveOnDeck { get; protected set; }
 
         /// <summary>
+        /// The ID of the defensive pitcher.
+        /// </summary>
+        public int? DefensiveOnDeckId { get; protected set; }
+
+        /// <summary>
         /// The name of the third baseman.
         /// </summary>
         public string? DefensiveInHole { get; protected set; }
+
+        /// <summary>
+        /// The ID of the defensive pitcher.
+        /// </summary>
+        public int? DefensiveInHoleId { get; protected set; }
 
         /// <summary>
         /// The name of the third baseman.
@@ -126,5 +181,141 @@
         /// The name of the third baseman.
         /// </summary>
         public int? DefensiveTeamId { get; protected set; }
+
+        /// <summary>
+        /// The name of the third baseman.
+        /// </summary>
+        public int? OffensiveTeamBatterId { get; protected set; }
+
+        /// <summary>
+        /// The name of the current offensive batter.
+        /// </summary>
+        public string? OffensiveTeamBatterName { get; protected set; }
+
+        /// <summary>
+        /// The name of the third baseman.
+        /// </summary>
+        public string? OffensiveTeamOnDeckName { get; protected set; }
+
+        /// <summary>
+        /// The name of the third baseman.
+        /// </summary>
+        public int? OffensiveTeamOnDeckId { get; protected set; }
+
+        /// <summary>
+        /// The name of the third baseman.
+        /// </summary>
+        public string? OffensiveTeamInHoleName { get; protected set; }
+
+        /// <summary>
+        /// The name of the third baseman.
+        /// </summary>
+        public int? OffensiveTeamInHoleId { get; protected set; }
+
+        /// <summary>
+        /// The name of the third baseman.
+        /// </summary>
+        public string? OffensiveTeamPitcherName { get; protected set; }
+
+        /// <summary>
+        /// The name of the third baseman.
+        /// </summary>
+        public int? OffensiveTeamPitcherId { get; protected set; }
+
+        /// <summary>
+        /// The name of the third baseman.
+        /// </summary>
+        public string? OffensiveTeamName { get; protected set; }
+
+        /// <summary>
+        /// The name of the third baseman.
+        /// </summary>
+        public int? OffensiveTeamId { get; protected set; }
+
+        public Linescore(int? currentInning,
+            string? inningHalf,
+            int? scheduledInnings,
+            int? hometeamRuns,
+            int? hometeamHits,
+            int? hometeamErrors,
+            int? awayteamRuns,
+            int? awayteamHits,
+            int? awayteamErrors,
+            int? inningNumber,
+            int? defensivePitcherId,
+            string? pitcherName,
+            string? catcherName,
+            int? catcherId,
+            string? firstBasemanName,
+            int? firstBasemanId,
+            string? secondBasemanName,
+            int? secondBasemanId,
+            string? thirdBasemanName,
+            int? thirdBasemanId,
+            string? shortstopName,
+            int? shortstopId,
+            string? leftFielderName,
+            int? leftFielderId,
+            string? centerFielderName,
+            int? centerFielderId,
+            string? rightFielderName,
+            int? rightFielderId,
+            string? defensiveBatterName,
+            int? defensiveBatterId,
+            string? defensiveOnDeck,
+            int? defensiveOnDeckId,
+            string? defensiveInHole,
+            int? defensiveInHoleId,
+            string? defensiveTeamName,
+            int? defensiveTeamId,
+            string? offensiveTeamBatterName,
+            int? offensiveTeamBatterId,
+            string? offensiveTeamOnDeckName,
+            int? offensiveTeamOnDeckId,
+            string? offensiveTeamInHoleName,
+            int? offensiveTeamInHoleId)
+        {
+            InningHalf = inningHalf;
+            ScheduledInnings = scheduledInnings;
+            HometeamRuns = hometeamRuns;
+            HometeamHits = hometeamHits;
+            HometeamErrors = hometeamErrors;
+            AwayteamRuns = awayteamRuns;
+            AwayteamHits = awayteamHits;
+            AwayteamErrors = awayteamErrors;
+            InningNumber = inningNumber;
+            DefensivePitcherId = defensivePitcherId;
+            PitcherName = pitcherName;
+            CatcherName = catcherName;
+            CatcherId = catcherId;
+            FirstBasemanName = firstBasemanName;
+            FirstBasemanId = firstBasemanId;
+            SecondBasemanName = secondBasemanName;
+            SecondBasemanId = secondBasemanId;
+            ThirdBasemanName = thirdBasemanName;
+            ThirdBasemanId = thirdBasemanId;
+            ShortstopName = shortstopName;
+            ShortstopId = shortstopId;
+            LeftFielderName = leftFielderName;
+            LeftFielderId = leftFielderId;
+            CenterFielderName = centerFielderName;
+            CenterFielderId = centerFielderId;
+            RightFielderName = rightFielderName;
+            RightFielderId = rightFielderId;
+            DefensiveBatterName = defensiveBatterName;
+            DefensiveBatterId = defensiveBatterId;
+            DefensiveOnDeck = defensiveOnDeck;
+            DefensiveOnDeckId = defensiveOnDeckId;
+            DefensiveInHole = defensiveInHole;
+            DefensiveInHoleId = defensiveInHoleId;
+            DefensiveTeamName = defensiveTeamName;
+            DefensiveTeamId = defensiveTeamId;
+            OffensiveTeamBatterName = offensiveTeamBatterName;
+            OffensiveTeamBatterId = offensiveTeamBatterId;
+            OffensiveTeamOnDeckName = offensiveTeamOnDeckName;
+            OffensiveTeamOnDeckId = offensiveTeamOnDeckId;
+            OffensiveTeamInHoleName = offensiveTeamInHoleName;
+            OffensiveTeamInHoleId = offensiveTeamInHoleId;
+        }
     }
 }
