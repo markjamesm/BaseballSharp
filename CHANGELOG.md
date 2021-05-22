@@ -1,5 +1,9 @@
 # Changelog
 
+#### V0.1.4-alpha
+
+- Added DepthChart() endpoint.
+
 #### V0.1.3-alpha
 
 - Added TeamRoster() endpoint function.
