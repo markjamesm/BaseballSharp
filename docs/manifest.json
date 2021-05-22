@@ -101,11 +101,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BaseballSharp.eTeamIds.yml",
+      "source_relative_path": "api/BaseballSharp.eTeamId.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.eTeamIds.html",
-          "hash": "CGDiTyEJYedAVfDcyqW161cQnsgBtxeRRlVLokkVC2g="
+          "relative_path": "api/BaseballSharp.eTeamId.html",
+          "hash": "Sp1gOYql88yQvMn5TYScB/7TOtEgok0bplnB/S/gZXI="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.html",
-          "hash": "BHGwVx/pihPSg/gUtjx0mQmI16dAh8ubl2YoeRGjhmo="
+          "hash": "ro4Jbs8jEZ9/vB8PdyBXAQOT5RBI+aJW2komxQfF3eI="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "6yWpomp5UgaH27hxLxEZ52xqQPK4rD32GzJfcItKCLE="
+          "hash": "cUoLvf6uAuaiOp0fbHdmHGAg66+JEzFckBOlERh0RoA="
         }
       },
       "is_incremental": false,
@@ -180,7 +180,7 @@
           "hash": "hj8YlAbU3PM5L4i5OPSqtoe4puX9s7f/HMh79slvxFU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -209,7 +209,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
