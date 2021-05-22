@@ -1,8 +1,9 @@
 # Changelog
 
-#### V0.1.2-alpha
+#### V0.1.3-alpha
 
 - Added TeamRoster() endpoint function.
+- Added Linescore() endpoint.
 
 #### V0.1.2-alpha
 
