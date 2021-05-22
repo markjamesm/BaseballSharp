@@ -7,6 +7,7 @@ using BaseballSharp.DTO.GameSchedule;
 using BaseballSharp.DTO.PitchingReport;
 using BaseballSharp.DTO.Teams;
 using BaseballSharp.DTO;
+using BaseballSharp.DTO.Linescore;
 
 namespace BaseballSharp
 {
@@ -172,6 +173,78 @@ namespace BaseballSharp
             }
 
             return teamRosters;
+        }
+
+        /// <summary>
+        /// Returns a list of linescore data for the game in question.
+        /// </summary>
+        /// <returns>A list of TeamRoster objects.</returns>
+        /// <param name="gameId">The ID number of the game.</param>
+        /// <returns>A list of TeamRoster objects</returns>
+        public static List<Linescore> LineScore(int gameId)
+        {
+            List<Linescore> lineScores = new();
+
+            try
+            {
+                WebClient client = new();
+                string jsonResponse = client.DownloadString(_baseUrl + "/game/" + gameId + "/linescore");
+
+                LinescoreDto? lineScoresJson = JsonSerializer.Deserialize<LinescoreDto>(jsonResponse);
+
+                foreach (var inning in lineScoresJson.innings)
+                {
+                    lineScores.Add(new Linescore(
+                        lineScoresJson?.currentInning,
+                        lineScoresJson?.inningHalf,
+                        lineScoresJson?.scheduledInnings,
+                        lineScoresJson?.teams?.home.runs,
+                        lineScoresJson?.teams?.home.hits,
+                        lineScoresJson?.teams?.home.errors,
+                        lineScoresJson?.teams?.away.runs,
+                        lineScoresJson?.teams?.away.hits,
+                        lineScoresJson?.teams?.away.errors,
+                        inning?.num,
+                        lineScoresJson?.defense?.pitcher?.id,
+                        lineScoresJson?.defense?.pitcher?.fullName,
+                        lineScoresJson?.defense?.catcher?.fullName,
+                        lineScoresJson?.defense?.catcher?.id,
+                        lineScoresJson?.defense?.first?.fullName,
+                        lineScoresJson?.defense?.first?.id,
+                        lineScoresJson?.defense?.second?.fullName,
+                        lineScoresJson?.defense?.second?.id,
+                        lineScoresJson?.defense?.third?.fullName,
+                        lineScoresJson?.defense?.third?.id,
+                        lineScoresJson?.defense?.shortstop?.fullName,
+                        lineScoresJson?.defense?.shortstop?.id,
+                        lineScoresJson?.defense?.left?.fullName,
+                        lineScoresJson?.defense?.left?.id,
+                        lineScoresJson?.defense?.center?.fullName,
+                        lineScoresJson?.defense?.center?.id,
+                        lineScoresJson?.defense?.right?.fullName,
+                        lineScoresJson?.defense?.right?.id,
+                        lineScoresJson?.defense?.batter?.fullName,
+                        lineScoresJson?.defense?.batter?.id,
+                        lineScoresJson?.defense?.onDeck?.fullName,
+                        lineScoresJson?.defense?.onDeck?.id,
+                        lineScoresJson?.defense?.inHole?.fullName,
+                        lineScoresJson?.defense?.inHole?.id,
+                        lineScoresJson?.defense?.team?.name,
+                        lineScoresJson?.defense?.team?.id,
+                        lineScoresJson?.offense?.batter?.fullName,
+                        lineScoresJson?.offense?.batter?.id,
+                        lineScoresJson?.offense?.onDeck?.fullName,
+                        lineScoresJson?.offense?.onDeck?.id,
+                        lineScoresJson?.offense?.inHole?.fullName,
+                        lineScoresJson?.offense?.inHole?.id));
+                }
+            }
+            catch (WebException)
+            {
+                throw new WebException();
+            }
+
+            return lineScores;
         }
     }
 }

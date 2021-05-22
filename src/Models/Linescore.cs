@@ -1,6 +1,6 @@
 ﻿namespace BaseballSharp.Models
 {
-    class Linescore
+    public class Linescore
     {
         /// <summary>
         /// The current inning of play.
@@ -60,7 +60,7 @@
         /// <summary>
         /// The defensive pitcher's name.
         /// </summary>
-        public string? PitcherName { get; protected set; }
+        public string? DefensePitcherName { get; protected set; }
 
         /// <summary>
         /// The catcher's name.
@@ -285,7 +285,7 @@
             AwayteamErrors = awayteamErrors;
             InningNumber = inningNumber;
             DefensivePitcherId = defensivePitcherId;
-            PitcherName = pitcherName;
+            DefensePitcherName = pitcherName;
             CatcherName = catcherName;
             CatcherId = catcherId;
             FirstBasemanName = firstBasemanName;

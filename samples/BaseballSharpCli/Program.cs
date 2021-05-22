@@ -37,6 +37,13 @@ namespace MLBSharpCli
                 Console.WriteLine($"{team.PlayerFullName}, {team.PlayerPosition}, {team.StatusCode}");
             }
 
+            var lineScore = Api.LineScore(529572);
+
+            foreach (var game in lineScore)
+            {
+                Console.WriteLine($"Inning: {game.InningNumber}, 2nd base: {game.DefensePitcherName}, 1st base: {game.FirstBasemanName}");
+            }
+
         }
     }
 }

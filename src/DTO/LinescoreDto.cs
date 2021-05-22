@@ -151,7 +151,7 @@ namespace BaseballSharp.DTO.Linescore
         public Team team { get; set; }
     }
 
-    public class Linescore
+    public class LinescoreDto
     {
         public string copyright { get; set; }
         public int currentInning { get; set; }
