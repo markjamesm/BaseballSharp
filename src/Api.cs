@@ -245,5 +245,47 @@ namespace BaseballSharp
 
             return lineScores;
         }
+
+        /// <summary>
+        /// Returns a list of depth chart information for a given team.
+        /// Use the TeamData() call to obtain the id numbers needed to satisfy the teamId parameter. 
+        /// </summary>
+        /// <returns>A list of team objects.</returns>
+        /// <param name="teamId">The team's ID number.</param>
+        /// <returns>A list of pitching report objects</returns>
+        public static List<DepthChart> DepthChart(int teamId)
+        {
+            List<DepthChart> depthCharts = new();
+
+            try
+            {
+                WebClient client = new();
+                string jsonResponse = client.DownloadString(_baseUrl + "/teams/" + teamId + "/roster/depthChart");
+
+                TeamRosterDto? depthChartJson = JsonSerializer.Deserialize<TeamRosterDto>(jsonResponse);
+
+                foreach (var person in depthChartJson.roster)
+                {
+                    depthCharts.Add(new DepthChart(
+                        depthChartJson?.teamId,
+                        depthChartJson?.rosterType,
+                        person?.person?.id,
+                        person?.person?.fullName,
+                        person?.jerseyNumber,
+                        person?.position?.code,
+                        person?.position?.name,
+                        person?.position?.type,
+                        person?.position?.abbreviation,
+                        person?.status?.code,
+                        person?.status?.description));
+                }
+            }
+            catch (WebException)
+            {
+                throw new WebException();
+            }
+
+            return depthCharts;
+        }
     }
 }

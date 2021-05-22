@@ -45,6 +45,14 @@ namespace MLBSharpCli
                 Console.WriteLine($"Inning: {inning.InningNumber}, 2nd base: {inning.SecondBasemanName}, 1st base: {inning.FirstBasemanName}");
             }
 
+            // Get a team's depth chart
+            var depthChart = Api.DepthChart(111);
+
+            foreach (var person in depthChart)
+            {
+                Console.WriteLine($"Name: {person.PlayerFullName}, position: {person.PositionName}");
+            }
+
         }
     }
 }
