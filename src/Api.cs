@@ -10,6 +10,9 @@ using BaseballSharp.DTO.Linescore;
 
 namespace BaseballSharp
 {
+    /// <summary>
+    /// The Api class holds all MLB Stats API endpoints that can be accessed from Baseball Sharp.
+    /// </summary>
     public class Api
     {
         private static readonly string _baseUrl = "http://statsapi.mlb.com/api/v1";

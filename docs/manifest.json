@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Api.html",
-          "hash": "lDcFX2IVWemidcX4VddnfRyWUcnukqWlcqDKEuxO4mI="
+          "hash": "cIcDjzC0LQOmkJd0iAje4rcPsrRkYnn8HAmB20EcqTA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "kIhLFoR5hkiQlMyfYudSUbM8BcrGz/NRbx+VsjHAcOE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "8YRjkSjXHkuYA5coVJQgDQe+s8+MurF/uSHF2Lr0epQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.html",
-          "hash": "ro4Jbs8jEZ9/vB8PdyBXAQOT5RBI+aJW2komxQfF3eI="
+          "hash": "qiN8/4dwpFPyW7DBGWk7kU1zz+mr6n3YrIVq5rd1pJ8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -180,7 +180,7 @@
           "hash": "omz6SUB9zZfd3z+hWmUvEohRFD19mMCLhF3TKUfs2k8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -209,7 +209,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
