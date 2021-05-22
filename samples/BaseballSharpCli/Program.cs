@@ -39,9 +39,9 @@ namespace MLBSharpCli
 
             var lineScore = Api.LineScore(529572);
 
-            foreach (var game in lineScore)
+            foreach (var inning in lineScore)
             {
-                Console.WriteLine($"Inning: {game.InningNumber}, 2nd base: {game.DefensePitcherName}, 1st base: {game.FirstBasemanName}");
+                Console.WriteLine($"Inning: {inning.InningNumber}, 2nd base: {inning.SecondBasemanName}, 1st base: {inning.FirstBasemanName}");
             }
 
         }

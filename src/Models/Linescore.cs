@@ -68,17 +68,17 @@
         public string? CatcherName { get; protected set; }
 
         /// <summary>
-        /// The ID of the defensive pitcher.
+        /// The ID of the catcher.
         /// </summary>
         public int? CatcherId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The name of the first baseman.
         /// </summary>
         public string? FirstBasemanName { get; protected set; }
 
         /// <summary>
-        /// The ID of the defensive pitcher.
+        /// The ID of the first baseman.
         /// </summary>
         public int? FirstBasemanId { get; protected set; }
 
@@ -88,7 +88,7 @@
         public string? SecondBasemanName { get; protected set; }
 
         /// <summary>
-        /// The ID of the defensive pitcher.
+        /// The ID of the second baseman.
         /// </summary>
         public int? SecondBasemanId { get; protected set; }
 
@@ -98,92 +98,92 @@
         public string? ThirdBasemanName { get; protected set; }
 
         /// <summary>
-        /// The ID of the defensive pitcher.
+        /// The ID of the third baseman.
         /// </summary>
         public int? ThirdBasemanId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The name of the shortstop.
         /// </summary>
         public string? ShortstopName { get; protected set; }
 
         /// <summary>
-        /// The ID of the defensive pitcher.
+        /// The ID number of the shortstop.
         /// </summary>
         public int? ShortstopId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The name of the left fielder.
         /// </summary>
         public string? LeftFielderName { get; protected set; }
 
         /// <summary>
-        /// The ID of the defensive pitcher.
+        /// The ID of the left fielder.
         /// </summary>
         public int? LeftFielderId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The name of the center fielder.
         /// </summary>
         public string? CenterFielderName { get; protected set; }
 
         /// <summary>
-        /// The ID of the defensive pitcher.
+        /// The ID of the center fielder.
         /// </summary>
         public int? CenterFielderId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The name of the right fielder.
         /// </summary>
         public string? RightFielderName { get; protected set; }
 
         /// <summary>
-        /// The ID of the defensive pitcher.
+        /// The ID of the right fielder.
         /// </summary>
         public int? RightFielderId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The name of the defensive batter.
         /// </summary>
         public string? DefensiveBatterName { get; protected set; }
 
         /// <summary>
-        /// The ID of the defensive pitcher.
+        /// The ID of the defensive batter.
         /// </summary>
         public int? DefensiveBatterId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The name of the defensive on deck player.
         /// </summary>
         public string? DefensiveOnDeck { get; protected set; }
 
         /// <summary>
-        /// The ID of the defensive pitcher.
+        /// The ID of the defensive on deck player.
         /// </summary>
         public int? DefensiveOnDeckId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The name of defensive player in the hole.
         /// </summary>
         public string? DefensiveInHole { get; protected set; }
 
         /// <summary>
-        /// The ID of the defensive pitcher.
+        /// The ID number of the defensive player in the hole.
         /// </summary>
         public int? DefensiveInHoleId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The name of the defensive team.
         /// </summary>
         public string? DefensiveTeamName { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The id number of the defending team.
         /// </summary>
         public int? DefensiveTeamId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The batter id number for the offensive team player.
         /// </summary>
         public int? OffensiveTeamBatterId { get; protected set; }
 
@@ -193,42 +193,42 @@
         public string? OffensiveTeamBatterName { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The name of the offensive player on deck.
         /// </summary>
         public string? OffensiveTeamOnDeckName { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The on deck player id for the offensive team.
         /// </summary>
         public int? OffensiveTeamOnDeckId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The name of the player in hole on the offensive team.
         /// </summary>
         public string? OffensiveTeamInHoleName { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The Id number for the in hole on the offensive team 
         /// </summary>
         public int? OffensiveTeamInHoleId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The offensive team pitcher name.
         /// </summary>
         public string? OffensiveTeamPitcherName { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The Id number for the offensive team pitcher.
         /// </summary>
         public int? OffensiveTeamPitcherId { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// The offensive team name.
         /// </summary>
         public string? OffensiveTeamName { get; protected set; }
 
         /// <summary>
-        /// The name of the third baseman.
+        /// ID number of the offensive team.
         /// </summary>
         public int? OffensiveTeamId { get; protected set; }
 

@@ -178,9 +178,9 @@ namespace BaseballSharp
         /// <summary>
         /// Returns a list of linescore data for the game in question.
         /// </summary>
-        /// <returns>A list of TeamRoster objects.</returns>
+        /// <returns>A list of Linescore objects.</returns>
         /// <param name="gameId">The ID number of the game.</param>
-        /// <returns>A list of TeamRoster objects</returns>
+        /// <returns>A list of Linescore objects</returns>
         public static List<Linescore> LineScore(int gameId)
         {
             List<Linescore> lineScores = new();
