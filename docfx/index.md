@@ -1,6 +1,6 @@
 # Baseball Sharp
 
-This is the documentation website for [Baseball Sharp](https://github.com/markjamesm/Baseball-Sharp), an unofficial C# wrapper for the public facing (but undocumented) MLB Stats API. Currently in an early alpha status, Baseball Sharp is in active development and is built on .NET 5.0.
+This is the documentation website for [Baseball Sharp](https://github.com/markjamesm/Baseball-Sharp), an unofficial C# wrapper library for the public facing (but undocumented) MLB Stats API. Currently in an early alpha status, Baseball Sharp is in active development and is built on .NET 5.0.
 
 * [Nuget Package](https://www.nuget.org/packages/BaseballSharp/0.1.1-alpha).
 

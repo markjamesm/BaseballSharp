@@ -5,7 +5,7 @@
     /// to cast as an int to pass to functions that require a
     /// team id.
     /// </summary>
-    public enum eTeamIds
+    public enum eTeamId
     {
         Angels = 108,
         DBacks = 109,
