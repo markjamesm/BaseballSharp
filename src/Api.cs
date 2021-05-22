@@ -43,10 +43,9 @@ namespace BaseballSharp
                 }
             }
 
-            catch (WebException ex)
+            catch (WebException)
             {
-                // Need to change this.
-                Debug.WriteLine($"Error {ex}");
+                throw new WebException();
             }
 
             return upcomingGames;
@@ -86,9 +85,9 @@ namespace BaseballSharp
                 }
             }
 
-            catch (WebException ex)
+            catch (WebException)
             {
-                Debug.WriteLine($"Error {ex}");
+                throw new WebException();
             }
 
             return pitchingReports;
@@ -126,9 +125,9 @@ namespace BaseballSharp
                 }
             }
 
-            catch (WebException ex)
+            catch (WebException)
             {
-                Debug.WriteLine($"Error {ex}");
+                throw new WebException();
             }
 
             return teamsList;
