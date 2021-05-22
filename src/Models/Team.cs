@@ -3,17 +3,17 @@
     public class Team
     {
         /// <summary>
-        /// The team's full name. eg: "Toronto Blue Jays"
+        /// The team's full name. eg: "Toronto Blue Jays".
         /// </summary>
         public string? FullName { get; protected set; }
 
         /// <summary>
-        /// The team's name (eg: "Jays"
+        /// The team's name (eg: "Jays").
         /// </summary>
         public string? Name { get; protected set; }
 
         /// <summary>
-        /// Team hometown 
+        /// Team hometown.
         /// </summary>
         public string? Location { get; protected set; }
 
@@ -28,7 +28,7 @@
         public string? LeagueName { get; protected set; }
 
         /// <summary>
-        /// The league ID (used for building other league calls)
+        /// The league ID (used for building other league calls).
         /// </summary>
         public int? LeagueId { get; protected set; }
 
@@ -60,6 +60,5 @@
             VenueName = venueName;
             VenueId = venueId;
         }
-
     }
 }
