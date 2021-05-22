@@ -3,7 +3,7 @@
 #### V0.1.4-alpha
 
 - Added DepthChart() endpoint.
-- Added eTeamId enum to get team ids.
+- Added eTeamId enum to make getting team ids easier.
 
 #### V0.1.3-alpha
 
