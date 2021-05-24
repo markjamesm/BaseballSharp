@@ -3,7 +3,7 @@
     /// <summary>
     /// A list of all team ids in enum format. This can be used
     /// to cast as an int to pass to functions that require a
-    /// team id.
+    /// teamId as a parameter.
     /// </summary>
     public enum eTeamId
     {
