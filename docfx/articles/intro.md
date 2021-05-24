@@ -12,7 +12,7 @@ using BaseballSharp;
 
 - Visit the [API Documentation page](https://markjames.dev/Baseball-Sharp/api/index.html) for the most up-to-date endpoint and model documentation. 
 
-- You can also see examples of how to use the endpoint functions in the MLBSharpCli [Program.cs file](https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharpCli/Program.cs) example app.
+- You can also see examples of how to use the endpoint functions in the [BaseballSharpCli example app](https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharpCli/Program.cs).
 
 Endpoints include (but are not limited to) the following:
 

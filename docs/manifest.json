@@ -132,7 +132,7 @@
           "hash": "/YZZZTaXg9JTSaqAvuc6sw1oRMLbPzSakrXmboqVQAI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "7lF0Oe7Pdmm/8ZWf8v9Gk4V+7RzurNiRhFJpylpaMzM="
+          "hash": "PRDNutr/UqFDAXQkO4Xkr59KYm6bauIlmYjNW9ckuA0="
         }
       },
       "is_incremental": false,
@@ -209,7 +209,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 2
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
