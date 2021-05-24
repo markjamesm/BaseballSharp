@@ -16,6 +16,7 @@
     <PackageTags>MLB, Baseball, Wrapper</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageId>BaseballSharp</PackageId>
+	  <Configuration>release</Configuration>
 	  <Nullable>enable</Nullable> 
   </PropertyGroup>
 
