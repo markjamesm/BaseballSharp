@@ -24,7 +24,7 @@
           "hash": "Zl/HXdjjyIM6VDD3ojlr7P2rQzslTnjVRggjoN/HlP4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -36,7 +36,7 @@
           "hash": "+2OKx6lVUBTJnaUSrxu1GLU6JATjwXK+saDWjo8//CU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "kCnL1xX9ADJADs+WDwxGInqTVUkH1lBCj5kWxyweEMo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "37kuFDOJcex20AEJlgpnwuuBTTzO8ndZR/f3nI5lLGs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "kIhLFoR5hkiQlMyfYudSUbM8BcrGz/NRbx+VsjHAcOE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -84,7 +84,7 @@
           "hash": "8rXaaHqR+7bzzl1ulG80NDXqxmY7X0RyG6jPAKf8Uc0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "8YRjkSjXHkuYA5coVJQgDQe+s8+MurF/uSHF2Lr0epQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.eTeamId.html",
-          "hash": "Sp1gOYql88yQvMn5TYScB/7TOtEgok0bplnB/S/gZXI="
+          "hash": "OGTzESAnlrTEhyIq1RYwXWZDyfAiIRqt5bHwVCOITm0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.html",
-          "hash": "qiN8/4dwpFPyW7DBGWk7kU1zz+mr6n3YrIVq5rd1pJ8="
+          "hash": "UxW78ltN7ixzxTQQ2XxpIvRPxU15q+0eDnILBvtzRpc="
         }
       },
       "is_incremental": false,
@@ -132,7 +132,7 @@
           "hash": "7VUFCE3E9oZs0fIWfCqm1JSgSHhkHHUzWlJu1Kv1hcc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -209,13 +209,13 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 2
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 10,
-          "skipped_file_count": 9
+          "skipped_file_count": 2
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
