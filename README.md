@@ -14,8 +14,9 @@ The solution contains two projects:
 
 ## Documentation
 
-* Visit the [documentation site](https://markjames.dev/Baseball-Sharp/articles/intro.html) for a getting started guide and API reference.
-* [Read the changelog](https://markjames.dev/Baseball-Sharp/articles/changelog.html)
+* Read the [getting started guide](https://markjames.dev/Baseball-Sharp/articles/intro.html).
+* View the [API reference](https://markjames.dev/Baseball-Sharp/api/index.html).
+* [Read the changelog](https://markjames.dev/Baseball-Sharp/articles/changelog.html).
 
 ## Planned
 
