@@ -1,2 +1,4 @@
 - name: Getting Started
   href: intro.md
+- name: API Reference
+  href: /api/index.md
