@@ -2,3 +2,5 @@
   href: intro.md
 - name: API Reference
   href: ../api/index.md
+- name: Changelog
+  href: changelog.md
