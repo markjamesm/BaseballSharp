@@ -132,7 +132,7 @@
           "hash": "fdUoe8xKjrgvZYOEmY7q/YLa0722VnEtrfg/+IIHVhY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/changelog.html",
-          "hash": "ceANWfSs1dmUNctN4kEzyS55oAJr8PczBk0UZeAeqIo="
+          "hash": "8JhWAoemM/z48uojcz0fnHnq/X42e7mcMB8wUdmyhu0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "t8qoY13ikfJr830+0px+slNGb9kmx/v6Geg0U4Diybk="
+          "hash": "bHdAmKOwWWXLY+BSd6LwFxp1eLDfZ2gnUCju7D4STxY="
         }
       },
       "is_incremental": false,
@@ -192,7 +192,7 @@
           "hash": "omz6SUB9zZfd3z+hWmUvEohRFD19mMCLhF3TKUfs2k8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
