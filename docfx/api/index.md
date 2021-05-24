@@ -1,4 +1,4 @@
-# API Documentation
+# API Reference
 Browse the API documentation. 
 
 ## Namespaces

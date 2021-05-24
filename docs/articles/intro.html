@@ -70,18 +70,18 @@
 <h1 id="getting-started">Getting Started</h1>
 
 <h2 id="usage">Usage</h2>
-<p>Clone the repository or install <a href="https://www.nuget.org/packages/BaseballSharp/0.1.1-alpha">from Nuget</a>. Next, import Baseball Sharp into your project with:</p>
+<p>Clone the repository or <a href="https://www.nuget.org/packages/BaseballSharp">install from Nuget</a>. Next, import Baseball Sharp into your project with:</p>
 <pre><code class="lang-csharp">using BaseballSharp;
 </code></pre>
 <h2 id="endpoints">Endpoints</h2>
 <ul>
-<li><p>Visit the <a href="https://markjames.dev/Baseball-Sharp/api/index.html">API Documentation page</a> for the most up-to-date endpoint and model documentation.</p>
+<li><p>Visit the <a href="https://markjames.dev/Baseball-Sharp/api/index.html">API Reference section</a> for the most up-to-date endpoint and model documentation.</p>
 </li>
 <li><p>You can also see examples of how to use the endpoint functions in the <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharpCli/Program.cs">BaseballSharpCli example app</a>.</p>
 </li>
 </ul>
 <p>Endpoints include (but are not limited to) the following:</p>
-<h4 id="schedulestring-date"><code>Schedule(string date)</code></h4>
+<h3 id="schedulestring-date"><code>Schedule(string date)</code></h3>
 <p>Returns a <code>list&lt;Schedule&gt;</code> of containing games played on the specified date. Dates should be specified in mm/DD/yyyy format. Note: This endpoint is still being worked with plans to obtain game ids and other endpoints.</p>
 <p>The list contains:</p>
 <ul>
@@ -90,7 +90,7 @@
 <li>BallPark</li>
 <li>Scheduled innings: The number of scheduled innings for the game.</li>
 </ul>
-<h4 id="pitchingreportsstring-date"><code>PitchingReports(string date)</code></h4>
+<h3 id="pitchingreportsstring-date"><code>PitchingReports(string date)</code></h3>
 <p>Returns a <code>list&lt;PitchingReport&gt;</code> containing the following information for a specified date (mm/DD/yyyy format):</p>
 <ul>
 <li>HomeTeam</li>
@@ -102,7 +102,7 @@
 <li>AwayProbablePitcherNotes</li>
 <li>AwayProbablePitcherId</li>
 </ul>
-<h4 id="teamdata"><code>TeamData()</code></h4>
+<h3 id="teamdata"><code>TeamData()</code></h3>
 <p>Returns a <code>list&lt;Team&gt;</code> of all teams in the league. Contains the following information:</p>
 <ul>
 <li>FullName - Full team name, eg: &quot;Toronto Blue Jays&quot;</li>
