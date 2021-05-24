@@ -8,14 +8,13 @@ Clone the repository or install [from Nuget](https://www.nuget.org/packages/Base
 using BaseballSharp;
 ```
 
-Currently, the [MlbApi class](https://markjames.dev/Baseball-Sharp/api/index.html) contains all the endpoint functionality. 
-
-You can also see examples of how to use the endpoint functions in the MLBSharpCli [Program.cs file](https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharpCli/Program.cs).
-
-
 ## Endpoints
 
-Endpoints are limited at the moment, but will be expanding as the library is in active development. The [Api Documentation](https://markjames.dev/Baseball-Sharp/api/index.html) section contains the most up to date endpoints reference.
+- Visit the [API Documentation page](https://markjames.dev/Baseball-Sharp/api/index.html) for the most up-to-date endpoint and model documentation. 
+
+- You can also see examples of how to use the endpoint functions in the MLBSharpCli [Program.cs file](https://github.com/markjamesm/Baseball-Sharp/blob/master/MLBSharpCli/Program.cs) example app.
+
+Endpoints include (but are not limited to) the following:
 
 #### ```Schedule(string date)```
 
