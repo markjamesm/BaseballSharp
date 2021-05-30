@@ -1,29 +1,27 @@
-﻿using System;
-using BaseballSharp;
+﻿using BaseballSharp;
+using System;
 
 namespace MLBSharpCli
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            string todaysDate = DateTime.Now.ToString("MM-dd-yyyy").Replace("-", "/");
-
-            var upcomingGames =  Api.Schedule(todaysDate);
+            var upcomingGames = Api.Schedule(DateTime.Now).GetAwaiter().GetResult();
 
             foreach (var game in upcomingGames)
             {
                 Console.WriteLine($"{game.AwayTeam} vs {game.HomeTeam} at {game.Ballpark}");
             }
 
-            var pitching = Api.PitchingReports(todaysDate);
+            var pitching = Api.PitchingReports(DateTime.Now).GetAwaiter().GetResult();
 
             foreach (var pitcher in pitching)
             {
                 Console.WriteLine($"Home pitcher: {pitcher.HomeProbablePitcherName}, Notes: {pitcher.HomeProbablePitcherNotes}");
             }
 
-            var teamsList = Api.TeamData();
+            var teamsList = Api.TeamData().GetAwaiter().GetResult();
 
             foreach (var team in teamsList)
             {
@@ -31,7 +29,7 @@ namespace MLBSharpCli
             }
 
             // Example of casting the team ids enum to int in the parameter.
-            var teamRoster = Api.TeamRoster((int)eTeamId.BlueJays, 2021);
+            var teamRoster = Api.TeamRoster((int)eTeamId.BlueJays, 2021).GetAwaiter().GetResult();
 
             foreach (var team in teamRoster)
             {
@@ -39,7 +37,7 @@ namespace MLBSharpCli
             }
 
             // Display some basic data from the LineScore endpoint.
-            var lineScore = Api.LineScore(529572);
+            var lineScore = Api.LineScore(529572).GetAwaiter().GetResult();
 
             foreach (var inning in lineScore)
             {
@@ -47,13 +45,12 @@ namespace MLBSharpCli
             }
 
             // Get a team's depth chart
-            var depthChart = Api.DepthChart(111);
+            var depthChart = Api.DepthChart(111).GetAwaiter().GetResult();
 
             foreach (var person in depthChart)
             {
                 Console.WriteLine($"Name: {person.PlayerFullName}, position: {person.PositionName}");
             }
-
         }
     }
 }
