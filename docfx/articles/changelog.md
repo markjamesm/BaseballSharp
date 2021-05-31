@@ -2,6 +2,12 @@
 
 #### 0.1.5-alpha
 
+##### Endpoints
+
+- Added Divisions() endpoint.
+
+##### Backend changes
+
 - Removed dependency on WebClient, this was causing issues with Blazor when the API was called (WASM requires HttpClient)
 - Moved all calls to a private method to remove the need to create a new webclient with each call, also helps declutter the calling methods
 - Moved API calls to async to take advantage of the async HttpClient calls

@@ -258,5 +258,30 @@ namespace BaseballSharp
 
             return depthCharts;
         }
+
+        /// <summary>
+        /// Endpoint to get the MLB divisions and associated data.
+        /// </summary>
+        /// <returns>A list of Division objects.</returns>
+        public static async Task<IEnumerable<Models.Division>> Divisions()
+        {
+            List<Models.Division> divisions = new();
+
+            string jsonResponse = await getResponse("/divisions?sportId=1");
+
+            DivisionsDto? teamDivisions = JsonSerializer.Deserialize<DivisionsDto>(jsonResponse);
+
+            foreach (LeagueDivision? division in (teamDivisions ?? new DivisionsDto()).divisions ?? new LeagueDivision[0])
+            {
+                divisions.Add(new Models.Division(
+                division?.id,
+                division?.name,
+                division?.nameShort,
+                division?.abbreviation,
+                division?.league?.id));
+            }
+
+            return divisions;
+        }
     }
 }
