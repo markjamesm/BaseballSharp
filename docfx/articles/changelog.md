@@ -1,5 +1,13 @@
 # Changelog
 
+#### 0.1.5-alpha
+
+- Removed dependency on WebClient, this was causing issues with Blazor when the API was called (WASM requires HttpClient)
+- Moved all calls to a private method to remove the need to create a new webclient with each call, also helps declutter the calling methods
+- Moved API calls to async to take advantage of the async HttpClient calls
+- Add null-coalescing logic to avoid null exceptions if the MLB API returns a null result.
+- Updated CLI project to account for these changes
+
 #### 0.1.4-alpha
 
 - Added DepthChart() endpoint.
