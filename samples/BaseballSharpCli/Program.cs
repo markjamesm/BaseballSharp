@@ -51,6 +51,14 @@ namespace MLBSharpCli
             {
                 Console.WriteLine($"Name: {person.PlayerFullName}, position: {person.PositionName}");
             }
+
+            // Get a list of divisions
+            var divisions = Api.Divisions().GetAwaiter().GetResult();
+
+            foreach (var division in divisions)
+            {
+                Console.WriteLine($"Division name: {division.DivisionName}, Division ID: {division.DivisionId}");
+            }
         }
     }
 }
