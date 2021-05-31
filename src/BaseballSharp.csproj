@@ -17,7 +17,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageId>BaseballSharp</PackageId>
 	  <Configuration>release</Configuration>
-	  <Nullable>enable</Nullable> 
+	  <Nullable>enable</Nullable>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild> 
   </PropertyGroup>
 
 </Project>
