@@ -1,5 +1,5 @@
 # Baseball Sharp
-[![C#](https://img.shields.io/badge/Language-CSharp-darkgreen.svg)](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)) [![NuGet](https://img.shields.io/nuget/vpre/BaseballSharp)](https://www.nuget.org/packages/BaseballSharp/) [![License](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+[![C#](https://img.shields.io/badge/Language-CSharp-darkgreen.svg)](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)) [!Build](https://github.com/markjamesm/Baseball-Sharp/actions)](https://github.com/markjamesm/Baseball-Sharp/actions/workflows/dotnet.yml/badge.svg) [![NuGet](https://img.shields.io/nuget/vpre/BaseballSharp)](https://www.nuget.org/packages/BaseballSharp/) [![License](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 ## About
 
