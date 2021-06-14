@@ -17,7 +17,7 @@ namespace BaseballSharp
     /// </summary>
     public class Api
     {
-        private static readonly string _baseUrl = "http://statsapi.mlb.com/api/v1";
+        private static readonly string _baseUrl = "https://statsapi.mlb.com/api/v1";
 
         private static async Task<string> getResponse(string? Endpoint)
         {
@@ -131,16 +131,37 @@ namespace BaseballSharp
         /// <summary>
         /// Returns a list of team roster data for a given season.
         /// Use the TeamData() call to obtain the id numbers needed to satisfy the teamId parameter.
-        /// </summary>
-        /// <returns>A list of team objects.</returns>
-        /// <param name="teamId">The team's ID number.</param>
-        /// <param name="season">The desired season, eg: 2021.</param>
-        /// <returns>A list of pitching report objects</returns>
-        public static async Task<IEnumerable<TeamRoster>> TeamRoster(int teamId, int season)
+        /// <param name="teamId"> The team's MLB id (use enum)</param>
+        /// <param name="season"> The year the season begins on</param>
+        /// <param name="date"> A date to use, will return the roster as of that date</param>
+        /// <param name="roster"> The roster type to return. Can choose either full roster, 25man or 40 man</param>
+        /// <returns></returns>
+        public static async Task<IEnumerable<TeamRoster>> TeamRoster(int teamId, int season, DateTime date, rosterType roster = rosterType.rosterFull)
         {
             List<TeamRoster> teamRosters = new();
 
-            string jsonResponse = await getResponse("/teams/" + teamId + "/roster/fullRoster?season=" + season);
+            string type_string = "";
+
+            switch (roster)
+            {
+                case rosterType.rosterFull:
+                    type_string = "/teams/" + teamId + "/roster/fullRoster?season=" + season + "&date=" + date.ToString("MM/dd/yyyy");
+                    break;
+
+                case rosterType.roster25:
+                    type_string = "/teams/" + teamId + "/roster?season=" + season + "&date=" + date.ToString("MM/dd/yyyy");
+                    break;
+
+                case rosterType.roster40:
+
+                    type_string = "/teams/" + teamId + "/roster?season=" + season + "&rosterType=40Man" + "&date=" + date.ToString("MM/dd/yyyy");
+                    break;
+
+                default:
+                    break;
+            }
+
+            string jsonResponse = await getResponse(type_string);
 
             TeamRosterDto? teamRostersJson = JsonSerializer.Deserialize<TeamRosterDto>(jsonResponse);
 

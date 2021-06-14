@@ -29,7 +29,7 @@ namespace MLBSharpCli
             }
 
             // Example of casting the team ids enum to int in the parameter.
-            var teamRoster = Api.TeamRoster((int)eTeamId.BlueJays, 2021).GetAwaiter().GetResult();
+            var teamRoster = Api.TeamRoster((int)eTeamId.BlueJays, 2021, DateTime.Now, rosterType.rosterFull).GetAwaiter().GetResult();
 
             foreach (var team in teamRoster)
             {
