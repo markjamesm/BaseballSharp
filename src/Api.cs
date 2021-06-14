@@ -17,7 +17,7 @@ namespace BaseballSharp
     /// </summary>
     public class Api
     {
-        private static readonly string _baseUrl = "http://statsapi.mlb.com/api/v1";
+        private static readonly string _baseUrl = "https://statsapi.mlb.com/api/v1";
 
         private static async Task<string> getResponse(string? Endpoint)
         {
