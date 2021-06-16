@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Api.html",
-          "hash": "cIcDjzC0LQOmkJd0iAje4rcPsrRkYnn8HAmB20EcqTA="
+          "hash": "mcn36pzk/rxhV4CHsCmjTLk3HUm4cpDZbTNLpBOMUWU="
         }
       },
       "is_incremental": true,
@@ -21,7 +21,19 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.DepthChart.html",
-          "hash": "Zl/HXdjjyIM6VDD3ojlr7P2rQzslTnjVRggjoN/HlP4="
+          "hash": "MNgjKoEZ1l9pvTFfhW2v7e4iSw4D36VK78rSLx1BLBA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.Models.Division.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.Models.Division.html",
+          "hash": "J+GcepOPyLn8hHK5uUVUNs2W+M30815XjfzadRQeZDY="
         }
       },
       "is_incremental": true,
@@ -33,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.Linescore.html",
-          "hash": "+2OKx6lVUBTJnaUSrxu1GLU6JATjwXK+saDWjo8//CU="
+          "hash": "OJbqCXVqkz88KAIepoGDZ322CSdLwJ6J8SP3qia3/UY="
         }
       },
       "is_incremental": true,
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.PitchingReport.html",
-          "hash": "kCnL1xX9ADJADs+WDwxGInqTVUkH1lBCj5kWxyweEMo="
+          "hash": "+beJZnYNXD5X9nSkoVDTuz/MdBnCra7VoLtppC+0BqI="
         }
       },
       "is_incremental": true,
@@ -57,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.Schedule.html",
-          "hash": "37kuFDOJcex20AEJlgpnwuuBTTzO8ndZR/f3nI5lLGs="
+          "hash": "pLZYxHhNputpHvULZpnuPv/aL/xRLejbUBtnNSVxJ98="
         }
       },
       "is_incremental": true,
@@ -69,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.Team.html",
-          "hash": "kIhLFoR5hkiQlMyfYudSUbM8BcrGz/NRbx+VsjHAcOE="
+          "hash": "GBn6BAckKNo/gf+w21rkLkKVrgODADSsgl+pSaSmkIY="
         }
       },
       "is_incremental": true,
@@ -81,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.TeamRoster.html",
-          "hash": "8rXaaHqR+7bzzl1ulG80NDXqxmY7X0RyG6jPAKf8Uc0="
+          "hash": "znswYnWQ41u0GFGBKEprSJsJvjh6RsHNpab6BaLtpV8="
         }
       },
       "is_incremental": true,
@@ -93,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Models.html",
-          "hash": "8YRjkSjXHkuYA5coVJQgDQe+s8+MurF/uSHF2Lr0epQ="
+          "hash": "5G5l5dbYbQ7rstqLJdb2PfsRUwX5r3+d0XQ3WxoOQ3U="
         }
       },
       "is_incremental": true,
@@ -105,7 +117,19 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.eTeamId.html",
-          "hash": "OGTzESAnlrTEhyIq1RYwXWZDyfAiIRqt5bHwVCOITm0="
+          "hash": "Ovl8FjNC1g05xWck6rmPQ7eg13mtMeZM1kZwUdqKUp0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.rosterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.rosterType.html",
+          "hash": "s1WiE9cgoCF2R0LfnoKPr8oIeoZZ4DEWCiKmSt8TBNU="
         }
       },
       "is_incremental": true,
@@ -117,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.html",
-          "hash": "UxW78ltN7ixzxTQQ2XxpIvRPxU15q+0eDnILBvtzRpc="
+          "hash": "X39DczLDsTRxUxGqbxKccWiMs/qep0KpVq3p1u5kmcY="
         }
       },
       "is_incremental": true,
@@ -129,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "u3MdW8VYS6cyqlkD+jMuQ3ITp2qIIcyHcLMcDc2veAg="
+          "hash": "VJDcdeZ39EhYA4g3qWkZ6yDuizIFS2Z6YuXBdVsTxsM="
         }
       },
       "is_incremental": true,
@@ -141,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "cUoLvf6uAuaiOp0fbHdmHGAg66+JEzFckBOlERh0RoA="
+          "hash": "TDlN9YzWoy389hHQQ3MoFJychFIAbZ12BjtRkCjl0OY="
         }
       },
       "is_incremental": false,
@@ -153,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/changelog.html",
-          "hash": "mn98vnNRISqATvdh2u18xmEHlg0hXX6ak5TtkK84WwU="
+          "hash": "0pd9pLf4w8pzxqbbE+i6bnlTFTrVMl2O/ICxDEjBZ/g="
         }
       },
       "is_incremental": true,
@@ -165,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "bHdAmKOwWWXLY+BSd6LwFxp1eLDfZ2gnUCju7D4STxY="
+          "hash": "UsSAOz6l4PqhQcaC6SX6UYt1YBzQtnsu4HECM26GNlk="
         }
       },
       "is_incremental": true,
@@ -189,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "omz6SUB9zZfd3z+hWmUvEohRFD19mMCLhF3TKUfs2k8="
+          "hash": "8K62lVArbCe2KoSDhDt7Lw56v7cYAbo1taoBf5jx5m4="
         }
       },
       "is_incremental": true,
@@ -226,8 +250,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 10,
-          "skipped_file_count": 10
+          "total_file_count": 12,
+          "skipped_file_count": 12
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

@@ -8,7 +8,7 @@
     <title>Changelog </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Changelog ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -69,6 +69,11 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="changelog">Changelog</h1>
 
+<h4 id="016-alpha">0.1.6-alpha</h4>
+<ul>
+<li>Added ability to pull roster back by either full, 25man or 40 man.</li>
+<li>Moved http calls to https to avoid mixed-content errors and because it's just better.</li>
+</ul>
 <h4 id="015-alpha">0.1.5-alpha</h4>
 <h5 id="endpoints">Endpoints</h5>
 <ul>
@@ -76,11 +81,11 @@
 </ul>
 <h5 id="backend-changes">Backend changes</h5>
 <ul>
-<li>Removed dependency on WebClient, this was causing issues with Blazor when the API was called (WASM requires HttpClient)</li>
-<li>Moved all calls to a private method to remove the need to create a new webclient with each call, also helps declutter the calling methods</li>
-<li>Moved API calls to async to take advantage of the async HttpClient calls</li>
+<li>Removed dependency on WebClient, this was causing issues with Blazor when the API was called (WASM requires HttpClient).</li>
+<li>Moved all calls to a private method to remove the need to create a new webclient with each call, also helps declutter the calling methods.</li>
+<li>Moved API calls to async to take advantage of the async HttpClient calls.</li>
 <li>Add null-coalescing logic to avoid null exceptions if the MLB API returns a null result.</li>
-<li>Updated CLI project to account for these changes</li>
+<li>Updated CLI project to account for these changes.</li>
 </ul>
 <h4 id="014-alpha">0.1.4-alpha</h4>
 <ul>

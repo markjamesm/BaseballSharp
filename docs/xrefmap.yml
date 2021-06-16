@@ -26,6 +26,19 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Api.DepthChart
   nameWithType: Api.DepthChart
+- uid: BaseballSharp.Api.Divisions
+  name: Divisions()
+  href: api/BaseballSharp.Api.html#BaseballSharp_Api_Divisions
+  commentId: M:BaseballSharp.Api.Divisions
+  fullName: BaseballSharp.Api.Divisions()
+  nameWithType: Api.Divisions()
+- uid: BaseballSharp.Api.Divisions*
+  name: Divisions
+  href: api/BaseballSharp.Api.html#BaseballSharp_Api_Divisions_
+  commentId: Overload:BaseballSharp.Api.Divisions
+  isSpec: "True"
+  fullName: BaseballSharp.Api.Divisions
+  nameWithType: Api.Divisions
 - uid: BaseballSharp.Api.LineScore(System.Int32)
   name: LineScore(Int32)
   href: api/BaseballSharp.Api.html#BaseballSharp_Api_LineScore_System_Int32_
@@ -39,12 +52,12 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Api.LineScore
   nameWithType: Api.LineScore
-- uid: BaseballSharp.Api.PitchingReports(System.String)
-  name: PitchingReports(String)
-  href: api/BaseballSharp.Api.html#BaseballSharp_Api_PitchingReports_System_String_
-  commentId: M:BaseballSharp.Api.PitchingReports(System.String)
-  fullName: BaseballSharp.Api.PitchingReports(System.String)
-  nameWithType: Api.PitchingReports(String)
+- uid: BaseballSharp.Api.PitchingReports(System.DateTime)
+  name: PitchingReports(DateTime)
+  href: api/BaseballSharp.Api.html#BaseballSharp_Api_PitchingReports_System_DateTime_
+  commentId: M:BaseballSharp.Api.PitchingReports(System.DateTime)
+  fullName: BaseballSharp.Api.PitchingReports(System.DateTime)
+  nameWithType: Api.PitchingReports(DateTime)
 - uid: BaseballSharp.Api.PitchingReports*
   name: PitchingReports
   href: api/BaseballSharp.Api.html#BaseballSharp_Api_PitchingReports_
@@ -52,12 +65,12 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Api.PitchingReports
   nameWithType: Api.PitchingReports
-- uid: BaseballSharp.Api.Schedule(System.String)
-  name: Schedule(String)
-  href: api/BaseballSharp.Api.html#BaseballSharp_Api_Schedule_System_String_
-  commentId: M:BaseballSharp.Api.Schedule(System.String)
-  fullName: BaseballSharp.Api.Schedule(System.String)
-  nameWithType: Api.Schedule(String)
+- uid: BaseballSharp.Api.Schedule(System.DateTime)
+  name: Schedule(DateTime)
+  href: api/BaseballSharp.Api.html#BaseballSharp_Api_Schedule_System_DateTime_
+  commentId: M:BaseballSharp.Api.Schedule(System.DateTime)
+  fullName: BaseballSharp.Api.Schedule(System.DateTime)
+  nameWithType: Api.Schedule(DateTime)
 - uid: BaseballSharp.Api.Schedule*
   name: Schedule
   href: api/BaseballSharp.Api.html#BaseballSharp_Api_Schedule_
@@ -78,12 +91,12 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Api.TeamData
   nameWithType: Api.TeamData
-- uid: BaseballSharp.Api.TeamRoster(System.Int32,System.Int32)
-  name: TeamRoster(Int32, Int32)
-  href: api/BaseballSharp.Api.html#BaseballSharp_Api_TeamRoster_System_Int32_System_Int32_
-  commentId: M:BaseballSharp.Api.TeamRoster(System.Int32,System.Int32)
-  fullName: BaseballSharp.Api.TeamRoster(System.Int32, System.Int32)
-  nameWithType: Api.TeamRoster(Int32, Int32)
+- uid: BaseballSharp.Api.TeamRoster(System.Int32,System.Int32,System.DateTime,BaseballSharp.rosterType)
+  name: TeamRoster(Int32, Int32, DateTime, rosterType)
+  href: api/BaseballSharp.Api.html#BaseballSharp_Api_TeamRoster_System_Int32_System_Int32_System_DateTime_BaseballSharp_rosterType_
+  commentId: M:BaseballSharp.Api.TeamRoster(System.Int32,System.Int32,System.DateTime,BaseballSharp.rosterType)
+  fullName: BaseballSharp.Api.TeamRoster(System.Int32, System.Int32, System.DateTime, BaseballSharp.rosterType)
+  nameWithType: Api.TeamRoster(Int32, Int32, DateTime, rosterType)
 - uid: BaseballSharp.Api.TeamRoster*
   name: TeamRoster
   href: api/BaseballSharp.Api.html#BaseballSharp_Api_TeamRoster_
@@ -448,6 +461,93 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.DepthChart.TeamId
   nameWithType: DepthChart.TeamId
+- uid: BaseballSharp.Models.Division
+  name: Division
+  href: api/BaseballSharp.Models.Division.html
+  commentId: T:BaseballSharp.Models.Division
+  fullName: BaseballSharp.Models.Division
+  nameWithType: Division
+- uid: BaseballSharp.Models.Division.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32})
+  name: Division(Nullable<Int32>, String, String, String, Nullable<Int32>)
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division__ctor_System_Nullable_System_Int32__System_String_System_String_System_String_System_Nullable_System_Int32__
+  commentId: M:BaseballSharp.Models.Division.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32})
+  name.vb: Division(Nullable(Of Int32), String, String, String, Nullable(Of Int32))
+  fullName: BaseballSharp.Models.Division.Division(System.Nullable<System.Int32>, System.String, System.String, System.String, System.Nullable<System.Int32>)
+  fullName.vb: BaseballSharp.Models.Division.Division(System.Nullable(Of System.Int32), System.String, System.String, System.String, System.Nullable(Of System.Int32))
+  nameWithType: Division.Division(Nullable<Int32>, String, String, String, Nullable<Int32>)
+  nameWithType.vb: Division.Division(Nullable(Of Int32), String, String, String, Nullable(Of Int32))
+- uid: BaseballSharp.Models.Division.#ctor*
+  name: Division
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division__ctor_
+  commentId: Overload:BaseballSharp.Models.Division.#ctor
+  isSpec: "True"
+  fullName: BaseballSharp.Models.Division.Division
+  nameWithType: Division.Division
+- uid: BaseballSharp.Models.Division.DivisionAbbreviation
+  name: DivisionAbbreviation
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division_DivisionAbbreviation
+  commentId: P:BaseballSharp.Models.Division.DivisionAbbreviation
+  fullName: BaseballSharp.Models.Division.DivisionAbbreviation
+  nameWithType: Division.DivisionAbbreviation
+- uid: BaseballSharp.Models.Division.DivisionAbbreviation*
+  name: DivisionAbbreviation
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division_DivisionAbbreviation_
+  commentId: Overload:BaseballSharp.Models.Division.DivisionAbbreviation
+  isSpec: "True"
+  fullName: BaseballSharp.Models.Division.DivisionAbbreviation
+  nameWithType: Division.DivisionAbbreviation
+- uid: BaseballSharp.Models.Division.DivisionId
+  name: DivisionId
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division_DivisionId
+  commentId: P:BaseballSharp.Models.Division.DivisionId
+  fullName: BaseballSharp.Models.Division.DivisionId
+  nameWithType: Division.DivisionId
+- uid: BaseballSharp.Models.Division.DivisionId*
+  name: DivisionId
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division_DivisionId_
+  commentId: Overload:BaseballSharp.Models.Division.DivisionId
+  isSpec: "True"
+  fullName: BaseballSharp.Models.Division.DivisionId
+  nameWithType: Division.DivisionId
+- uid: BaseballSharp.Models.Division.DivisionName
+  name: DivisionName
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division_DivisionName
+  commentId: P:BaseballSharp.Models.Division.DivisionName
+  fullName: BaseballSharp.Models.Division.DivisionName
+  nameWithType: Division.DivisionName
+- uid: BaseballSharp.Models.Division.DivisionName*
+  name: DivisionName
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division_DivisionName_
+  commentId: Overload:BaseballSharp.Models.Division.DivisionName
+  isSpec: "True"
+  fullName: BaseballSharp.Models.Division.DivisionName
+  nameWithType: Division.DivisionName
+- uid: BaseballSharp.Models.Division.LeagueId
+  name: LeagueId
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division_LeagueId
+  commentId: P:BaseballSharp.Models.Division.LeagueId
+  fullName: BaseballSharp.Models.Division.LeagueId
+  nameWithType: Division.LeagueId
+- uid: BaseballSharp.Models.Division.LeagueId*
+  name: LeagueId
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division_LeagueId_
+  commentId: Overload:BaseballSharp.Models.Division.LeagueId
+  isSpec: "True"
+  fullName: BaseballSharp.Models.Division.LeagueId
+  nameWithType: Division.LeagueId
+- uid: BaseballSharp.Models.Division.ShortDivisionName
+  name: ShortDivisionName
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division_ShortDivisionName
+  commentId: P:BaseballSharp.Models.Division.ShortDivisionName
+  fullName: BaseballSharp.Models.Division.ShortDivisionName
+  nameWithType: Division.ShortDivisionName
+- uid: BaseballSharp.Models.Division.ShortDivisionName*
+  name: ShortDivisionName
+  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division_ShortDivisionName_
+  commentId: Overload:BaseballSharp.Models.Division.ShortDivisionName
+  isSpec: "True"
+  fullName: BaseballSharp.Models.Division.ShortDivisionName
+  nameWithType: Division.ShortDivisionName
 - uid: BaseballSharp.Models.Linescore
   name: Linescore
   href: api/BaseballSharp.Models.Linescore.html
@@ -1572,3 +1672,27 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.TeamRoster.TeamId
   nameWithType: TeamRoster.TeamId
+- uid: BaseballSharp.rosterType
+  name: rosterType
+  href: api/BaseballSharp.rosterType.html
+  commentId: T:BaseballSharp.rosterType
+  fullName: BaseballSharp.rosterType
+  nameWithType: rosterType
+- uid: BaseballSharp.rosterType.roster25
+  name: roster25
+  href: api/BaseballSharp.rosterType.html#BaseballSharp_rosterType_roster25
+  commentId: F:BaseballSharp.rosterType.roster25
+  fullName: BaseballSharp.rosterType.roster25
+  nameWithType: rosterType.roster25
+- uid: BaseballSharp.rosterType.roster40
+  name: roster40
+  href: api/BaseballSharp.rosterType.html#BaseballSharp_rosterType_roster40
+  commentId: F:BaseballSharp.rosterType.roster40
+  fullName: BaseballSharp.rosterType.roster40
+  nameWithType: rosterType.roster40
+- uid: BaseballSharp.rosterType.rosterFull
+  name: rosterFull
+  href: api/BaseballSharp.rosterType.html#BaseballSharp_rosterType_rosterFull
+  commentId: F:BaseballSharp.rosterType.rosterFull
+  fullName: BaseballSharp.rosterType.rosterFull
+  nameWithType: rosterType.rosterFull

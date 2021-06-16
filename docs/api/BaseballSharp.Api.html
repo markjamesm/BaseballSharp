@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Api
    ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -118,7 +118,7 @@
     <a href="https://github.com/markjamesm/MLB-Sharp/new/master/apiSpec/new?filename=BaseballSharp_Api_DepthChart_System_Int32_.md&amp;value=---%0Auid%3A%20BaseballSharp.Api.DepthChart(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L258">View Source</a>
+    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L256">View Source</a>
   </span>
   <a id="BaseballSharp_Api_DepthChart_" data-uid="BaseballSharp.Api.DepthChart*"></a>
   <h4 id="BaseballSharp_Api_DepthChart_System_Int32_" data-uid="BaseballSharp.Api.DepthChart(System.Int32)">DepthChart(Int32)</h4>
@@ -128,7 +128,7 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;DepthChart&gt; DepthChart(int teamId)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;DepthChart&gt;&gt; DepthChart(int teamId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -158,8 +158,40 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BaseballSharp.Models.DepthChart.html">DepthChart</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.DepthChart.html">DepthChart</a>&gt;&gt;</td>
         <td><p>A list of team objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/markjamesm/MLB-Sharp/new/master/apiSpec/new?filename=BaseballSharp_Api_Divisions.md&amp;value=---%0Auid%3A%20BaseballSharp.Api.Divisions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L287">View Source</a>
+  </span>
+  <a id="BaseballSharp_Api_Divisions_" data-uid="BaseballSharp.Api.Divisions*"></a>
+  <h4 id="BaseballSharp_Api_Divisions" data-uid="BaseballSharp.Api.Divisions">Divisions()</h4>
+  <div class="markdown level1 summary"><p>Endpoint to get the MLB divisions and associated data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;Division&gt;&gt; Divisions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.Division.html">Division</a>&gt;&gt;</td>
+        <td><p>A list of Division objects.</p>
 </td>
       </tr>
     </tbody>
@@ -169,7 +201,7 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
     <a href="https://github.com/markjamesm/MLB-Sharp/new/master/apiSpec/new?filename=BaseballSharp_Api_LineScore_System_Int32_.md&amp;value=---%0Auid%3A%20BaseballSharp.Api.LineScore(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L185">View Source</a>
+    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L191">View Source</a>
   </span>
   <a id="BaseballSharp_Api_LineScore_" data-uid="BaseballSharp.Api.LineScore*"></a>
   <h4 id="BaseballSharp_Api_LineScore_System_Int32_" data-uid="BaseballSharp.Api.LineScore(System.Int32)">LineScore(Int32)</h4>
@@ -178,7 +210,7 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;Linescore&gt; LineScore(int gameId)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;Linescore&gt;&gt; LineScore(int gameId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -208,7 +240,7 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BaseballSharp.Models.Linescore.html">Linescore</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.Linescore.html">Linescore</a>&gt;&gt;</td>
         <td><p>A list of Linescore objects.</p>
 </td>
       </tr>
@@ -216,19 +248,19 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/markjamesm/MLB-Sharp/new/master/apiSpec/new?filename=BaseballSharp_Api_PitchingReports_System_String_.md&amp;value=---%0Auid%3A%20BaseballSharp.Api.PitchingReports(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/markjamesm/MLB-Sharp/new/master/apiSpec/new?filename=BaseballSharp_Api_PitchingReports_System_DateTime_.md&amp;value=---%0Auid%3A%20BaseballSharp.Api.PitchingReports(System.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L61">View Source</a>
+    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L73">View Source</a>
   </span>
   <a id="BaseballSharp_Api_PitchingReports_" data-uid="BaseballSharp.Api.PitchingReports*"></a>
-  <h4 id="BaseballSharp_Api_PitchingReports_System_String_" data-uid="BaseballSharp.Api.PitchingReports(System.String)">PitchingReports(String)</h4>
+  <h4 id="BaseballSharp_Api_PitchingReports_System_DateTime_" data-uid="BaseballSharp.Api.PitchingReports(System.DateTime)">PitchingReports(DateTime)</h4>
   <div class="markdown level1 summary"><p>Returns a list of pitchers and their associated game reports.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;PitchingReport&gt; PitchingReports(string date)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;PitchingReport&gt;&gt; PitchingReports(DateTime date)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -241,9 +273,9 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">date</span></td>
-        <td><p>The date (MM/dd/yyyy) to return data for.</p>
+        <td><p>The date to return data for.</p>
 </td>
       </tr>
     </tbody>
@@ -258,7 +290,7 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BaseballSharp.Models.PitchingReport.html">PitchingReport</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.PitchingReport.html">PitchingReport</a>&gt;&gt;</td>
         <td><p>A list of pitching report objects</p>
 </td>
       </tr>
@@ -266,19 +298,19 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/markjamesm/MLB-Sharp/new/master/apiSpec/new?filename=BaseballSharp_Api_Schedule_System_String_.md&amp;value=---%0Auid%3A%20BaseballSharp.Api.Schedule(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/markjamesm/MLB-Sharp/new/master/apiSpec/new?filename=BaseballSharp_Api_Schedule_System_DateTime_.md&amp;value=---%0Auid%3A%20BaseballSharp.Api.Schedule(System.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L25">View Source</a>
+    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L46">View Source</a>
   </span>
   <a id="BaseballSharp_Api_Schedule_" data-uid="BaseballSharp.Api.Schedule*"></a>
-  <h4 id="BaseballSharp_Api_Schedule_System_String_" data-uid="BaseballSharp.Api.Schedule(System.String)">Schedule(String)</h4>
+  <h4 id="BaseballSharp_Api_Schedule_System_DateTime_" data-uid="BaseballSharp.Api.Schedule(System.DateTime)">Schedule(DateTime)</h4>
   <div class="markdown level1 summary"><p>Returns a list of the matchups and ballpark for the specified date.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;Schedule&gt; Schedule(string date)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;Schedule&gt;&gt; Schedule(DateTime date)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -291,9 +323,9 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">date</span></td>
-        <td><p>The date (MM/dd/yyyy) to return data for.</p>
+        <td><p>The date to return data for.</p>
 </td>
       </tr>
     </tbody>
@@ -308,7 +340,7 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BaseballSharp.Models.Schedule.html">Schedule</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.Schedule.html">Schedule</a>&gt;&gt;</td>
         <td><p>A list of schedule objects.</p>
 </td>
       </tr>
@@ -319,7 +351,7 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
     <a href="https://github.com/markjamesm/MLB-Sharp/new/master/apiSpec/new?filename=BaseballSharp_Api_TeamData.md&amp;value=---%0Auid%3A%20BaseballSharp.Api.TeamData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L103">View Source</a>
+    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L105">View Source</a>
   </span>
   <a id="BaseballSharp_Api_TeamData_" data-uid="BaseballSharp.Api.TeamData*"></a>
   <h4 id="BaseballSharp_Api_TeamData" data-uid="BaseballSharp.Api.TeamData">TeamData()</h4>
@@ -328,7 +360,7 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;Team&gt; TeamData()</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;Team&gt;&gt; TeamData()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -340,7 +372,7 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BaseballSharp.Models.Team.html">Team</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.Team.html">Team</a>&gt;&gt;</td>
         <td><p>A list of team objects.</p>
 </td>
       </tr>
@@ -348,20 +380,18 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/markjamesm/MLB-Sharp/new/master/apiSpec/new?filename=BaseballSharp_Api_TeamRoster_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20BaseballSharp.Api.TeamRoster(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/markjamesm/MLB-Sharp/new/master/apiSpec/new?filename=BaseballSharp_Api_TeamRoster_System_Int32_System_Int32_System_DateTime_BaseballSharp_rosterType_.md&amp;value=---%0Auid%3A%20BaseballSharp.Api.TeamRoster(System.Int32%2CSystem.Int32%2CSystem.DateTime%2CBaseballSharp.rosterType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L146">View Source</a>
+    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L139">View Source</a>
   </span>
   <a id="BaseballSharp_Api_TeamRoster_" data-uid="BaseballSharp.Api.TeamRoster*"></a>
-  <h4 id="BaseballSharp_Api_TeamRoster_System_Int32_System_Int32_" data-uid="BaseballSharp.Api.TeamRoster(System.Int32,System.Int32)">TeamRoster(Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Returns a list of team roster data for a given season.
-Use the TeamData() call to obtain the id numbers needed to satisfy the teamId parameter.</p>
-</div>
+  <h4 id="BaseballSharp_Api_TeamRoster_System_Int32_System_Int32_System_DateTime_BaseballSharp_rosterType_" data-uid="BaseballSharp.Api.TeamRoster(System.Int32,System.Int32,System.DateTime,BaseballSharp.rosterType)">TeamRoster(Int32, Int32, DateTime, rosterType)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;TeamRoster&gt; TeamRoster(int teamId, int season)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;TeamRoster&gt;&gt; TeamRoster(int teamId, int season, DateTime date, rosterType roster = rosterType.rosterFull)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -376,14 +406,22 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">teamId</span></td>
-        <td><p>The team's ID number.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">season</span></td>
-        <td><p>The desired season, eg: 2021.</p>
-</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">date</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BaseballSharp.rosterType.html">rosterType</a></td>
+        <td><span class="parametername">roster</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -397,9 +435,8 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BaseballSharp.Models.TeamRoster.html">TeamRoster</a>&gt;</td>
-        <td><p>A list of team objects.</p>
-</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.TeamRoster.html">TeamRoster</a>&gt;&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -414,7 +451,7 @@ Use the TeamData() call to obtain the id numbers needed to satisfy the teamId pa
                     <a href="https://github.com/markjamesm/MLB-Sharp/new/master/apiSpec/new?filename=BaseballSharp_Api.md&amp;value=---%0Auid%3A%20BaseballSharp.Api%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/markjamesm/MLB-Sharp/blob/master/src/Api.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

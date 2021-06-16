@@ -135,7 +135,7 @@ namespace BaseballSharp
         /// <param name="season"> The year the season begins on</param>
         /// <param name="date"> A date to use, will return the roster as of that date</param>
         /// <param name="roster"> The roster type to return. Can choose either full roster, 25man or 40 man</param>
-        /// <returns></returns>
+        /// <returns>Task<IEnumerable<TeamRoster>></returns>
         public static async Task<IEnumerable<TeamRoster>> TeamRoster(int teamId, int season, DateTime date, rosterType roster = rosterType.rosterFull)
         {
             List<TeamRoster> teamRosters = new();
