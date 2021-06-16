@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Api.html",
-          "hash": "mcn36pzk/rxhV4CHsCmjTLk3HUm4cpDZbTNLpBOMUWU="
+          "hash": "kurQgT22g4oasZZtGKF3Htr/uyGDuL7m9mx5dbFT3Pc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -144,7 +144,7 @@
           "hash": "X39DczLDsTRxUxGqbxKccWiMs/qep0KpVq3p1u5kmcY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -251,7 +251,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 12,
-          "skipped_file_count": 12
+          "skipped_file_count": 11
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

@@ -131,11 +131,12 @@ namespace BaseballSharp
         /// <summary>
         /// Returns a list of team roster data for a given season.
         /// Use the TeamData() call to obtain the id numbers needed to satisfy the teamId parameter.
+        /// </summary>
         /// <param name="teamId"> The team's MLB id (use enum)</param>
         /// <param name="season"> The year the season begins on</param>
         /// <param name="date"> A date to use, will return the roster as of that date</param>
         /// <param name="roster"> The roster type to return. Can choose either full roster, 25man or 40 man</param>
-        /// <returns>Task<IEnumerable<TeamRoster>></returns>
+        /// <returns>An IEnumerable TeamRoster</returns>
         public static async Task<IEnumerable<TeamRoster>> TeamRoster(int teamId, int season, DateTime date, rosterType roster = rosterType.rosterFull)
         {
             List<TeamRoster> teamRosters = new();
