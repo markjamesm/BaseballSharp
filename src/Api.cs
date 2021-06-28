@@ -49,16 +49,19 @@ namespace BaseballSharp
 
             string jsonResponse = await getResponse("/schedule/games/?sportId=1&date=" + date.ToString("MM/dd/yyyy"));
 
-            ScheduleDto? gameSchedule = JsonSerializer.Deserialize<ScheduleDto>(jsonResponse);
+            GameScheduleRoot? gameSchedule = JsonSerializer.Deserialize<GameScheduleRoot>(jsonResponse);
 
-            foreach (DTO.GameSchedule.Date? item in (gameSchedule ?? new ScheduleDto()).dates ?? new List<DTO.GameSchedule.Date>())
+            foreach (DTO.GameSchedule.Date? item in (gameSchedule ?? new GameScheduleRoot()).dates ?? new DTO.GameSchedule.Date[0])
             {
                 foreach (DTO.GameSchedule.Game? game in item.games ?? new DTO.GameSchedule.Game[0])
                 {
-                    upcomingGames.Add(new Schedule(game?.teams?.home?.team?.name,
-                        game?.teams?.away?.team?.name,
-                        game?.venue?.name,
-                        game?.scheduledInnings));
+                    upcomingGames.Add(new Models.Schedule()
+                    {
+                        gameID = game.gamePk,
+                        AwayTeam = game?.teams?.away?.team?.name,
+                        HomeTeam = game?.teams?.home?.team?.name,
+                        ScheduledInnings = game?.scheduledInnings
+                    });
                 }
             }
 
@@ -84,14 +87,17 @@ namespace BaseballSharp
             {
                 foreach (var game in (selectedDate ?? new DTO.PitchingReport.Date()).games ?? new DTO.PitchingReport.Game[0])
                 {
-                    pitchingReports.Add(new PitchingReport(game?.teams?.home?.team?.name,
-                        game?.teams?.home?.probablePitcher?.fullName,
-                        game?.teams?.home?.probablePitcher?.id,
-                        game?.teams?.home?.probablePitcher?.note,
-                        game?.teams?.away?.team?.name,
-                        game?.teams?.away?.probablePitcher?.fullName,
-                        game?.teams?.away?.probablePitcher?.id,
-                        game?.teams?.away?.probablePitcher?.note));
+                    pitchingReports.Add(new PitchingReport()
+                    {
+                        HomeTeam = game?.teams?.home?.team?.name,
+                        AwayTeam = game?.teams?.away?.team?.name,
+                        AwayProbablePitcherId = game?.teams?.away?.probablePitcher?.id,
+                        AwayProbablePitcherName = game?.teams?.away?.probablePitcher?.fullName,
+                        AwayProbablePitcherNotes = game?.teams?.away?.probablePitcher?.note,
+                        HomeProbablePitcherId = game?.teams?.home?.probablePitcher?.id,
+                        HomeProbablePitcherName = game?.teams?.home?.probablePitcher?.fullName,
+                        HomeProbablePitcherNotes = game?.teams?.home?.probablePitcher?.note
+                    });
                 }
             }
 
@@ -112,17 +118,19 @@ namespace BaseballSharp
 
             foreach (var team in (mlbTeams ?? new TeamDto()).teams ?? new DTO.Teams.Team[0])
             {
-                teamsList.Add(new Models.Team(team.name,
-                    team?.teamName,
-                    team?.locationName,
-                    team?.id,
-                    team?.league?.name,
-                    team?.league?.id,
-                    team?.division?.name,
-                    team?.division?.id,
-                    team?.abbreviation,
-                    team?.venue?.name,
-                    team?.venue?.id));
+                teamsList.Add(new Models.Team()
+                {
+                    Name = team?.name,
+                    Location = team?.locationName,
+                    Id = team?.id,
+                    LeagueId = team?.league?.id,
+                    LeagueName = team?.league?.name,
+                    DivisionName = team?.division?.name,
+                    DivisionId = team?.division?.id,
+                    Abbreviation = team?.abbreviation,
+                    VenueName = team?.venue?.name,
+                    VenueId = team?.venue?.id
+                });
             }
 
             return teamsList;
@@ -167,16 +175,19 @@ namespace BaseballSharp
 
             foreach (var item in (teamRostersJson ?? new TeamRosterDto()).roster ?? new Roster[0])
             {
-                teamRosters.Add(new TeamRoster(
-                    item?.person?.id,
-                    item?.person?.fullName,
-                    item?.position?.name,
-                    item?.position?.type,
-                    item?.position?.code,
-                    teamRostersJson?.teamId,
-                    item?.position?.abbreviation,
-                    item?.status?.code,
-                    item?.status?.description));
+                teamRosters.Add(new TeamRoster()
+                {
+                    PlayerId = item?.person?.id,
+                    PlayerFullName = item?.person?.fullName,
+                    PlayerPosition = item?.position?.name,
+                    PlayerType = item?.position?.type,
+                    PositionCode = item?.position?.code,
+                    TeamId = teamRostersJson?.teamId,
+                    PositionAbbreviation = item?.position?.abbreviation,
+                    StatusCode = item?.status?.code,
+                    StatusDescription = item?.status?.description
+                }
+                );
             }
 
             return teamRosters;
@@ -198,49 +209,51 @@ namespace BaseballSharp
 
             foreach (var inning in (lineScoresJson ?? new LinescoreDto()).innings ?? new List<Innings>())
             {
-                lineScores.Add(new Linescore(
-                    lineScoresJson?.currentInning,
-                    lineScoresJson?.inningHalf,
-                    lineScoresJson?.scheduledInnings,
-                    lineScoresJson?.teams?.home.runs,
-                    lineScoresJson?.teams?.home.hits,
-                    lineScoresJson?.teams?.home.errors,
-                    lineScoresJson?.teams?.away.runs,
-                    lineScoresJson?.teams?.away.hits,
-                    lineScoresJson?.teams?.away.errors,
-                    inning?.num,
-                    lineScoresJson?.defense?.pitcher?.id,
-                    lineScoresJson?.defense?.pitcher?.fullName,
-                    lineScoresJson?.defense?.catcher?.fullName,
-                    lineScoresJson?.defense?.catcher?.id,
-                    lineScoresJson?.defense?.first?.fullName,
-                    lineScoresJson?.defense?.first?.id,
-                    lineScoresJson?.defense?.second?.fullName,
-                    lineScoresJson?.defense?.second?.id,
-                    lineScoresJson?.defense?.third?.fullName,
-                    lineScoresJson?.defense?.third?.id,
-                    lineScoresJson?.defense?.shortstop?.fullName,
-                    lineScoresJson?.defense?.shortstop?.id,
-                    lineScoresJson?.defense?.left?.fullName,
-                    lineScoresJson?.defense?.left?.id,
-                    lineScoresJson?.defense?.center?.fullName,
-                    lineScoresJson?.defense?.center?.id,
-                    lineScoresJson?.defense?.right?.fullName,
-                    lineScoresJson?.defense?.right?.id,
-                    lineScoresJson?.defense?.batter?.fullName,
-                    lineScoresJson?.defense?.batter?.id,
-                    lineScoresJson?.defense?.onDeck?.fullName,
-                    lineScoresJson?.defense?.onDeck?.id,
-                    lineScoresJson?.defense?.inHole?.fullName,
-                    lineScoresJson?.defense?.inHole?.id,
-                    lineScoresJson?.defense?.team?.name,
-                    lineScoresJson?.defense?.team?.id,
-                    lineScoresJson?.offense?.batter?.fullName,
-                    lineScoresJson?.offense?.batter?.id,
-                    lineScoresJson?.offense?.onDeck?.fullName,
-                    lineScoresJson?.offense?.onDeck?.id,
-                    lineScoresJson?.offense?.inHole?.fullName,
-                    lineScoresJson?.offense?.inHole?.id));
+                lineScores.Add(new Linescore()
+                {
+                    CurrentInning = lineScoresJson?.currentInning,
+                    InningHalf = lineScoresJson?.inningHalf,
+                    ScheduledInnings = lineScoresJson?.scheduledInnings,
+                    HometeamRuns = lineScoresJson?.teams?.home?.runs,
+                    HometeamHits = lineScoresJson?.teams?.home?.hits,
+                    HometeamErrors = lineScoresJson?.teams?.home?.errors,
+                    AwayteamRuns = lineScoresJson?.teams?.away?.runs,
+                    AwayteamHits = lineScoresJson?.teams?.away?.hits,
+                    AwayteamErrors = lineScoresJson?.teams?.away?.errors,
+                    InningNumber = inning?.num,
+                    DefensivePitcherId = lineScoresJson?.defense?.pitcher?.id,
+                    DefensePitcherName = lineScoresJson?.defense?.pitcher?.fullName,
+                    CatcherName = lineScoresJson?.defense?.catcher?.fullName,
+                    CatcherId = lineScoresJson?.defense?.catcher?.id,
+                    FirstBasemanName = lineScoresJson?.defense?.first?.fullName,
+                    FirstBasemanId = lineScoresJson?.defense?.first?.id,
+                    SecondBasemanName = lineScoresJson?.defense?.second?.fullName,
+                    SecondBasemanId = lineScoresJson?.defense?.second?.id,
+                    ThirdBasemanName = lineScoresJson?.defense?.third?.fullName,
+                    ThirdBasemanId = lineScoresJson?.defense?.third?.id,
+                    ShortstopName = lineScoresJson?.defense?.shortstop?.fullName,
+                    ShortstopId = lineScoresJson?.defense?.shortstop?.id,
+                    LeftFielderName = lineScoresJson?.defense?.left?.fullName,
+                    LeftFielderId = lineScoresJson?.defense?.left?.id,
+                    CenterFielderName = lineScoresJson?.defense?.center?.fullName,
+                    CenterFielderId = lineScoresJson?.defense?.center?.id,
+                    RightFielderName = lineScoresJson?.defense?.right?.fullName,
+                    RightFielderId = lineScoresJson?.defense?.right?.id,
+                    DefensiveBatterName = lineScoresJson?.defense?.batter?.fullName,
+                    DefensiveBatterId = lineScoresJson?.defense?.batter?.id,
+                    DefensiveOnDeck = lineScoresJson?.defense?.onDeck?.fullName,
+                    DefensiveOnDeckId = lineScoresJson?.defense?.onDeck?.id,
+                    DefensiveInHole = lineScoresJson?.defense?.inHole?.fullName,
+                    DefensiveInHoleId = lineScoresJson?.defense?.inHole?.id,
+                    DefensiveTeamName = lineScoresJson?.defense?.team?.name,
+                    DefensiveTeamId = lineScoresJson?.defense?.team?.id,
+                    OffensiveTeamBatterName = lineScoresJson?.offense?.batter?.fullName,
+                    OffensiveTeamBatterId = lineScoresJson?.offense?.batter?.id,
+                    OffensiveTeamOnDeckName = lineScoresJson?.offense?.onDeck?.fullName,
+                    OffensiveTeamOnDeckId = lineScoresJson?.offense?.onDeck?.id,
+                    OffensiveTeamInHoleName = lineScoresJson?.offense?.inHole?.fullName,
+                    OffensiveTeamInHoleId = lineScoresJson?.offense?.inHole?.id
+                });
             }
 
             return lineScores;
@@ -263,18 +276,20 @@ namespace BaseballSharp
 
             foreach (var person in (depthChartJson ?? new TeamRosterDto()).roster ?? new Roster[0])
             {
-                depthCharts.Add(new DepthChart(
-                    depthChartJson?.teamId,
-                    depthChartJson?.rosterType,
-                    person?.person?.id,
-                    person?.person?.fullName,
-                    person?.jerseyNumber,
-                    person?.position?.code,
-                    person?.position?.name,
-                    person?.position?.type,
-                    person?.position?.abbreviation,
-                    person?.status?.code,
-                    person?.status?.description));
+                depthCharts.Add(new DepthChart()
+                {
+                    TeamId = depthChartJson?.teamId,
+                    RosterType = depthChartJson?.rosterType,
+                    PlayerId = person?.person?.id,
+                    PlayerFullName = person?.person?.fullName,
+                    JerseyNumber = person?.jerseyNumber,
+                    PositionCode = person?.position?.code,
+                    PositionName = person?.position?.name,
+                    PositionType = person?.position?.type,
+                    PositionAbbrevition = person?.position?.abbreviation,
+                    StatusCode = person?.status?.code,
+                    StatusDescription = person?.status?.description
+                });
             }
 
             return depthCharts;
@@ -294,12 +309,14 @@ namespace BaseballSharp
 
             foreach (LeagueDivision? division in (teamDivisions ?? new DivisionsDto()).divisions ?? new LeagueDivision[0])
             {
-                divisions.Add(new Models.Division(
-                division?.id,
-                division?.name,
-                division?.nameShort,
-                division?.abbreviation,
-                division?.league?.id));
+                divisions.Add(new Models.Division()
+                {
+                    DivisionId = division?.id,
+                    DivisionName = division?.name,
+                    ShortDivisionName = division?.nameShort,
+                    DivisionAbbreviation = division?.abbreviation,
+                    LeagueId = division?.league?.id
+                });
             }
 
             return divisions;
