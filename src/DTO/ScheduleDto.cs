@@ -6,7 +6,7 @@ namespace BaseballSharp.DTO.GameSchedule
 
     public class GameScheduleRoot
     {
-        public string copyright { get; set; }
+        public string? copyright { get; set; }
         public int totalItems { get; set; }
         public int totalEvents { get; set; }
         public int totalGames { get; set; }
@@ -16,7 +16,7 @@ namespace BaseballSharp.DTO.GameSchedule
 
     public class Date
     {
-        public string date { get; set; }
+        public string? date { get; set; }
         public int totalItems { get; set; }
         public int totalEvents { get; set; }
         public int totalGames { get; set; }
@@ -109,7 +109,7 @@ namespace BaseballSharp.DTO.GameSchedule
     {
         public int wins { get; set; }
         public int losses { get; set; }
-        public string pct { get; set; }
+        public string? pct { get; set; }
     }
 
     public class Team1
