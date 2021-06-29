@@ -2,25 +2,18 @@
 {
     public class Schedule
     {
-        public string? HomeTeam { get; protected set; }
-        public string? AwayTeam { get; protected set; }
+        public int? gameID { get; set; }
+        public string? HomeTeam { get; set; }
+        public string? AwayTeam { get; set; }
 
         /// <summary>
         /// The stadium that the team is playing at.
         /// </summary>
-        public string? Ballpark { get; protected set; }
+        public string? Ballpark { get; set; }
 
         /// <summary>
         /// The number of innings scheduled for the game. 
         /// </summary>
-        public int? ScheduledInnings { get; protected set; }
-
-        public Schedule(string? homeTeam, string? awayTeam, string? ballpark, int? scheduledInnings)
-        {
-            HomeTeam = homeTeam;
-            AwayTeam = awayTeam;
-            Ballpark = ballpark;
-            ScheduledInnings = scheduledInnings;
-        }
+        public int? ScheduledInnings { get; set; }
     }
 }
