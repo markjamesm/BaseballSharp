@@ -1,5 +1,17 @@
 # Changelog
 
+#### 0.1.7
+
+##### Endpoints
+
+- Adding game id so you can use it to get a specific game using the linescore endpoint. 
+
+##### Backend Changes
+
+- Adding nullable parameters.
+- Switching from contructors to object creation style to allow for easier modification of DTOs and to generally have it read cleaner.
+
+
 #### 0.1.6-alpha
 
 - Added ability to pull roster back by either full, 25man or 40 man.
