@@ -1,5 +1,8 @@
 ﻿namespace BaseballSharp
 {
+    /// <summary>
+    /// The types of roster data that can be obtained from the API.
+    /// </summary>
     public enum rosterType
     {
         /// <summary>

@@ -70,8 +70,12 @@
 <h1 id="changelog">Changelog</h1>
 
 <h4 id="017">0.1.7</h4>
+<h5 id="endpoints">Endpoints</h5>
 <ul>
-<li>Adding game id so you can use it to get a specific game using the linscore endpoint.</li>
+<li>Adding game id so you can use it to get a specific game using the linescore endpoint.</li>
+</ul>
+<h5 id="backend-changes">Backend Changes</h5>
+<ul>
 <li>Adding nullable parameters.</li>
 <li>Switching from contructors to object creation style to allow for easier modification of DTOs and to generally have it read cleaner.</li>
 </ul>
@@ -81,11 +85,11 @@
 <li>Moved http calls to https to avoid mixed-content errors and because it's just better.</li>
 </ul>
 <h4 id="015-alpha">0.1.5-alpha</h4>
-<h5 id="endpoints">Endpoints</h5>
+<h5 id="endpoints-1">Endpoints</h5>
 <ul>
 <li>Added Divisions() endpoint.</li>
 </ul>
-<h5 id="backend-changes">Backend changes</h5>
+<h5 id="backend-changes-1">Backend changes</h5>
 <ul>
 <li>Removed dependency on WebClient, this was causing issues with Blazor when the API was called (WASM requires HttpClient).</li>
 <li>Moved all calls to a private method to remove the need to create a new webclient with each call, also helps declutter the calling methods.</li>

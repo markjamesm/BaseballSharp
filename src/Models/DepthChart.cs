@@ -1,4 +1,8 @@
-﻿namespace BaseballSharp.Models
+﻿/// <summary>
+/// Contains the deserialized JSON responses from the Stats API, as well as their associated properties. 
+/// These are the model classes that the functions in the Api class return.
+/// </summary>
+namespace BaseballSharp.Models
 {
     public class DepthChart
     {

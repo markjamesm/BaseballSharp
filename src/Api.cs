@@ -10,6 +10,9 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 
+/// <summary>
+/// The BaseballSharp namespace contains the classes used to interface with the MLB Stats Api, as well as associated helper types.
+/// </summary>
 namespace BaseballSharp
 {
     /// <summary>
