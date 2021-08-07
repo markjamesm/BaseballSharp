@@ -1,6 +1,6 @@
 - name: Getting Started
   href: intro.md
-- name: API Reference
-  href: ../api/index.md
+- name: API Overview
+  href: ../api/BaseballSharp.yml
 - name: Changelog
   href: changelog.md
