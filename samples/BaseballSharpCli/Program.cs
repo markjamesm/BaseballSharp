@@ -1,5 +1,6 @@
 ﻿using BaseballSharp;
 using System;
+using BaseballSharp.Enums;
 
 namespace MLBSharpCli
 {

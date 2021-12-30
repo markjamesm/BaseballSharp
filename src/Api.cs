@@ -3,6 +3,7 @@ using BaseballSharp.DTO.GameSchedule;
 using BaseballSharp.DTO.Linescore;
 using BaseballSharp.DTO.PitchingReport;
 using BaseballSharp.DTO.Teams;
+using BaseballSharp.Enums;
 using BaseballSharp.Models;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,7 @@ namespace BaseballSharp
                 {
                     return_message = await client.GetAsync(_baseUrl + (Endpoint ?? "")).ConfigureAwait(false);
                 }
-                catch (System.Exception ex)
+                catch (Exception ex)
                 {
                     throw;
                 }
