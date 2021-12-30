@@ -1,5 +1,9 @@
 # Changelog
 
+#### 0.1.8
+
+- Upgraded to .NET 6.
+
 #### 0.1.7
 
 ##### Endpoints
