@@ -91,11 +91,11 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Api.TeamData
   nameWithType: Api.TeamData
-- uid: BaseballSharp.Api.TeamRoster(System.Int32,System.Int32,System.DateTime,BaseballSharp.rosterType)
+- uid: BaseballSharp.Api.TeamRoster(System.Int32,System.Int32,System.DateTime,BaseballSharp.Enums.rosterType)
   name: TeamRoster(Int32, Int32, DateTime, rosterType)
-  href: api/BaseballSharp.Api.html#BaseballSharp_Api_TeamRoster_System_Int32_System_Int32_System_DateTime_BaseballSharp_rosterType_
-  commentId: M:BaseballSharp.Api.TeamRoster(System.Int32,System.Int32,System.DateTime,BaseballSharp.rosterType)
-  fullName: BaseballSharp.Api.TeamRoster(System.Int32, System.Int32, System.DateTime, BaseballSharp.rosterType)
+  href: api/BaseballSharp.Api.html#BaseballSharp_Api_TeamRoster_System_Int32_System_Int32_System_DateTime_BaseballSharp_Enums_rosterType_
+  commentId: M:BaseballSharp.Api.TeamRoster(System.Int32,System.Int32,System.DateTime,BaseballSharp.Enums.rosterType)
+  fullName: BaseballSharp.Api.TeamRoster(System.Int32, System.Int32, System.DateTime, BaseballSharp.Enums.rosterType)
   nameWithType: Api.TeamRoster(Int32, Int32, DateTime, rosterType)
 - uid: BaseballSharp.Api.TeamRoster*
   name: TeamRoster
@@ -104,192 +104,222 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Api.TeamRoster
   nameWithType: Api.TeamRoster
-- uid: BaseballSharp.eTeamId
+- uid: BaseballSharp.Enums
+  name: BaseballSharp.Enums
+  href: api/BaseballSharp.Enums.html
+  commentId: N:BaseballSharp.Enums
+  fullName: BaseballSharp.Enums
+  nameWithType: BaseballSharp.Enums
+- uid: BaseballSharp.Enums.eTeamId
   name: eTeamId
-  href: api/BaseballSharp.eTeamId.html
-  commentId: T:BaseballSharp.eTeamId
-  fullName: BaseballSharp.eTeamId
+  href: api/BaseballSharp.Enums.eTeamId.html
+  commentId: T:BaseballSharp.Enums.eTeamId
+  fullName: BaseballSharp.Enums.eTeamId
   nameWithType: eTeamId
-- uid: BaseballSharp.eTeamId.Angels
+- uid: BaseballSharp.Enums.eTeamId.Angels
   name: Angels
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Angels
-  commentId: F:BaseballSharp.eTeamId.Angels
-  fullName: BaseballSharp.eTeamId.Angels
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Angels
+  commentId: F:BaseballSharp.Enums.eTeamId.Angels
+  fullName: BaseballSharp.Enums.eTeamId.Angels
   nameWithType: eTeamId.Angels
-- uid: BaseballSharp.eTeamId.Astros
+- uid: BaseballSharp.Enums.eTeamId.Astros
   name: Astros
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Astros
-  commentId: F:BaseballSharp.eTeamId.Astros
-  fullName: BaseballSharp.eTeamId.Astros
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Astros
+  commentId: F:BaseballSharp.Enums.eTeamId.Astros
+  fullName: BaseballSharp.Enums.eTeamId.Astros
   nameWithType: eTeamId.Astros
-- uid: BaseballSharp.eTeamId.Athletics
+- uid: BaseballSharp.Enums.eTeamId.Athletics
   name: Athletics
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Athletics
-  commentId: F:BaseballSharp.eTeamId.Athletics
-  fullName: BaseballSharp.eTeamId.Athletics
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Athletics
+  commentId: F:BaseballSharp.Enums.eTeamId.Athletics
+  fullName: BaseballSharp.Enums.eTeamId.Athletics
   nameWithType: eTeamId.Athletics
-- uid: BaseballSharp.eTeamId.BlueJays
+- uid: BaseballSharp.Enums.eTeamId.BlueJays
   name: BlueJays
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_BlueJays
-  commentId: F:BaseballSharp.eTeamId.BlueJays
-  fullName: BaseballSharp.eTeamId.BlueJays
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_BlueJays
+  commentId: F:BaseballSharp.Enums.eTeamId.BlueJays
+  fullName: BaseballSharp.Enums.eTeamId.BlueJays
   nameWithType: eTeamId.BlueJays
-- uid: BaseballSharp.eTeamId.Braves
+- uid: BaseballSharp.Enums.eTeamId.Braves
   name: Braves
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Braves
-  commentId: F:BaseballSharp.eTeamId.Braves
-  fullName: BaseballSharp.eTeamId.Braves
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Braves
+  commentId: F:BaseballSharp.Enums.eTeamId.Braves
+  fullName: BaseballSharp.Enums.eTeamId.Braves
   nameWithType: eTeamId.Braves
-- uid: BaseballSharp.eTeamId.Brewers
+- uid: BaseballSharp.Enums.eTeamId.Brewers
   name: Brewers
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Brewers
-  commentId: F:BaseballSharp.eTeamId.Brewers
-  fullName: BaseballSharp.eTeamId.Brewers
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Brewers
+  commentId: F:BaseballSharp.Enums.eTeamId.Brewers
+  fullName: BaseballSharp.Enums.eTeamId.Brewers
   nameWithType: eTeamId.Brewers
-- uid: BaseballSharp.eTeamId.Cardinals
+- uid: BaseballSharp.Enums.eTeamId.Cardinals
   name: Cardinals
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Cardinals
-  commentId: F:BaseballSharp.eTeamId.Cardinals
-  fullName: BaseballSharp.eTeamId.Cardinals
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Cardinals
+  commentId: F:BaseballSharp.Enums.eTeamId.Cardinals
+  fullName: BaseballSharp.Enums.eTeamId.Cardinals
   nameWithType: eTeamId.Cardinals
-- uid: BaseballSharp.eTeamId.Cubs
+- uid: BaseballSharp.Enums.eTeamId.Cubs
   name: Cubs
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Cubs
-  commentId: F:BaseballSharp.eTeamId.Cubs
-  fullName: BaseballSharp.eTeamId.Cubs
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Cubs
+  commentId: F:BaseballSharp.Enums.eTeamId.Cubs
+  fullName: BaseballSharp.Enums.eTeamId.Cubs
   nameWithType: eTeamId.Cubs
-- uid: BaseballSharp.eTeamId.DBacks
+- uid: BaseballSharp.Enums.eTeamId.DBacks
   name: DBacks
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_DBacks
-  commentId: F:BaseballSharp.eTeamId.DBacks
-  fullName: BaseballSharp.eTeamId.DBacks
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_DBacks
+  commentId: F:BaseballSharp.Enums.eTeamId.DBacks
+  fullName: BaseballSharp.Enums.eTeamId.DBacks
   nameWithType: eTeamId.DBacks
-- uid: BaseballSharp.eTeamId.Dodgers
+- uid: BaseballSharp.Enums.eTeamId.Dodgers
   name: Dodgers
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Dodgers
-  commentId: F:BaseballSharp.eTeamId.Dodgers
-  fullName: BaseballSharp.eTeamId.Dodgers
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Dodgers
+  commentId: F:BaseballSharp.Enums.eTeamId.Dodgers
+  fullName: BaseballSharp.Enums.eTeamId.Dodgers
   nameWithType: eTeamId.Dodgers
-- uid: BaseballSharp.eTeamId.Giants
+- uid: BaseballSharp.Enums.eTeamId.Giants
   name: Giants
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Giants
-  commentId: F:BaseballSharp.eTeamId.Giants
-  fullName: BaseballSharp.eTeamId.Giants
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Giants
+  commentId: F:BaseballSharp.Enums.eTeamId.Giants
+  fullName: BaseballSharp.Enums.eTeamId.Giants
   nameWithType: eTeamId.Giants
-- uid: BaseballSharp.eTeamId.Indians
+- uid: BaseballSharp.Enums.eTeamId.Indians
   name: Indians
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Indians
-  commentId: F:BaseballSharp.eTeamId.Indians
-  fullName: BaseballSharp.eTeamId.Indians
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Indians
+  commentId: F:BaseballSharp.Enums.eTeamId.Indians
+  fullName: BaseballSharp.Enums.eTeamId.Indians
   nameWithType: eTeamId.Indians
-- uid: BaseballSharp.eTeamId.Mariners
+- uid: BaseballSharp.Enums.eTeamId.Mariners
   name: Mariners
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Mariners
-  commentId: F:BaseballSharp.eTeamId.Mariners
-  fullName: BaseballSharp.eTeamId.Mariners
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Mariners
+  commentId: F:BaseballSharp.Enums.eTeamId.Mariners
+  fullName: BaseballSharp.Enums.eTeamId.Mariners
   nameWithType: eTeamId.Mariners
-- uid: BaseballSharp.eTeamId.Marlins
+- uid: BaseballSharp.Enums.eTeamId.Marlins
   name: Marlins
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Marlins
-  commentId: F:BaseballSharp.eTeamId.Marlins
-  fullName: BaseballSharp.eTeamId.Marlins
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Marlins
+  commentId: F:BaseballSharp.Enums.eTeamId.Marlins
+  fullName: BaseballSharp.Enums.eTeamId.Marlins
   nameWithType: eTeamId.Marlins
-- uid: BaseballSharp.eTeamId.Mets
+- uid: BaseballSharp.Enums.eTeamId.Mets
   name: Mets
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Mets
-  commentId: F:BaseballSharp.eTeamId.Mets
-  fullName: BaseballSharp.eTeamId.Mets
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Mets
+  commentId: F:BaseballSharp.Enums.eTeamId.Mets
+  fullName: BaseballSharp.Enums.eTeamId.Mets
   nameWithType: eTeamId.Mets
-- uid: BaseballSharp.eTeamId.Nationals
+- uid: BaseballSharp.Enums.eTeamId.Nationals
   name: Nationals
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Nationals
-  commentId: F:BaseballSharp.eTeamId.Nationals
-  fullName: BaseballSharp.eTeamId.Nationals
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Nationals
+  commentId: F:BaseballSharp.Enums.eTeamId.Nationals
+  fullName: BaseballSharp.Enums.eTeamId.Nationals
   nameWithType: eTeamId.Nationals
-- uid: BaseballSharp.eTeamId.Orioles
+- uid: BaseballSharp.Enums.eTeamId.Orioles
   name: Orioles
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Orioles
-  commentId: F:BaseballSharp.eTeamId.Orioles
-  fullName: BaseballSharp.eTeamId.Orioles
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Orioles
+  commentId: F:BaseballSharp.Enums.eTeamId.Orioles
+  fullName: BaseballSharp.Enums.eTeamId.Orioles
   nameWithType: eTeamId.Orioles
-- uid: BaseballSharp.eTeamId.Padres
+- uid: BaseballSharp.Enums.eTeamId.Padres
   name: Padres
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Padres
-  commentId: F:BaseballSharp.eTeamId.Padres
-  fullName: BaseballSharp.eTeamId.Padres
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Padres
+  commentId: F:BaseballSharp.Enums.eTeamId.Padres
+  fullName: BaseballSharp.Enums.eTeamId.Padres
   nameWithType: eTeamId.Padres
-- uid: BaseballSharp.eTeamId.Phillies
+- uid: BaseballSharp.Enums.eTeamId.Phillies
   name: Phillies
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Phillies
-  commentId: F:BaseballSharp.eTeamId.Phillies
-  fullName: BaseballSharp.eTeamId.Phillies
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Phillies
+  commentId: F:BaseballSharp.Enums.eTeamId.Phillies
+  fullName: BaseballSharp.Enums.eTeamId.Phillies
   nameWithType: eTeamId.Phillies
-- uid: BaseballSharp.eTeamId.Pirates
+- uid: BaseballSharp.Enums.eTeamId.Pirates
   name: Pirates
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Pirates
-  commentId: F:BaseballSharp.eTeamId.Pirates
-  fullName: BaseballSharp.eTeamId.Pirates
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Pirates
+  commentId: F:BaseballSharp.Enums.eTeamId.Pirates
+  fullName: BaseballSharp.Enums.eTeamId.Pirates
   nameWithType: eTeamId.Pirates
-- uid: BaseballSharp.eTeamId.Rangers
+- uid: BaseballSharp.Enums.eTeamId.Rangers
   name: Rangers
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Rangers
-  commentId: F:BaseballSharp.eTeamId.Rangers
-  fullName: BaseballSharp.eTeamId.Rangers
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Rangers
+  commentId: F:BaseballSharp.Enums.eTeamId.Rangers
+  fullName: BaseballSharp.Enums.eTeamId.Rangers
   nameWithType: eTeamId.Rangers
-- uid: BaseballSharp.eTeamId.Rays
+- uid: BaseballSharp.Enums.eTeamId.Rays
   name: Rays
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Rays
-  commentId: F:BaseballSharp.eTeamId.Rays
-  fullName: BaseballSharp.eTeamId.Rays
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Rays
+  commentId: F:BaseballSharp.Enums.eTeamId.Rays
+  fullName: BaseballSharp.Enums.eTeamId.Rays
   nameWithType: eTeamId.Rays
-- uid: BaseballSharp.eTeamId.Reds
+- uid: BaseballSharp.Enums.eTeamId.Reds
   name: Reds
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Reds
-  commentId: F:BaseballSharp.eTeamId.Reds
-  fullName: BaseballSharp.eTeamId.Reds
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Reds
+  commentId: F:BaseballSharp.Enums.eTeamId.Reds
+  fullName: BaseballSharp.Enums.eTeamId.Reds
   nameWithType: eTeamId.Reds
-- uid: BaseballSharp.eTeamId.RedSox
+- uid: BaseballSharp.Enums.eTeamId.RedSox
   name: RedSox
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_RedSox
-  commentId: F:BaseballSharp.eTeamId.RedSox
-  fullName: BaseballSharp.eTeamId.RedSox
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_RedSox
+  commentId: F:BaseballSharp.Enums.eTeamId.RedSox
+  fullName: BaseballSharp.Enums.eTeamId.RedSox
   nameWithType: eTeamId.RedSox
-- uid: BaseballSharp.eTeamId.Rockies
+- uid: BaseballSharp.Enums.eTeamId.Rockies
   name: Rockies
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Rockies
-  commentId: F:BaseballSharp.eTeamId.Rockies
-  fullName: BaseballSharp.eTeamId.Rockies
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Rockies
+  commentId: F:BaseballSharp.Enums.eTeamId.Rockies
+  fullName: BaseballSharp.Enums.eTeamId.Rockies
   nameWithType: eTeamId.Rockies
-- uid: BaseballSharp.eTeamId.Royals
+- uid: BaseballSharp.Enums.eTeamId.Royals
   name: Royals
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Royals
-  commentId: F:BaseballSharp.eTeamId.Royals
-  fullName: BaseballSharp.eTeamId.Royals
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Royals
+  commentId: F:BaseballSharp.Enums.eTeamId.Royals
+  fullName: BaseballSharp.Enums.eTeamId.Royals
   nameWithType: eTeamId.Royals
-- uid: BaseballSharp.eTeamId.Tigers
+- uid: BaseballSharp.Enums.eTeamId.Tigers
   name: Tigers
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Tigers
-  commentId: F:BaseballSharp.eTeamId.Tigers
-  fullName: BaseballSharp.eTeamId.Tigers
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Tigers
+  commentId: F:BaseballSharp.Enums.eTeamId.Tigers
+  fullName: BaseballSharp.Enums.eTeamId.Tigers
   nameWithType: eTeamId.Tigers
-- uid: BaseballSharp.eTeamId.Twins
+- uid: BaseballSharp.Enums.eTeamId.Twins
   name: Twins
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Twins
-  commentId: F:BaseballSharp.eTeamId.Twins
-  fullName: BaseballSharp.eTeamId.Twins
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Twins
+  commentId: F:BaseballSharp.Enums.eTeamId.Twins
+  fullName: BaseballSharp.Enums.eTeamId.Twins
   nameWithType: eTeamId.Twins
-- uid: BaseballSharp.eTeamId.WhiteSox
+- uid: BaseballSharp.Enums.eTeamId.WhiteSox
   name: WhiteSox
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_WhiteSox
-  commentId: F:BaseballSharp.eTeamId.WhiteSox
-  fullName: BaseballSharp.eTeamId.WhiteSox
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_WhiteSox
+  commentId: F:BaseballSharp.Enums.eTeamId.WhiteSox
+  fullName: BaseballSharp.Enums.eTeamId.WhiteSox
   nameWithType: eTeamId.WhiteSox
-- uid: BaseballSharp.eTeamId.Yankees
+- uid: BaseballSharp.Enums.eTeamId.Yankees
   name: Yankees
-  href: api/BaseballSharp.eTeamId.html#BaseballSharp_eTeamId_Yankees
-  commentId: F:BaseballSharp.eTeamId.Yankees
-  fullName: BaseballSharp.eTeamId.Yankees
+  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Yankees
+  commentId: F:BaseballSharp.Enums.eTeamId.Yankees
+  fullName: BaseballSharp.Enums.eTeamId.Yankees
   nameWithType: eTeamId.Yankees
+- uid: BaseballSharp.Enums.rosterType
+  name: rosterType
+  href: api/BaseballSharp.Enums.rosterType.html
+  commentId: T:BaseballSharp.Enums.rosterType
+  fullName: BaseballSharp.Enums.rosterType
+  nameWithType: rosterType
+- uid: BaseballSharp.Enums.rosterType.roster25
+  name: roster25
+  href: api/BaseballSharp.Enums.rosterType.html#BaseballSharp_Enums_rosterType_roster25
+  commentId: F:BaseballSharp.Enums.rosterType.roster25
+  fullName: BaseballSharp.Enums.rosterType.roster25
+  nameWithType: rosterType.roster25
+- uid: BaseballSharp.Enums.rosterType.roster40
+  name: roster40
+  href: api/BaseballSharp.Enums.rosterType.html#BaseballSharp_Enums_rosterType_roster40
+  commentId: F:BaseballSharp.Enums.rosterType.roster40
+  fullName: BaseballSharp.Enums.rosterType.roster40
+  nameWithType: rosterType.roster40
+- uid: BaseballSharp.Enums.rosterType.rosterFull
+  name: rosterFull
+  href: api/BaseballSharp.Enums.rosterType.html#BaseballSharp_Enums_rosterType_rosterFull
+  commentId: F:BaseballSharp.Enums.rosterType.rosterFull
+  fullName: BaseballSharp.Enums.rosterType.rosterFull
+  nameWithType: rosterType.rosterFull
 - uid: BaseballSharp.Models
   name: BaseballSharp.Models
   href: api/BaseballSharp.Models.html
@@ -302,22 +332,6 @@ references:
   commentId: T:BaseballSharp.Models.DepthChart
   fullName: BaseballSharp.Models.DepthChart
   nameWithType: DepthChart
-- uid: BaseballSharp.Models.DepthChart.#ctor(System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-  name: DepthChart(Nullable<Int32>, String, Nullable<Int32>, String, String, String, String, String, String, String, String)
-  href: api/BaseballSharp.Models.DepthChart.html#BaseballSharp_Models_DepthChart__ctor_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
-  commentId: M:BaseballSharp.Models.DepthChart.#ctor(System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-  name.vb: DepthChart(Nullable(Of Int32), String, Nullable(Of Int32), String, String, String, String, String, String, String, String)
-  fullName: BaseballSharp.Models.DepthChart.DepthChart(System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String)
-  fullName.vb: BaseballSharp.Models.DepthChart.DepthChart(System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String)
-  nameWithType: DepthChart.DepthChart(Nullable<Int32>, String, Nullable<Int32>, String, String, String, String, String, String, String, String)
-  nameWithType.vb: DepthChart.DepthChart(Nullable(Of Int32), String, Nullable(Of Int32), String, String, String, String, String, String, String, String)
-- uid: BaseballSharp.Models.DepthChart.#ctor*
-  name: DepthChart
-  href: api/BaseballSharp.Models.DepthChart.html#BaseballSharp_Models_DepthChart__ctor_
-  commentId: Overload:BaseballSharp.Models.DepthChart.#ctor
-  isSpec: "True"
-  fullName: BaseballSharp.Models.DepthChart.DepthChart
-  nameWithType: DepthChart.DepthChart
 - uid: BaseballSharp.Models.DepthChart.JerseyNumber
   name: JerseyNumber
   href: api/BaseballSharp.Models.DepthChart.html#BaseballSharp_Models_DepthChart_JerseyNumber
@@ -467,22 +481,6 @@ references:
   commentId: T:BaseballSharp.Models.Division
   fullName: BaseballSharp.Models.Division
   nameWithType: Division
-- uid: BaseballSharp.Models.Division.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32})
-  name: Division(Nullable<Int32>, String, String, String, Nullable<Int32>)
-  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division__ctor_System_Nullable_System_Int32__System_String_System_String_System_String_System_Nullable_System_Int32__
-  commentId: M:BaseballSharp.Models.Division.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32})
-  name.vb: Division(Nullable(Of Int32), String, String, String, Nullable(Of Int32))
-  fullName: BaseballSharp.Models.Division.Division(System.Nullable<System.Int32>, System.String, System.String, System.String, System.Nullable<System.Int32>)
-  fullName.vb: BaseballSharp.Models.Division.Division(System.Nullable(Of System.Int32), System.String, System.String, System.String, System.Nullable(Of System.Int32))
-  nameWithType: Division.Division(Nullable<Int32>, String, String, String, Nullable<Int32>)
-  nameWithType.vb: Division.Division(Nullable(Of Int32), String, String, String, Nullable(Of Int32))
-- uid: BaseballSharp.Models.Division.#ctor*
-  name: Division
-  href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division__ctor_
-  commentId: Overload:BaseballSharp.Models.Division.#ctor
-  isSpec: "True"
-  fullName: BaseballSharp.Models.Division.Division
-  nameWithType: Division.Division
 - uid: BaseballSharp.Models.Division.DivisionAbbreviation
   name: DivisionAbbreviation
   href: api/BaseballSharp.Models.Division.html#BaseballSharp_Models_Division_DivisionAbbreviation
@@ -554,22 +552,6 @@ references:
   commentId: T:BaseballSharp.Models.Linescore
   fullName: BaseballSharp.Models.Linescore
   nameWithType: Linescore
-- uid: BaseballSharp.Models.Linescore.#ctor(System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32})
-  name: Linescore(Nullable<Int32>, String, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, String, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>)
-  href: api/BaseballSharp.Models.Linescore.html#BaseballSharp_Models_Linescore__ctor_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__
-  commentId: M:BaseballSharp.Models.Linescore.#ctor(System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32})
-  name.vb: Linescore(Nullable(Of Int32), String, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), String, String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32))
-  fullName: BaseballSharp.Models.Linescore.Linescore(System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.String, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>)
-  fullName.vb: BaseballSharp.Models.Linescore.Linescore(System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.String, System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32))
-  nameWithType: Linescore.Linescore(Nullable<Int32>, String, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, String, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>)
-  nameWithType.vb: Linescore.Linescore(Nullable(Of Int32), String, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), String, String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32))
-- uid: BaseballSharp.Models.Linescore.#ctor*
-  name: Linescore
-  href: api/BaseballSharp.Models.Linescore.html#BaseballSharp_Models_Linescore__ctor_
-  commentId: Overload:BaseballSharp.Models.Linescore.#ctor
-  isSpec: "True"
-  fullName: BaseballSharp.Models.Linescore.Linescore
-  nameWithType: Linescore.Linescore
 - uid: BaseballSharp.Models.Linescore.AwayteamErrors
   name: AwayteamErrors
   href: api/BaseballSharp.Models.Linescore.html#BaseballSharp_Models_Linescore_AwayteamErrors
@@ -947,19 +929,6 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.Linescore.OffensiveTeamBatterName
   nameWithType: Linescore.OffensiveTeamBatterName
-- uid: BaseballSharp.Models.Linescore.OffensiveTeamId
-  name: OffensiveTeamId
-  href: api/BaseballSharp.Models.Linescore.html#BaseballSharp_Models_Linescore_OffensiveTeamId
-  commentId: P:BaseballSharp.Models.Linescore.OffensiveTeamId
-  fullName: BaseballSharp.Models.Linescore.OffensiveTeamId
-  nameWithType: Linescore.OffensiveTeamId
-- uid: BaseballSharp.Models.Linescore.OffensiveTeamId*
-  name: OffensiveTeamId
-  href: api/BaseballSharp.Models.Linescore.html#BaseballSharp_Models_Linescore_OffensiveTeamId_
-  commentId: Overload:BaseballSharp.Models.Linescore.OffensiveTeamId
-  isSpec: "True"
-  fullName: BaseballSharp.Models.Linescore.OffensiveTeamId
-  nameWithType: Linescore.OffensiveTeamId
 - uid: BaseballSharp.Models.Linescore.OffensiveTeamInHoleId
   name: OffensiveTeamInHoleId
   href: api/BaseballSharp.Models.Linescore.html#BaseballSharp_Models_Linescore_OffensiveTeamInHoleId
@@ -1174,22 +1143,6 @@ references:
   commentId: T:BaseballSharp.Models.PitchingReport
   fullName: BaseballSharp.Models.PitchingReport
   nameWithType: PitchingReport
-- uid: BaseballSharp.Models.PitchingReport.#ctor(System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},System.String)
-  name: PitchingReport(String, String, Nullable<Int32>, String, String, String, Nullable<Int32>, String)
-  href: api/BaseballSharp.Models.PitchingReport.html#BaseballSharp_Models_PitchingReport__ctor_System_String_System_String_System_Nullable_System_Int32__System_String_System_String_System_String_System_Nullable_System_Int32__System_String_
-  commentId: M:BaseballSharp.Models.PitchingReport.#ctor(System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},System.String)
-  name.vb: PitchingReport(String, String, Nullable(Of Int32), String, String, String, Nullable(Of Int32), String)
-  fullName: BaseballSharp.Models.PitchingReport.PitchingReport(System.String, System.String, System.Nullable<System.Int32>, System.String, System.String, System.String, System.Nullable<System.Int32>, System.String)
-  fullName.vb: BaseballSharp.Models.PitchingReport.PitchingReport(System.String, System.String, System.Nullable(Of System.Int32), System.String, System.String, System.String, System.Nullable(Of System.Int32), System.String)
-  nameWithType: PitchingReport.PitchingReport(String, String, Nullable<Int32>, String, String, String, Nullable<Int32>, String)
-  nameWithType.vb: PitchingReport.PitchingReport(String, String, Nullable(Of Int32), String, String, String, Nullable(Of Int32), String)
-- uid: BaseballSharp.Models.PitchingReport.#ctor*
-  name: PitchingReport
-  href: api/BaseballSharp.Models.PitchingReport.html#BaseballSharp_Models_PitchingReport__ctor_
-  commentId: Overload:BaseballSharp.Models.PitchingReport.#ctor
-  isSpec: "True"
-  fullName: BaseballSharp.Models.PitchingReport.PitchingReport
-  nameWithType: PitchingReport.PitchingReport
 - uid: BaseballSharp.Models.PitchingReport.AwayProbablePitcherId
   name: AwayProbablePitcherId
   href: api/BaseballSharp.Models.PitchingReport.html#BaseballSharp_Models_PitchingReport_AwayProbablePitcherId
@@ -1300,22 +1253,6 @@ references:
   commentId: T:BaseballSharp.Models.Schedule
   fullName: BaseballSharp.Models.Schedule
   nameWithType: Schedule
-- uid: BaseballSharp.Models.Schedule.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32})
-  name: Schedule(String, String, String, Nullable<Int32>)
-  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule__ctor_System_String_System_String_System_String_System_Nullable_System_Int32__
-  commentId: M:BaseballSharp.Models.Schedule.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32})
-  name.vb: Schedule(String, String, String, Nullable(Of Int32))
-  fullName: BaseballSharp.Models.Schedule.Schedule(System.String, System.String, System.String, System.Nullable<System.Int32>)
-  fullName.vb: BaseballSharp.Models.Schedule.Schedule(System.String, System.String, System.String, System.Nullable(Of System.Int32))
-  nameWithType: Schedule.Schedule(String, String, String, Nullable<Int32>)
-  nameWithType.vb: Schedule.Schedule(String, String, String, Nullable(Of Int32))
-- uid: BaseballSharp.Models.Schedule.#ctor*
-  name: Schedule
-  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule__ctor_
-  commentId: Overload:BaseballSharp.Models.Schedule.#ctor
-  isSpec: "True"
-  fullName: BaseballSharp.Models.Schedule.Schedule
-  nameWithType: Schedule.Schedule
 - uid: BaseballSharp.Models.Schedule.AwayTeam
   name: AwayTeam
   href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_AwayTeam
@@ -1342,6 +1279,19 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.Schedule.Ballpark
   nameWithType: Schedule.Ballpark
+- uid: BaseballSharp.Models.Schedule.gameID
+  name: gameID
+  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_gameID
+  commentId: P:BaseballSharp.Models.Schedule.gameID
+  fullName: BaseballSharp.Models.Schedule.gameID
+  nameWithType: Schedule.gameID
+- uid: BaseballSharp.Models.Schedule.gameID*
+  name: gameID
+  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_gameID_
+  commentId: Overload:BaseballSharp.Models.Schedule.gameID
+  isSpec: "True"
+  fullName: BaseballSharp.Models.Schedule.gameID
+  nameWithType: Schedule.gameID
 - uid: BaseballSharp.Models.Schedule.HomeTeam
   name: HomeTeam
   href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_HomeTeam
@@ -1374,22 +1324,6 @@ references:
   commentId: T:BaseballSharp.Models.Team
   fullName: BaseballSharp.Models.Team
   nameWithType: Team
-- uid: BaseballSharp.Models.Team.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32})
-  name: Team(String, String, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, String, Nullable<Int32>)
-  href: api/BaseballSharp.Models.Team.html#BaseballSharp_Models_Team__ctor_System_String_System_String_System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_Int32__
-  commentId: M:BaseballSharp.Models.Team.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32})
-  name.vb: Team(String, String, String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, String, Nullable(Of Int32))
-  fullName: BaseballSharp.Models.Team.Team(System.String, System.String, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.Nullable<System.Int32>, System.String, System.String, System.Nullable<System.Int32>)
-  fullName.vb: BaseballSharp.Models.Team.Team(System.String, System.String, System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.Nullable(Of System.Int32), System.String, System.String, System.Nullable(Of System.Int32))
-  nameWithType: Team.Team(String, String, String, Nullable<Int32>, String, Nullable<Int32>, String, Nullable<Int32>, String, String, Nullable<Int32>)
-  nameWithType.vb: Team.Team(String, String, String, Nullable(Of Int32), String, Nullable(Of Int32), String, Nullable(Of Int32), String, String, Nullable(Of Int32))
-- uid: BaseballSharp.Models.Team.#ctor*
-  name: Team
-  href: api/BaseballSharp.Models.Team.html#BaseballSharp_Models_Team__ctor_
-  commentId: Overload:BaseballSharp.Models.Team.#ctor
-  isSpec: "True"
-  fullName: BaseballSharp.Models.Team.Team
-  nameWithType: Team.Team
 - uid: BaseballSharp.Models.Team.Abbreviation
   name: Abbreviation
   href: api/BaseballSharp.Models.Team.html#BaseballSharp_Models_Team_Abbreviation
@@ -1539,22 +1473,6 @@ references:
   commentId: T:BaseballSharp.Models.TeamRoster
   fullName: BaseballSharp.Models.TeamRoster
   nameWithType: TeamRoster
-- uid: BaseballSharp.Models.TeamRoster.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String)
-  name: TeamRoster(Nullable<Int32>, String, String, String, String, Nullable<Int32>, String, String, String)
-  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster__ctor_System_Nullable_System_Int32__System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_String_System_String_System_String_
-  commentId: M:BaseballSharp.Models.TeamRoster.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String)
-  name.vb: TeamRoster(Nullable(Of Int32), String, String, String, String, Nullable(Of Int32), String, String, String)
-  fullName: BaseballSharp.Models.TeamRoster.TeamRoster(System.Nullable<System.Int32>, System.String, System.String, System.String, System.String, System.Nullable<System.Int32>, System.String, System.String, System.String)
-  fullName.vb: BaseballSharp.Models.TeamRoster.TeamRoster(System.Nullable(Of System.Int32), System.String, System.String, System.String, System.String, System.Nullable(Of System.Int32), System.String, System.String, System.String)
-  nameWithType: TeamRoster.TeamRoster(Nullable<Int32>, String, String, String, String, Nullable<Int32>, String, String, String)
-  nameWithType.vb: TeamRoster.TeamRoster(Nullable(Of Int32), String, String, String, String, Nullable(Of Int32), String, String, String)
-- uid: BaseballSharp.Models.TeamRoster.#ctor*
-  name: TeamRoster
-  href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster__ctor_
-  commentId: Overload:BaseballSharp.Models.TeamRoster.#ctor
-  isSpec: "True"
-  fullName: BaseballSharp.Models.TeamRoster.TeamRoster
-  nameWithType: TeamRoster.TeamRoster
 - uid: BaseballSharp.Models.TeamRoster.PlayerFullName
   name: PlayerFullName
   href: api/BaseballSharp.Models.TeamRoster.html#BaseballSharp_Models_TeamRoster_PlayerFullName
@@ -1672,27 +1590,3 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.TeamRoster.TeamId
   nameWithType: TeamRoster.TeamId
-- uid: BaseballSharp.rosterType
-  name: rosterType
-  href: api/BaseballSharp.rosterType.html
-  commentId: T:BaseballSharp.rosterType
-  fullName: BaseballSharp.rosterType
-  nameWithType: rosterType
-- uid: BaseballSharp.rosterType.roster25
-  name: roster25
-  href: api/BaseballSharp.rosterType.html#BaseballSharp_rosterType_roster25
-  commentId: F:BaseballSharp.rosterType.roster25
-  fullName: BaseballSharp.rosterType.roster25
-  nameWithType: rosterType.roster25
-- uid: BaseballSharp.rosterType.roster40
-  name: roster40
-  href: api/BaseballSharp.rosterType.html#BaseballSharp_rosterType_roster40
-  commentId: F:BaseballSharp.rosterType.roster40
-  fullName: BaseballSharp.rosterType.roster40
-  nameWithType: rosterType.roster40
-- uid: BaseballSharp.rosterType.rosterFull
-  name: rosterFull
-  href: api/BaseballSharp.rosterType.html#BaseballSharp_rosterType_rosterFull
-  commentId: F:BaseballSharp.rosterType.rosterFull
-  fullName: BaseballSharp.rosterType.rosterFull
-  nameWithType: rosterType.rosterFull
