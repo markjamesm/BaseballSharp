@@ -1,9 +1,8 @@
 ﻿using System;
 
-namespace BaseballSharp.DTO.PitchingReport
-{
+namespace BaseballSharp.DTO.PitchingReport;
 
-    public class PitchingReportDto
+public class PitchingReportDto
     {
         public Date[]? dates { get; set; }
     }
@@ -70,5 +69,3 @@ namespace BaseballSharp.DTO.PitchingReport
         public string? fullName { get; set; } = String.Empty;
         public string? note { get; set; } = String.Empty;
     }
-
-}

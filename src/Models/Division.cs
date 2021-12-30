@@ -1,5 +1,5 @@
-﻿namespace BaseballSharp.Models
-{
+﻿namespace BaseballSharp.Models;
+
     public class Division
     {
         /// <summary>
@@ -27,5 +27,3 @@
         /// </summary>
         public int? LeagueId { get; set; }
     }
-
-}

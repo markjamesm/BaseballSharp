@@ -1,23 +1,21 @@
-﻿namespace BaseballSharp
+﻿namespace BaseballSharp.Enums;
+/// <summary>
+/// The types of roster data that can be obtained from the API.
+/// </summary>
+public enum rosterType
 {
     /// <summary>
-    /// The types of roster data that can be obtained from the API.
+    /// The full roster.
     /// </summary>
-    public enum rosterType
-    {
-        /// <summary>
-        /// The full roster.
-        /// </summary>
-        rosterFull,
+    rosterFull,
 
-        /// <summary>
-        /// The 25-man roster.
-        /// </summary>
-        roster25,
+    /// <summary>
+    /// The 25-man roster.
+    /// </summary>
+    roster25,
 
-        /// <summary>
-        /// The 40-man roster.
-        /// </summary>
-        roster40
-    }
+    /// <summary>
+    /// The 40-man roster.
+    /// </summary>
+    roster40
 }
