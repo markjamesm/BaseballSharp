@@ -1,5 +1,9 @@
 # Changelog
 
+#### 0.1.9
+
+- Performance improvement by using a single instance of HttpClient (so we can reduce the waste of sockets by reusing them) for all API calls.
+
 #### 0.1.8
 
 - Upgraded to .NET 6.

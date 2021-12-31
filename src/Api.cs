@@ -19,27 +19,16 @@ namespace BaseballSharp
     /// <summary>
     /// The Api class holds all MLB Stats API endpoints that can be accessed from Baseball Sharp.
     /// </summary>
-    public class Api
+    public static class Api
     {
+        private static HttpClient _httpClient = new HttpClient();
         private static readonly string _baseUrl = "https://statsapi.mlb.com/api/v1";
 
-        private static async Task<string> getResponse(string? Endpoint)
+        private static async Task<string> GetResponse(string? Endpoint)
         {
-            using (HttpClient client = new HttpClient())
-            {
-                var return_message = new HttpResponseMessage();
+            var returnMessage = await _httpClient.GetAsync(_baseUrl + (Endpoint ?? "")).ConfigureAwait(false);
 
-                try
-                {
-                    return_message = await client.GetAsync(_baseUrl + (Endpoint ?? "")).ConfigureAwait(false);
-                }
-                catch (Exception ex)
-                {
-                    throw;
-                }
-
-                return await return_message.Content.ReadAsStringAsync();
-            }
+            return await returnMessage.Content.ReadAsStringAsync();
         }
 
         /// <summary>
@@ -51,7 +40,7 @@ namespace BaseballSharp
         {
             List<Schedule> upcomingGames = new();
 
-            string jsonResponse = await getResponse("/schedule/games/?sportId=1&date=" + date.ToString("MM/dd/yyyy"));
+            string jsonResponse = await GetResponse("/schedule/games/?sportId=1&date=" + date.ToString("MM/dd/yyyy"));
 
             GameScheduleRoot? gameSchedule = JsonSerializer.Deserialize<GameScheduleRoot>(jsonResponse);
 
@@ -81,7 +70,7 @@ namespace BaseballSharp
         {
             List<PitchingReport> pitchingReports = new();
 
-            string jsonResponse = await getResponse("/schedule?sportId=1&hydrate=probablePitcher(note)" +
+            string jsonResponse = await GetResponse("/schedule?sportId=1&hydrate=probablePitcher(note)" +
                 "&fields=dates,date,games,gamePk,gameDate,status,abstractGameState," +
                 "teams,away,home,team,id,name,probablePitcher,id,fullName,note&" + date.ToString("MM/dd/yyyy"));
 
@@ -116,7 +105,7 @@ namespace BaseballSharp
         {
             List<Models.Team> teamsList = new();
 
-            string jsonResponse = await getResponse("/teams?sportId=1");
+            string jsonResponse = await GetResponse("/teams?sportId=1");
 
             TeamDto? mlbTeams = JsonSerializer.Deserialize<TeamDto>(jsonResponse);
 
@@ -174,7 +163,7 @@ namespace BaseballSharp
                     break;
             }
 
-            string jsonResponse = await getResponse(type_string);
+            string jsonResponse = await GetResponse(type_string);
 
             TeamRosterDto? teamRostersJson = JsonSerializer.Deserialize<TeamRosterDto>(jsonResponse);
 
@@ -208,7 +197,7 @@ namespace BaseballSharp
         {
             List<Linescore> lineScores = new();
 
-            string jsonResponse = await getResponse("/game/" + gameId + "/linescore");
+            string jsonResponse = await GetResponse("/game/" + gameId + "/linescore");
 
             LinescoreDto? lineScoresJson = JsonSerializer.Deserialize<LinescoreDto>(jsonResponse);
 
@@ -275,7 +264,7 @@ namespace BaseballSharp
         {
             List<DepthChart> depthCharts = new();
 
-            string jsonResponse = await getResponse("/teams/" + teamId + "/roster/depthChart");
+            string jsonResponse = await GetResponse("/teams/" + teamId + "/roster/depthChart");
 
             TeamRosterDto? depthChartJson = JsonSerializer.Deserialize<TeamRosterDto>(jsonResponse);
 
@@ -308,7 +297,7 @@ namespace BaseballSharp
         {
             List<Models.Division> divisions = new();
 
-            string jsonResponse = await getResponse("/divisions?sportId=1");
+            string jsonResponse = await GetResponse("/divisions?sportId=1");
 
             DivisionsDto? teamDivisions = JsonSerializer.Deserialize<DivisionsDto>(jsonResponse);
 
