@@ -11,7 +11,7 @@ public class GameScheduleRoot
     public int totalEvents { get; set; }
     public int totalGames { get; set; }
     public int totalGamesInProgress { get; set; }
-    public Date[]? dates { get; set; }
+    public Date[] dates { get; set; } = Array.Empty<Date>();
 }
 
 public class Date
@@ -21,8 +21,8 @@ public class Date
     public int totalEvents { get; set; }
     public int totalGames { get; set; }
     public int totalGamesInProgress { get; set; }
-    public Game[]? games { get; set; }
-    public object[]? events { get; set; }
+    public Game[] games { get; set; } = Array.Empty<Game>();
+    public object[] events { get; set; } = Array.Empty<Object>();
 }
 
 public class Game

@@ -1,10 +1,12 @@
-﻿namespace BaseballSharp.DTO.Teams;
+﻿using System;
+
+namespace BaseballSharp.DTO.Teams;
 
 
 public class TeamDto
 {
     public string? copyright { get; set; }
-    public Team[]? teams { get; set; }
+    public Team[]? teams { get; set; } = Array.Empty<Team>();
 }
 
 public class Team
