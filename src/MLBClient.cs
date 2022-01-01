@@ -21,25 +21,15 @@ namespace BaseballSharp
     /// </summary>
     public class MLBClient : IMLBClient
     {
+        private static HttpClient _httpClient = new HttpClient();
         private static readonly string _baseUrl = "https://statsapi.mlb.com/api/v1";
 
-        private async Task<string> GetResponse(string? Endpoint)
+        private async Task<string> GetResponseAsync(string endpoint)
         {
-            using (HttpClient client = new HttpClient())
-            {
-                var returnMessage = new HttpResponseMessage();
 
-                try
-                {
-                    returnMessage = await client.GetAsync(_baseUrl + (Endpoint ?? "")).ConfigureAwait(false);
-                }
-                catch (Exception ex)
-                {
-                    throw;
-                }
+            var returnMessage = await _httpClient.GetAsync(_baseUrl + (endpoint ?? "")).ConfigureAwait(false);
 
-                return await returnMessage.Content.ReadAsStringAsync();
-            }
+            return await returnMessage.Content.ReadAsStringAsync();
         }
 
         /// <summary>
@@ -51,7 +41,7 @@ namespace BaseballSharp
         {
             var upcomingGames = new List<Schedule>();
 
-            var jsonResponse = await GetResponse("/schedule/games/?sportId=1&date=" + date.ToString("MM/dd/yyyy"));
+            var jsonResponse = await GetResponseAsync("/schedule/games/?sportId=1&date=" + date.ToString("MM/dd/yyyy"));
             GameScheduleRoot? gameSchedule = JsonSerializer.Deserialize<GameScheduleRoot>(jsonResponse);
 
             foreach (DTO.GameSchedule.Date? item in (gameSchedule ?? new GameScheduleRoot()).dates ?? new DTO.GameSchedule.Date[0])
@@ -80,7 +70,7 @@ namespace BaseballSharp
         {
             var pitchingReports = new List<PitchingReport>();
 
-            var jsonResponse = await GetResponse("/schedule?sportId=1&hydrate=probablePitcher(note)" +
+            var jsonResponse = await GetResponseAsync("/schedule?sportId=1&hydrate=probablePitcher(note)" +
                 "&fields=dates,date,games,gamePk,gameDate,status,abstractGameState," +
                 "teams,away,home,team,id,name,probablePitcher,id,fullName,note&" + date.ToString("MM/dd/yyyy"));
             var reports = JsonSerializer.Deserialize<PitchingReportDto>(jsonResponse);
@@ -114,7 +104,7 @@ namespace BaseballSharp
         {
             var teamsList = new List<Models.Team>();
 
-            var jsonResponse = await GetResponse("/teams?sportId=1");
+            var jsonResponse = await GetResponseAsync("/teams?sportId=1");
             var mlbTeams = JsonSerializer.Deserialize<TeamDto>(jsonResponse);
 
             foreach (var team in (mlbTeams ?? new TeamDto()).teams ?? new DTO.Teams.Team[0])
@@ -171,7 +161,7 @@ namespace BaseballSharp
                     break;
             }
 
-            var jsonResponse = await GetResponse(typeString);
+            var jsonResponse = await GetResponseAsync(typeString);
             var teamRostersJson = JsonSerializer.Deserialize<TeamRosterDto>(jsonResponse);
 
             foreach (var item in (teamRostersJson ?? new TeamRosterDto()).roster ?? new Roster[0])
@@ -204,7 +194,7 @@ namespace BaseballSharp
         {
             var lineScores = new List<Linescore>();
 
-            var jsonResponse = await GetResponse("/game/" + gameId + "/linescore");
+            var jsonResponse = await GetResponseAsync("/game/" + gameId + "/linescore");
             var lineScoresJson = JsonSerializer.Deserialize<LinescoreDto>(jsonResponse);
 
             foreach (var inning in (lineScoresJson ?? new LinescoreDto()).innings ?? new List<Innings>())
@@ -270,7 +260,7 @@ namespace BaseballSharp
         {
             var depthCharts = new List<DepthChart>();
 
-            var jsonResponse = await GetResponse("/teams/" + teamId + "/roster/depthChart");
+            var jsonResponse = await GetResponseAsync("/teams/" + teamId + "/roster/depthChart");
             var depthChartJson = JsonSerializer.Deserialize<TeamRosterDto>(jsonResponse);
 
             foreach (var person in (depthChartJson ?? new TeamRosterDto()).roster ?? new Roster[0])
@@ -302,7 +292,7 @@ namespace BaseballSharp
         {
             var divisions = new List<Models.Division>();
 
-            var jsonResponse = await GetResponse("/divisions?sportId=1");
+            var jsonResponse = await GetResponseAsync("/divisions?sportId=1");
             var teamDivisions = JsonSerializer.Deserialize<DivisionsDto>(jsonResponse);
 
             foreach (var division in (teamDivisions ?? new DivisionsDto()).divisions ?? new LeagueDivision[0])
