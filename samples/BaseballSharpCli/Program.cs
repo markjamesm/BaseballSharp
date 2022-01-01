@@ -1,30 +1,31 @@
 ﻿using BaseballSharp;
 using System;
 using BaseballSharp.Enums;
+using System.Threading.Tasks;
 
 namespace MLBSharpCli
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        private static async Task Main(string[] args)
         {
             var mlbClient = new MLBClient();
 
-            var upcomingGames = mlbClient.GetScheduleAsync(DateTime.Now).GetAwaiter().GetResult();
+            var upcomingGames = await mlbClient.GetScheduleAsync(DateTime.Now);
 
             foreach (var game in upcomingGames)
             {
                 Console.WriteLine($"{game.AwayTeam} vs {game.HomeTeam} at {game.Ballpark}");
             }
 
-            var pitching = mlbClient.GetPitchingReportsAsync(DateTime.Now).GetAwaiter().GetResult();
+            var pitching = await mlbClient.GetPitchingReportsAsync(DateTime.Now);
 
             foreach (var pitcher in pitching)
             {
                 Console.WriteLine($"Home pitcher: {pitcher.HomeProbablePitcherName}, Notes: {pitcher.HomeProbablePitcherNotes}");
             }
 
-            var teamsList = mlbClient.GetTeamDataAsync().GetAwaiter().GetResult();
+            var teamsList = await mlbClient.GetTeamDataAsync();
 
             foreach (var team in teamsList)
             {
@@ -32,7 +33,7 @@ namespace MLBSharpCli
             }
 
             // Example of casting the team ids enum to int in the parameter.
-            var teamRoster = mlbClient.GetTeamRosterAsync((int)eTeamId.BlueJays, 2021, DateTime.Now, rosterType.rosterFull).GetAwaiter().GetResult();
+            var teamRoster = await mlbClient.GetTeamRosterAsync((int)eTeamId.BlueJays, 2021, DateTime.Now, rosterType.rosterFull);
 
             foreach (var team in teamRoster)
             {
@@ -40,7 +41,7 @@ namespace MLBSharpCli
             }
 
             // Display some basic data from the LineScore endpoint.
-            var lineScore = mlbClient.GetLineScoreAsync(529572).GetAwaiter().GetResult();
+            var lineScore = await mlbClient.GetLineScoreAsync(529572);
 
             foreach (var inning in lineScore)
             {
@@ -48,7 +49,7 @@ namespace MLBSharpCli
             }
 
             // Get a team's depth chart
-            var depthChart = mlbClient.GetDepthChartAsync(111).GetAwaiter().GetResult();
+            var depthChart = await mlbClient.GetDepthChartAsync(111);
 
             foreach (var person in depthChart)
             {
@@ -56,7 +57,7 @@ namespace MLBSharpCli
             }
 
             // Get a list of divisions
-            var divisions = mlbClient.GetDivisionsAsync().GetAwaiter().GetResult();
+            var divisions = await mlbClient.GetDivisionsAsync();
 
             foreach (var division in divisions)
             {
