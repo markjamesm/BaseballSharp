@@ -21,22 +21,15 @@ namespace BaseballSharp
     /// </summary>
     public class MLBClient
     {
+        private static HttpClient _httpClient = new HttpClient();
         private static readonly string _baseUrl = "https://statsapi.mlb.com/api/v1";
 
         private static async Task<string> GetResponse(string? Endpoint)
         {
-            using (HttpClient client = new HttpClient())
-            {
-                var returnMessage = new HttpResponseMessage();
+            var returnMessage = await _httpClient.GetAsync(_baseUrl + (Endpoint ?? "")).ConfigureAwait(false);
 
-                try
-                {
-                    returnMessage = await client.GetAsync(_baseUrl + (Endpoint ?? "")).ConfigureAwait(false);
-                }
-                catch (Exception ex)
-                {
-                    throw;
-                }
+            return await returnMessage.Content.ReadAsStringAsync();
+        }
 
                 return await returnMessage.Content.ReadAsStringAsync();
             }
@@ -50,6 +43,8 @@ namespace BaseballSharp
         public static async Task<IEnumerable<Schedule>> Schedule(DateTime date)
         {
             var upcomingGames = new List<Schedule>();
+
+            string jsonResponse = await GetResponse("/schedule/games/?sportId=1&date=" + date.ToString("MM/dd/yyyy"));
 
             var jsonResponse = await GetResponse("/schedule/games/?sportId=1&date=" + date.ToString("MM/dd/yyyy"));
             GameScheduleRoot? gameSchedule = JsonSerializer.Deserialize<GameScheduleRoot>(jsonResponse);

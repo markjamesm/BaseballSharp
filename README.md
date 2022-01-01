@@ -3,9 +3,14 @@
 
 ## About
 
-Baseball Sharp is an unofficial .NET wrapper library for the public facing (but undocumented) MLB Stats API. Currently in an early alpha status, Baseball Sharp is in active development and is built on .NET 6.0. 
+Baseball Sharp is an unofficial .NET wrapper library for the public facing (but undocumented) MLB Stats API. Currently runs on .NET6.
 
 ## Usage
+
+Clone the repository or [install from Nuget](https://www.nuget.org/packages/BaseballSharp/). Next, import Baseball Sharp into your project with:
+```
+using BaseballSharp;
+```
 
 The solution contains two projects: 
 
