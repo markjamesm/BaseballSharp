@@ -19,27 +19,17 @@ namespace BaseballSharp
     /// <summary>
     /// The MLBClient class holds all MLB Stats API endpoints that can be accessed from Baseball Sharp.
     /// </summary>
-    public class MLBClient
+    public class MLBClient : IMLBClient
     {
+        private static HttpClient _httpClient = new HttpClient();
         private static readonly string _baseUrl = "https://statsapi.mlb.com/api/v1";
 
-        private static async Task<string> GetResponse(string? Endpoint)
+        private async Task<string> GetResponseAsync(string endpoint)
         {
-            using (HttpClient client = new HttpClient())
-            {
-                var returnMessage = new HttpResponseMessage();
 
-                try
-                {
-                    returnMessage = await client.GetAsync(_baseUrl + (Endpoint ?? "")).ConfigureAwait(false);
-                }
-                catch (Exception ex)
-                {
-                    throw;
-                }
+            var returnMessage = await _httpClient.GetAsync(_baseUrl + (endpoint ?? "")).ConfigureAwait(false);
 
-                return await returnMessage.Content.ReadAsStringAsync();
-            }
+            return await returnMessage.Content.ReadAsStringAsync();
         }
 
         /// <summary>
@@ -47,11 +37,11 @@ namespace BaseballSharp
         /// </summary>
         /// <param name="date">The date to return data for.</param>
         /// <returns>A list of schedule objects.</returns>
-        public static async Task<IEnumerable<Schedule>> Schedule(DateTime date)
+        public async Task<IEnumerable<Schedule>> GetScheduleAsync(DateTime date)
         {
             var upcomingGames = new List<Schedule>();
 
-            var jsonResponse = await GetResponse("/schedule/games/?sportId=1&date=" + date.ToString("MM/dd/yyyy"));
+            var jsonResponse = await GetResponseAsync("/schedule/games/?sportId=1&date=" + date.ToString("MM/dd/yyyy"));
             GameScheduleRoot? gameSchedule = JsonSerializer.Deserialize<GameScheduleRoot>(jsonResponse);
 
             foreach (DTO.GameSchedule.Date? item in (gameSchedule ?? new GameScheduleRoot()).dates ?? new DTO.GameSchedule.Date[0])
@@ -76,11 +66,11 @@ namespace BaseballSharp
         /// </summary>
         /// <param name="date">The date to return data for.</param>
         /// <returns>A list of pitching report objects</returns>
-        public static async Task<IEnumerable<PitchingReport>> GetPitchingReportsAsync(DateTime date)
+        public async Task<IEnumerable<PitchingReport>> GetPitchingReportsAsync(DateTime date)
         {
             var pitchingReports = new List<PitchingReport>();
 
-            var jsonResponse = await GetResponse("/schedule?sportId=1&hydrate=probablePitcher(note)" +
+            var jsonResponse = await GetResponseAsync("/schedule?sportId=1&hydrate=probablePitcher(note)" +
                 "&fields=dates,date,games,gamePk,gameDate,status,abstractGameState," +
                 "teams,away,home,team,id,name,probablePitcher,id,fullName,note&" + date.ToString("MM/dd/yyyy"));
             var reports = JsonSerializer.Deserialize<PitchingReportDto>(jsonResponse);
@@ -110,11 +100,11 @@ namespace BaseballSharp
         /// Returns a list of all MLB teams and some associated data. The ID parameters can be used to build other queries.
         /// </summary>
         /// <returns>A list of team objects.</returns>
-        public static async Task<IEnumerable<Models.Team>> GetTeamDataAsync()
+        public async Task<IEnumerable<Models.Team>> GetTeamDataAsync()
         {
             var teamsList = new List<Models.Team>();
 
-            var jsonResponse = await GetResponse("/teams?sportId=1");
+            var jsonResponse = await GetResponseAsync("/teams?sportId=1");
             var mlbTeams = JsonSerializer.Deserialize<TeamDto>(jsonResponse);
 
             foreach (var team in (mlbTeams ?? new TeamDto()).teams ?? new DTO.Teams.Team[0])
@@ -146,7 +136,7 @@ namespace BaseballSharp
         /// <param name="date"> A date to use, will return the roster as of that date</param>
         /// <param name="roster"> The roster type to return. Can choose either full roster, 25man or 40 man</param>
         /// <returns>An IEnumerable TeamRoster</returns>
-        public static async Task<IEnumerable<TeamRoster>> GetTeamRosterAsync(int teamId, int season, DateTime date, rosterType roster = rosterType.rosterFull)
+        public async Task<IEnumerable<TeamRoster>> GetTeamRosterAsync(int teamId, int season, DateTime date, rosterType roster = rosterType.rosterFull)
         {
             List<TeamRoster> teamRosters = new();
 
@@ -171,7 +161,7 @@ namespace BaseballSharp
                     break;
             }
 
-            var jsonResponse = await GetResponse(typeString);
+            var jsonResponse = await GetResponseAsync(typeString);
             var teamRostersJson = JsonSerializer.Deserialize<TeamRosterDto>(jsonResponse);
 
             foreach (var item in (teamRostersJson ?? new TeamRosterDto()).roster ?? new Roster[0])
@@ -200,11 +190,11 @@ namespace BaseballSharp
         /// <returns>A list of Linescore objects.</returns>
         /// <param name="gameId">The ID number of the game.</param>
         /// <returns>A list of Linescore objects</returns>
-        public static async Task<IEnumerable<Linescore>> GetLineScoreAsync(int gameId)
+        public async Task<IEnumerable<Linescore>> GetLineScoreAsync(int gameId)
         {
             var lineScores = new List<Linescore>();
 
-            var jsonResponse = await GetResponse("/game/" + gameId + "/linescore");
+            var jsonResponse = await GetResponseAsync("/game/" + gameId + "/linescore");
             var lineScoresJson = JsonSerializer.Deserialize<LinescoreDto>(jsonResponse);
 
             foreach (var inning in (lineScoresJson ?? new LinescoreDto()).innings ?? new List<Innings>())
@@ -266,11 +256,11 @@ namespace BaseballSharp
         /// <returns>A list of team objects.</returns>
         /// <param name="teamId">The team's ID number.</param>
         /// <returns>A list of pitching report objects</returns>
-        public static async Task<IEnumerable<DepthChart>> GetDepthChartAsync(int teamId)
+        public async Task<IEnumerable<DepthChart>> GetDepthChartAsync(int teamId)
         {
             var depthCharts = new List<DepthChart>();
 
-            var jsonResponse = await GetResponse("/teams/" + teamId + "/roster/depthChart");
+            var jsonResponse = await GetResponseAsync("/teams/" + teamId + "/roster/depthChart");
             var depthChartJson = JsonSerializer.Deserialize<TeamRosterDto>(jsonResponse);
 
             foreach (var person in (depthChartJson ?? new TeamRosterDto()).roster ?? new Roster[0])
@@ -298,11 +288,11 @@ namespace BaseballSharp
         /// Endpoint to get the MLB divisions and associated data.
         /// </summary>
         /// <returns>A list of Division objects.</returns>
-        public static async Task<IEnumerable<Models.Division>> GetDivisionsAsync()
+        public async Task<IEnumerable<Models.Division>> GetDivisionsAsync()
         {
             var divisions = new List<Models.Division>();
 
-            var jsonResponse = await GetResponse("/divisions?sportId=1");
+            var jsonResponse = await GetResponseAsync("/divisions?sportId=1");
             var teamDivisions = JsonSerializer.Deserialize<DivisionsDto>(jsonResponse);
 
             foreach (var division in (teamDivisions ?? new DivisionsDto()).divisions ?? new LeagueDivision[0])
