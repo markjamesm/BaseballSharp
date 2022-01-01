@@ -1,8 +1,10 @@
-﻿namespace BaseballSharp.DTO;
+﻿using System;
+
+namespace BaseballSharp.DTO;
 public class DivisionsDto
 {
     public string? copyright { get; set; }
-    public LeagueDivision[]? divisions { get; set; }
+    public LeagueDivision[] divisions { get; set; } = Array.Empty<LeagueDivision>();
 }
 
 public class LeagueDivision

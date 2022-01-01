@@ -10,10 +10,8 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Team = BaseballSharp.DTO.Teams.Team;
 
-/// <summary>
-/// The BaseballSharp namespace contains the classes used to interface with the MLB Stats Api, as well as associated helper types.
-/// </summary>
 namespace BaseballSharp
 {
     /// <summary>
@@ -42,18 +40,18 @@ namespace BaseballSharp
             var upcomingGames = new List<Schedule>();
 
             var jsonResponse = await GetResponseAsync("/schedule/games/?sportId=1&date=" + date.ToString("MM/dd/yyyy"));
-            GameScheduleRoot? gameSchedule = JsonSerializer.Deserialize<GameScheduleRoot>(jsonResponse);
+            var gameSchedule = JsonSerializer.Deserialize<GameScheduleRoot>(jsonResponse);
 
-            foreach (DTO.GameSchedule.Date? item in (gameSchedule ?? new GameScheduleRoot()).dates ?? new DTO.GameSchedule.Date[0])
+            foreach (var item in (gameSchedule ?? new GameScheduleRoot()).dates)
             {
-                foreach (DTO.GameSchedule.Game? game in item.games ?? new DTO.GameSchedule.Game[0])
+                foreach (var game in item.games)
                 {
                     upcomingGames.Add(new Models.Schedule()
                     {
                         gameID = game.gamePk,
-                        AwayTeam = game?.teams?.away?.team?.name,
-                        HomeTeam = game?.teams?.home?.team?.name,
-                        ScheduledInnings = game?.scheduledInnings
+                        AwayTeam = game.teams?.away?.team?.name,
+                        HomeTeam = game.teams?.home?.team?.name,
+                        ScheduledInnings = game.scheduledInnings
                     });
                 }
             }
@@ -75,20 +73,20 @@ namespace BaseballSharp
                 "teams,away,home,team,id,name,probablePitcher,id,fullName,note&" + date.ToString("MM/dd/yyyy"));
             var reports = JsonSerializer.Deserialize<PitchingReportDto>(jsonResponse);
 
-            foreach (var selectedDate in (reports ?? new PitchingReportDto()).dates ?? new DTO.PitchingReport.Date[0])
+            foreach (var selectedDate in (reports ?? new PitchingReportDto()).dates ?? Array.Empty<DTO.PitchingReport.Date>())
             {
-                foreach (var game in (selectedDate ?? new DTO.PitchingReport.Date()).games ?? new DTO.PitchingReport.Game[0])
+                foreach (var game in selectedDate.games ?? Array.Empty<DTO.PitchingReport.Game>())
                 {
                     pitchingReports.Add(new PitchingReport()
                     {
-                        HomeTeam = game?.teams?.home?.team?.name,
-                        AwayTeam = game?.teams?.away?.team?.name,
-                        AwayProbablePitcherId = game?.teams?.away?.probablePitcher?.id,
-                        AwayProbablePitcherName = game?.teams?.away?.probablePitcher?.fullName,
-                        AwayProbablePitcherNotes = game?.teams?.away?.probablePitcher?.note,
-                        HomeProbablePitcherId = game?.teams?.home?.probablePitcher?.id,
-                        HomeProbablePitcherName = game?.teams?.home?.probablePitcher?.fullName,
-                        HomeProbablePitcherNotes = game?.teams?.home?.probablePitcher?.note
+                        HomeTeam = game.teams?.home?.team?.name,
+                        AwayTeam = game.teams?.away?.team?.name,
+                        AwayProbablePitcherId = game.teams?.away?.probablePitcher?.id,
+                        AwayProbablePitcherName = game.teams?.away?.probablePitcher?.fullName,
+                        AwayProbablePitcherNotes = game.teams?.away?.probablePitcher?.note,
+                        HomeProbablePitcherId = game.teams?.home?.probablePitcher?.id,
+                        HomeProbablePitcherName = game.teams?.home?.probablePitcher?.fullName,
+                        HomeProbablePitcherNotes = game.teams?.home?.probablePitcher?.note
                     });
                 }
             }
@@ -107,20 +105,20 @@ namespace BaseballSharp
             var jsonResponse = await GetResponseAsync("/teams?sportId=1");
             var mlbTeams = JsonSerializer.Deserialize<TeamDto>(jsonResponse);
 
-            foreach (var team in (mlbTeams ?? new TeamDto()).teams ?? new DTO.Teams.Team[0])
+            foreach (var team in (mlbTeams ?? new TeamDto()).teams ?? Array.Empty<Team>())
             {
                 teamsList.Add(new Models.Team()
                 {
-                    Name = team?.name,
-                    Location = team?.locationName,
-                    Id = team?.id,
-                    LeagueId = team?.league?.id,
-                    LeagueName = team?.league?.name,
-                    DivisionName = team?.division?.name,
-                    DivisionId = team?.division?.id,
-                    Abbreviation = team?.abbreviation,
-                    VenueName = team?.venue?.name,
-                    VenueId = team?.venue?.id
+                    Name = team.name,
+                    Location = team.locationName,
+                    Id = team.id,
+                    LeagueId = team.league?.id,
+                    LeagueName = team.league?.name,
+                    DivisionName = team.division?.name,
+                    DivisionId = team.division?.id,
+                    Abbreviation = team.abbreviation,
+                    VenueName = team.venue?.name,
+                    VenueId = team.venue?.id
                 });
             }
 
@@ -156,29 +154,25 @@ namespace BaseballSharp
 
                     typeString = "/teams/" + teamId + "/roster?season=" + season + "&rosterType=40Man" + "&date=" + date.ToString("MM/dd/yyyy");
                     break;
-
-                default:
-                    break;
             }
 
             var jsonResponse = await GetResponseAsync(typeString);
             var teamRostersJson = JsonSerializer.Deserialize<TeamRosterDto>(jsonResponse);
 
-            foreach (var item in (teamRostersJson ?? new TeamRosterDto()).roster ?? new Roster[0])
+            foreach (var item in (teamRostersJson ?? new TeamRosterDto()).roster ?? Array.Empty<Roster>())
             {
                 teamRosters.Add(new TeamRoster()
                 {
-                    PlayerId = item?.person?.id,
-                    PlayerFullName = item?.person?.fullName,
-                    PlayerPosition = item?.position?.name,
-                    PlayerType = item?.position?.type,
-                    PositionCode = item?.position?.code,
+                    PlayerId = item.person?.id,
+                    PlayerFullName = item.person?.fullName,
+                    PlayerPosition = item.position?.name,
+                    PlayerType = item.position?.type,
+                    PositionCode = item.position?.code,
                     TeamId = teamRostersJson?.teamId,
-                    PositionAbbreviation = item?.position?.abbreviation,
-                    StatusCode = item?.status?.code,
-                    StatusDescription = item?.status?.description
-                }
-                );
+                    PositionAbbreviation = item.position?.abbreviation,
+                    StatusCode = item.status?.code,
+                    StatusDescription = item.status?.description
+                });
             }
 
             return teamRosters;
@@ -263,7 +257,7 @@ namespace BaseballSharp
             var jsonResponse = await GetResponseAsync("/teams/" + teamId + "/roster/depthChart");
             var depthChartJson = JsonSerializer.Deserialize<TeamRosterDto>(jsonResponse);
 
-            foreach (var person in (depthChartJson ?? new TeamRosterDto()).roster ?? new Roster[0])
+            foreach (var person in (depthChartJson ?? new TeamRosterDto()).roster ?? Array.Empty<Roster>())
             {
                 depthCharts.Add(new DepthChart()
                 {
@@ -295,15 +289,15 @@ namespace BaseballSharp
             var jsonResponse = await GetResponseAsync("/divisions?sportId=1");
             var teamDivisions = JsonSerializer.Deserialize<DivisionsDto>(jsonResponse);
 
-            foreach (var division in (teamDivisions ?? new DivisionsDto()).divisions ?? new LeagueDivision[0])
+            foreach (var division in (teamDivisions ?? new DivisionsDto()).divisions)
             {
                 divisions.Add(new Models.Division()
                 {
-                    DivisionId = division?.id,
-                    DivisionName = division?.name,
-                    ShortDivisionName = division?.nameShort,
-                    DivisionAbbreviation = division?.abbreviation,
-                    LeagueId = division?.league?.id
+                    DivisionId = division.id,
+                    DivisionName = division.name,
+                    ShortDivisionName = division.nameShort,
+                    DivisionAbbreviation = division.abbreviation,
+                    LeagueId = division.league?.id
                 });
             }
 

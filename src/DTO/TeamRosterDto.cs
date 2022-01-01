@@ -1,9 +1,11 @@
-﻿namespace BaseballSharp.DTO;
+﻿using System;
+
+namespace BaseballSharp.DTO;
 
 public class TeamRosterDto
 {
     public string? copyright { get; set; }
-    public Roster[]? roster { get; set; }
+    public Roster[]? roster { get; set; } = Array.Empty<Roster>();
     public string? link { get; set; }
     public int? teamId { get; set; }
     public string? rosterType { get; set; }
