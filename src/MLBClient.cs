@@ -19,11 +19,11 @@ namespace BaseballSharp
     /// <summary>
     /// The MLBClient class holds all MLB Stats API endpoints that can be accessed from Baseball Sharp.
     /// </summary>
-    public class MLBClient
+    public class MLBClient : IMLBClient
     {
         private static readonly string _baseUrl = "https://statsapi.mlb.com/api/v1";
 
-        private static async Task<string> GetResponse(string? Endpoint)
+        private async Task<string> GetResponse(string? Endpoint)
         {
             using (HttpClient client = new HttpClient())
             {
@@ -47,7 +47,7 @@ namespace BaseballSharp
         /// </summary>
         /// <param name="date">The date to return data for.</param>
         /// <returns>A list of schedule objects.</returns>
-        public static async Task<IEnumerable<Schedule>> Schedule(DateTime date)
+        public async Task<IEnumerable<Schedule>> GetScheduleAsync(DateTime date)
         {
             var upcomingGames = new List<Schedule>();
 
@@ -76,7 +76,7 @@ namespace BaseballSharp
         /// </summary>
         /// <param name="date">The date to return data for.</param>
         /// <returns>A list of pitching report objects</returns>
-        public static async Task<IEnumerable<PitchingReport>> GetPitchingReportsAsync(DateTime date)
+        public async Task<IEnumerable<PitchingReport>> GetPitchingReportsAsync(DateTime date)
         {
             var pitchingReports = new List<PitchingReport>();
 
@@ -110,7 +110,7 @@ namespace BaseballSharp
         /// Returns a list of all MLB teams and some associated data. The ID parameters can be used to build other queries.
         /// </summary>
         /// <returns>A list of team objects.</returns>
-        public static async Task<IEnumerable<Models.Team>> GetTeamDataAsync()
+        public async Task<IEnumerable<Models.Team>> GetTeamDataAsync()
         {
             var teamsList = new List<Models.Team>();
 
@@ -146,7 +146,7 @@ namespace BaseballSharp
         /// <param name="date"> A date to use, will return the roster as of that date</param>
         /// <param name="roster"> The roster type to return. Can choose either full roster, 25man or 40 man</param>
         /// <returns>An IEnumerable TeamRoster</returns>
-        public static async Task<IEnumerable<TeamRoster>> GetTeamRosterAsync(int teamId, int season, DateTime date, rosterType roster = rosterType.rosterFull)
+        public async Task<IEnumerable<TeamRoster>> GetTeamRosterAsync(int teamId, int season, DateTime date, rosterType roster = rosterType.rosterFull)
         {
             List<TeamRoster> teamRosters = new();
 
@@ -200,7 +200,7 @@ namespace BaseballSharp
         /// <returns>A list of Linescore objects.</returns>
         /// <param name="gameId">The ID number of the game.</param>
         /// <returns>A list of Linescore objects</returns>
-        public static async Task<IEnumerable<Linescore>> GetLineScoreAsync(int gameId)
+        public async Task<IEnumerable<Linescore>> GetLineScoreAsync(int gameId)
         {
             var lineScores = new List<Linescore>();
 
@@ -266,7 +266,7 @@ namespace BaseballSharp
         /// <returns>A list of team objects.</returns>
         /// <param name="teamId">The team's ID number.</param>
         /// <returns>A list of pitching report objects</returns>
-        public static async Task<IEnumerable<DepthChart>> GetDepthChartAsync(int teamId)
+        public async Task<IEnumerable<DepthChart>> GetDepthChartAsync(int teamId)
         {
             var depthCharts = new List<DepthChart>();
 
@@ -298,7 +298,7 @@ namespace BaseballSharp
         /// Endpoint to get the MLB divisions and associated data.
         /// </summary>
         /// <returns>A list of Division objects.</returns>
-        public static async Task<IEnumerable<Models.Division>> GetDivisionsAsync()
+        public async Task<IEnumerable<Models.Division>> GetDivisionsAsync()
         {
             var divisions = new List<Models.Division>();
 
