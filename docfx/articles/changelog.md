@@ -1,5 +1,10 @@
 # Changelog
 
+#### 0.1.9
+
+- Major code cleanup and refactoring.
+- Created an MLBClient interface for testing.
+
 #### 0.1.8
 
 - Upgraded to .NET 6.

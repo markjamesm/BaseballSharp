@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MLBClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MLBClient
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BaseballSharp.MLBClient">
+  
+  
+  <h1 id="BaseballSharp_MLBClient" data-uid="BaseballSharp.MLBClient" class="text-break">Class MLBClient
+  </h1>
+  <div class="markdown level0 summary"><p>The MLBClient class holds all MLB Stats API endpoints that can be accessed from Baseball Sharp.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MLBClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BaseballSharp.html">BaseballSharp</a></h6>
+  <h6><strong>Assembly</strong>: BaseballSharp.dll</h6>
+  <h5 id="BaseballSharp_MLBClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MLBClient</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/markjamesm/Baseball-Sharp/new/master/apiSpec/new?filename=BaseballSharp_MLBClient_GetDepthChartAsync_System_Int32_.md&amp;value=---%0Auid%3A%20BaseballSharp.MLBClient.GetDepthChartAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/src/MLBClient.cs/#L269">View Source</a>
+  </span>
+  <a id="BaseballSharp_MLBClient_GetDepthChartAsync_" data-uid="BaseballSharp.MLBClient.GetDepthChartAsync*"></a>
+  <h4 id="BaseballSharp_MLBClient_GetDepthChartAsync_System_Int32_" data-uid="BaseballSharp.MLBClient.GetDepthChartAsync(System.Int32)">GetDepthChartAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a list of depth chart information for a given team.
+Use the GetTeamDataAsync() call to obtain the id numbers needed to satisfy the teamId parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;DepthChart&gt;&gt; GetDepthChartAsync(int teamId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">teamId</span></td>
+        <td><p>The team's ID number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.DepthChart.html">DepthChart</a>&gt;&gt;</td>
+        <td><p>A list of team objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/markjamesm/Baseball-Sharp/new/master/apiSpec/new?filename=BaseballSharp_MLBClient_GetDivisionsAsync.md&amp;value=---%0Auid%3A%20BaseballSharp.MLBClient.GetDivisionsAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/src/MLBClient.cs/#L301">View Source</a>
+  </span>
+  <a id="BaseballSharp_MLBClient_GetDivisionsAsync_" data-uid="BaseballSharp.MLBClient.GetDivisionsAsync*"></a>
+  <h4 id="BaseballSharp_MLBClient_GetDivisionsAsync" data-uid="BaseballSharp.MLBClient.GetDivisionsAsync">GetDivisionsAsync()</h4>
+  <div class="markdown level1 summary"><p>Endpoint to get the MLB divisions and associated data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;Division&gt;&gt; GetDivisionsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.Division.html">Division</a>&gt;&gt;</td>
+        <td><p>A list of Division objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/markjamesm/Baseball-Sharp/new/master/apiSpec/new?filename=BaseballSharp_MLBClient_GetLineScoreAsync_System_Int32_.md&amp;value=---%0Auid%3A%20BaseballSharp.MLBClient.GetLineScoreAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/src/MLBClient.cs/#L203">View Source</a>
+  </span>
+  <a id="BaseballSharp_MLBClient_GetLineScoreAsync_" data-uid="BaseballSharp.MLBClient.GetLineScoreAsync*"></a>
+  <h4 id="BaseballSharp_MLBClient_GetLineScoreAsync_System_Int32_" data-uid="BaseballSharp.MLBClient.GetLineScoreAsync(System.Int32)">GetLineScoreAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a list of linescore data for the game in question.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;Linescore&gt;&gt; GetLineScoreAsync(int gameId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">gameId</span></td>
+        <td><p>The ID number of the game.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.Linescore.html">Linescore</a>&gt;&gt;</td>
+        <td><p>A list of Linescore objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/markjamesm/Baseball-Sharp/new/master/apiSpec/new?filename=BaseballSharp_MLBClient_GetPitchingReportsAsync_System_DateTime_.md&amp;value=---%0Auid%3A%20BaseballSharp.MLBClient.GetPitchingReportsAsync(System.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/src/MLBClient.cs/#L79">View Source</a>
+  </span>
+  <a id="BaseballSharp_MLBClient_GetPitchingReportsAsync_" data-uid="BaseballSharp.MLBClient.GetPitchingReportsAsync*"></a>
+  <h4 id="BaseballSharp_MLBClient_GetPitchingReportsAsync_System_DateTime_" data-uid="BaseballSharp.MLBClient.GetPitchingReportsAsync(System.DateTime)">GetPitchingReportsAsync(DateTime)</h4>
+  <div class="markdown level1 summary"><p>Returns a list of pitchers and their associated game reports.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;PitchingReport&gt;&gt; GetPitchingReportsAsync(DateTime date)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">date</span></td>
+        <td><p>The date to return data for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.PitchingReport.html">PitchingReport</a>&gt;&gt;</td>
+        <td><p>A list of pitching report objects</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/markjamesm/Baseball-Sharp/new/master/apiSpec/new?filename=BaseballSharp_MLBClient_GetTeamDataAsync.md&amp;value=---%0Auid%3A%20BaseballSharp.MLBClient.GetTeamDataAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/src/MLBClient.cs/#L113">View Source</a>
+  </span>
+  <a id="BaseballSharp_MLBClient_GetTeamDataAsync_" data-uid="BaseballSharp.MLBClient.GetTeamDataAsync*"></a>
+  <h4 id="BaseballSharp_MLBClient_GetTeamDataAsync" data-uid="BaseballSharp.MLBClient.GetTeamDataAsync">GetTeamDataAsync()</h4>
+  <div class="markdown level1 summary"><p>Returns a list of all MLB teams and some associated data. The ID parameters can be used to build other queries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;Team&gt;&gt; GetTeamDataAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.Team.html">Team</a>&gt;&gt;</td>
+        <td><p>A list of team objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/markjamesm/Baseball-Sharp/new/master/apiSpec/new?filename=BaseballSharp_MLBClient_GetTeamRosterAsync_System_Int32_System_Int32_System_DateTime_BaseballSharp_Enums_rosterType_.md&amp;value=---%0Auid%3A%20BaseballSharp.MLBClient.GetTeamRosterAsync(System.Int32%2CSystem.Int32%2CSystem.DateTime%2CBaseballSharp.Enums.rosterType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/src/MLBClient.cs/#L149">View Source</a>
+  </span>
+  <a id="BaseballSharp_MLBClient_GetTeamRosterAsync_" data-uid="BaseballSharp.MLBClient.GetTeamRosterAsync*"></a>
+  <h4 id="BaseballSharp_MLBClient_GetTeamRosterAsync_System_Int32_System_Int32_System_DateTime_BaseballSharp_Enums_rosterType_" data-uid="BaseballSharp.MLBClient.GetTeamRosterAsync(System.Int32,System.Int32,System.DateTime,BaseballSharp.Enums.rosterType)">GetTeamRosterAsync(Int32, Int32, DateTime, rosterType)</h4>
+  <div class="markdown level1 summary"><p>Returns a list of team roster data for a given season.
+Use the GetTeamDataAsync() call to obtain the id numbers needed to satisfy the teamId parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;TeamRoster&gt;&gt; GetTeamRosterAsync(int teamId, int season, DateTime date, rosterType roster = rosterType.rosterFull)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">teamId</span></td>
+        <td><p>The team's MLB id (use enum)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">season</span></td>
+        <td><p>The year the season begins on</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">date</span></td>
+        <td><p>A date to use, will return the roster as of that date</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BaseballSharp.Enums.rosterType.html">rosterType</a></td>
+        <td><span class="parametername">roster</span></td>
+        <td><p>The roster type to return. Can choose either full roster, 25man or 40 man</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.TeamRoster.html">TeamRoster</a>&gt;&gt;</td>
+        <td><p>An IEnumerable TeamRoster</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/markjamesm/Baseball-Sharp/new/master/apiSpec/new?filename=BaseballSharp_MLBClient_Schedule_System_DateTime_.md&amp;value=---%0Auid%3A%20BaseballSharp.MLBClient.Schedule(System.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/src/MLBClient.cs/#L50">View Source</a>
+  </span>
+  <a id="BaseballSharp_MLBClient_Schedule_" data-uid="BaseballSharp.MLBClient.Schedule*"></a>
+  <h4 id="BaseballSharp_MLBClient_Schedule_System_DateTime_" data-uid="BaseballSharp.MLBClient.Schedule(System.DateTime)">Schedule(DateTime)</h4>
+  <div class="markdown level1 summary"><p>Returns a list of the matchups and ballpark for the specified date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IEnumerable&lt;Schedule&gt;&gt; Schedule(DateTime date)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">date</span></td>
+        <td><p>The date to return data for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BaseballSharp.Models.Schedule.html">Schedule</a>&gt;&gt;</td>
+        <td><p>A list of schedule objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/markjamesm/Baseball-Sharp/new/master/apiSpec/new?filename=BaseballSharp_MLBClient.md&amp;value=---%0Auid%3A%20BaseballSharp.MLBClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/src/MLBClient.cs/#L22" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

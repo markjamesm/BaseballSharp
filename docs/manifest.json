@@ -5,18 +5,6 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BaseballSharp.Api.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BaseballSharp.Api.html",
-          "hash": "IrCvpfXxi/aPLQhvhW3XyYwGzWmPVb399pIkcryY9Pw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BaseballSharp.Enums.eTeamId.yml",
       "output": {
         ".html": {
@@ -46,6 +34,18 @@
         ".html": {
           "relative_path": "api/BaseballSharp.Enums.html",
           "hash": "OBxGL75NeuX2eb5oveTDttV8jGttalRr6N1wLxMyMPA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.MLBClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.MLBClient.html",
+          "hash": "QeUGYeoH51FvpE7xrvpsEQiVZYlgwPbLClU3lB9VF20="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.html",
-          "hash": "O+I0LIsp+/sNXRSa11UnRwLg2WrM8Ma4QaJhjMUtde4="
+          "hash": "K23Nom2C7x8uXJ5nzj4OlysxxpGqvRXSDSXeeeR/6lw="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "WQnrdHZ1ykXs0H3Z6b7W4Mid5ZZ4uOmt1bBRFz4Wn4Y="
+          "hash": "QxlvkzWSJOqkpYiYGhWN1nEwCrPJ5WXX0bJebH2z6GE="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/changelog.html",
-          "hash": "CGJDPkpJgpNSxyE9sV7wRZq0IU+ZSHmpo9Que4Jbtsw="
+          "hash": "tBuxgwmargbvXH+HbQjep4MISel/q3x1U4S6YvjKfp8="
         }
       },
       "is_incremental": false,
@@ -204,7 +204,7 @@
           "hash": "iHfctDygJf9URSttVzO+3R9JTd8x8zc+VLLUcALnTGU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -228,7 +228,7 @@
           "hash": "42BO9WI1kJA16VjQW2Lo9EoZEAbQEJtKThTs0iNgJIs="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -247,25 +247,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 4,
-          "skipped_file_count": 0
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 13,
-          "skipped_file_count": 0
+          "skipped_file_count": 2
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -278,8 +276,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
