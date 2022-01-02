@@ -263,15 +263,15 @@ namespace BaseballSharp
                 {
                     TeamId = depthChartJson?.teamId,
                     RosterType = depthChartJson?.rosterType,
-                    PlayerId = person?.person?.id,
-                    PlayerFullName = person?.person?.fullName,
-                    JerseyNumber = person?.jerseyNumber,
-                    PositionCode = person?.position?.code,
-                    PositionName = person?.position?.name,
-                    PositionType = person?.position?.type,
-                    PositionAbbrevition = person?.position?.abbreviation,
-                    StatusCode = person?.status?.code,
-                    StatusDescription = person?.status?.description
+                    PlayerId = person.person?.id,
+                    PlayerFullName = person.person?.fullName,
+                    JerseyNumber = person.jerseyNumber,
+                    PositionCode = person.position?.code,
+                    PositionName = person.position?.name,
+                    PositionType = person.position?.type,
+                    PositionAbbrevition = person.position?.abbreviation,
+                    StatusCode = person.status?.code,
+                    StatusDescription = person.status?.description
                 });
             }
 
