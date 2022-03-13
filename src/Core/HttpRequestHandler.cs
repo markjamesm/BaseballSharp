@@ -25,7 +25,10 @@ public class HttpRequestHandler
                 {
                     var options = new JsonSerializerOptions()
                     {
-                        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
+                        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+                        NumberHandling = JsonNumberHandling.AllowReadingFromString,
+                        IncludeFields = true,
+                        PropertyNameCaseInsensitive = true
                     };
                     httpResponse.jsonResponse = await returnMessage.Content.ReadAsStringAsync(ct);
                     httpResponse.deserializedObject = JsonSerializer.Deserialize<T>(httpResponse.jsonResponse, options);
