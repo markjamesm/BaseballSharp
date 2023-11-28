@@ -33,7 +33,7 @@ namespace MLBSharpCli
             }
 
             // Example of casting the team ids enum to int in the parameter.
-            var teamRoster = await mlbClient.GetTeamRosterAsync((int)eTeamId.BlueJays, 2021, DateTime.Now, rosterType.rosterFull);
+            var teamRoster = await mlbClient.GetTeamRosterAsync(eTeamIdEnum.BlueJays.Id, 2021, DateTime.Now, rosterType.rosterFull);
 
             foreach (var team in teamRoster)
             {
