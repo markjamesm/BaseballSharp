@@ -1,11 +1,11 @@
-﻿using BaseballSharp;
-using System;
-using BaseballSharp.Enums;
+﻿using System;
 using System.Threading.Tasks;
+using BaseballSharp;
+using BaseballSharp.Enums;
 
-namespace MLBSharpCli
+namespace BaseballSharpCli
 {
-    internal class Program
+    internal static class Program
     {
         private static async Task Main(string[] args)
         {
