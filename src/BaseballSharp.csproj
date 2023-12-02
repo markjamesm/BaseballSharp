@@ -1,20 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-      <TargetFramework>net7.0</TargetFramework>
+      <TargetFramework>net8.0</TargetFramework>
       <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
       <Version>0.2.0</Version>
     <Authors>Mark-James McDougall</Authors>
     <Product>BaseballSharp</Product>
-	 <Title>Baseball Sharp</Title>
+	 <Title>BaseballSharp</Title>
     <Description>
-		Baseball Sharp is an unofficial .NET wrapper for the MLB Stats API.
-		View the documentation - https://markjames.dev/Baseball-Sharp/articles/intro.html
-		Changelog - https://markjames.dev/Baseball-Sharp/articles/changelog.html
+		BaseballSharp is an unofficial .NET wrapper for the MLB Stats API.
+		View the documentation - https://baseballsharp.markjames.dev/articles/intro.html
+		Changelog - https://baseballsharp.markjames.dev/articles/changelog.html
 		This package and its author are not affiliated with MLB or any MLB team. This API wrapper interfaces with MLB's Stats API. Use of MLB data is subject to the notice posted at http://gdx.mlb.com/components/copyright.txt.
 	</Description>
-    <RepositoryUrl>https://github.com/markjamesm/Baseball-Sharp</RepositoryUrl>
-    <PackageTags>MLB, Baseball, Wrapper</PackageTags>
+    <RepositoryUrl>https://github.com/markjamesm/BaseballSharp</RepositoryUrl>
+    <PackageTags>MLB, Baseball, Major League Baseball, MLB API</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageId>BaseballSharp</PackageId>
 	  <Configuration>release</Configuration>

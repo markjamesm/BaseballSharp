@@ -1,5 +1,11 @@
 # Changelog
 
+#### 0.2.0
+
+- Expanded json serializer option to make deserialization less sensitive for malformed json.
+- Improved error handling.
+- Updated project to .NET 8.
+
 #### 0.1.9
 
 - Major code cleanup and refactoring.

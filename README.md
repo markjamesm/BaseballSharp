@@ -3,7 +3,7 @@
 
 ## About
 
-Baseball Sharp is an unofficial .NET API client for accessing the public facing (but undocumented) MLB Stats API. Currently runs on .NET 7.
+Baseball Sharp is an unofficial .NET API client for accessing the public facing (but undocumented) MLB (Major League Baseball) Stats API. Currently runs on .NET 8.
 
 ## Usage
 
@@ -27,7 +27,6 @@ The solution contains two projects:
 
 * Continue implementing API endpoints and helper functions. 
 * Add unit tests.
-* Develop BaseballSharp CLI example to showcase usage.
 
 ## Copyright Notice 
 

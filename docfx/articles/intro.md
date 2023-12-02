@@ -10,7 +10,7 @@ using BaseballSharp;
 
 ## Endpoints
 
-- Visit the [API Reference section](https://markjames.dev/Baseball-Sharp/api/BaseballSharp.html) for the most up-to-date endpoint and model documentation. 
+- Visit the [API Reference section](https://baseballsharp.markjames.dev/api/BaseballSharp.html) for the most up-to-date endpoint and model documentation. 
 
 - You can also see examples of how to use the endpoint functions in the [BaseballSharpCli example app](https://github.com/markjamesm/Baseball-Sharp/blob/master/samples/BaseballSharpCli/Program.cs).
 
