@@ -1,9 +1,9 @@
-# Baseball Sharp
+# BaseballSharp
 [![C#](https://img.shields.io/badge/Language-CSharp-darkgreen.svg)](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)) [![Build](https://github.com/markjamesm/Baseball-Sharp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/markjamesm/Baseball-Sharp/actions) [![NuGet](https://img.shields.io/nuget/vpre/BaseballSharp)](https://www.nuget.org/packages/BaseballSharp/) [![License](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 ## About
 
-Baseball Sharp is an unofficial .NET API client for accessing the public facing (but undocumented) MLB (Major League Baseball) Stats API. Currently runs on .NET 8.
+BaseballSharp is an unofficial .NET API client for accessing the public facing (but undocumented) MLB (Major League Baseball) Stats API. Currently runs on .NET 8.
 
 ## Usage
 
