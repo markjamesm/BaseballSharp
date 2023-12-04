@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Changelog </title>
+      <title>Namespace BaseballSharp.Core
+ </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Changelog ">
+      <meta name="title" content="Namespace BaseballSharp.Core
+ ">
     
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
@@ -65,74 +67,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="changelog">Changelog</h1>
+            <article class="content wrap" id="_content" data-uid="BaseballSharp.Core">
 
-<h4 id="020">0.2.0</h4>
-<ul>
-<li>Expanded json serializer option to make deserialization less sensitive for malformed json.</li>
-<li>Improved error handling.</li>
-<li>Updated project to .NET 8.</li>
-</ul>
-<h4 id="019">0.1.9</h4>
-<ul>
-<li>Major code cleanup and refactoring.</li>
-<li>Created an MLBClient interface for testing.</li>
-</ul>
-<h4 id="018">0.1.8</h4>
-<ul>
-<li>Upgraded to .NET 6.</li>
-</ul>
-<h4 id="017">0.1.7</h4>
-<h5 id="endpoints">Endpoints</h5>
-<ul>
-<li>Adding game id so you can use it to get a specific game using the linescore endpoint.</li>
-</ul>
-<h5 id="backend-changes">Backend Changes</h5>
-<ul>
-<li>Adding nullable parameters.</li>
-<li>Switching from contructors to object creation style to allow for easier modification of DTOs and to generally have it read cleaner.</li>
-</ul>
-<h4 id="016-alpha">0.1.6-alpha</h4>
-<ul>
-<li>Added ability to pull roster back by either full, 25man or 40 man.</li>
-<li>Moved http calls to https to avoid mixed-content errors and because it's just better.</li>
-</ul>
-<h4 id="015-alpha">0.1.5-alpha</h4>
-<h5 id="endpoints-1">Endpoints</h5>
-<ul>
-<li>Added Divisions() endpoint.</li>
-</ul>
-<h5 id="backend-changes-1">Backend changes</h5>
-<ul>
-<li>Removed dependency on WebClient, this was causing issues with Blazor when the API was called (WASM requires HttpClient).</li>
-<li>Moved all calls to a private method to remove the need to create a new webclient with each call, also helps declutter the calling methods.</li>
-<li>Moved API calls to async to take advantage of the async HttpClient calls.</li>
-<li>Add null-coalescing logic to avoid null exceptions if the MLB API returns a null result.</li>
-<li>Updated CLI project to account for these changes.</li>
-</ul>
-<h4 id="014-alpha">0.1.4-alpha</h4>
-<ul>
-<li>Added DepthChart() endpoint.</li>
-<li>Added eTeamId enum to make getting team ids easier.</li>
-</ul>
-<h4 id="013-alpha">0.1.3-alpha</h4>
-<ul>
-<li>Added TeamRoster() endpoint function.</li>
-<li>Added Linescore() endpoint.</li>
-</ul>
-<h4 id="012-alpha">0.1.2-alpha</h4>
-<ul>
-<li>Refactored project to use nullable value types in case some data is missing from a JSON response.</li>
-</ul>
-<h4 id="011-alpha">0.1.1-alpha</h4>
-<ul>
-<li>Renamed project to Baseball Sharp.</li>
-</ul>
-<h4 id="010-alpha">0.1.0-alpha</h4>
-<ul>
-<li>Initial commit.</li>
-</ul>
+  <h1 id="BaseballSharp_Core" data-uid="BaseballSharp.Core" class="text-break">Namespace BaseballSharp.Core
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">
+Classes
+</h3>
+      <h4><a class="xref" href="BaseballSharp.Core.HttpRequestHandler.html">HttpRequestHandler</a></h4>
+      <section></section>
+
 
 </article>
           </div>
@@ -141,9 +88,6 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/markjamesm/Baseball-Sharp/blob/master/docfx/articles/changelog.md/#L1" class="contribution-link">Edit this page</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

@@ -1,30 +1,35 @@
 {
-  "homepages": [],
-  "source_base_path": "C:/Users/mjmcd/Desktop/Programming Projects/Baseball-Sharp/docfx",
+  "source_base_path": "/home/markjames/Git-Pulls/Baseball-Sharp/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BaseballSharp.Api.yml",
+      "source_relative_path": "api/BaseballSharp.Core.HttpRequestHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Api.html",
-          "hash": "IrCvpfXxi/aPLQhvhW3XyYwGzWmPVb399pIkcryY9Pw="
+          "relative_path": "api/BaseballSharp.Core.HttpRequestHandler.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BaseballSharp.Enums.eTeamId.yml",
+      "source_relative_path": "api/BaseballSharp.Core.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Enums.eTeamId.html",
-          "hash": "L+Ujrmjsh9w7DAlyyYfAwwpV55MbArqrA2MVKjBz67M="
+          "relative_path": "api/BaseballSharp.Core.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.Enums.eTeamIdEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.Enums.eTeamIdEnum.html"
+        }
+      },
       "version": ""
     },
     {
@@ -32,11 +37,9 @@
       "source_relative_path": "api/BaseballSharp.Enums.rosterType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Enums.rosterType.html",
-          "hash": "DLkm+AQQNpavwhHALwGDQepbR9NOq0glPGZFZJcBouU="
+          "relative_path": "api/BaseballSharp.Enums.rosterType.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -44,11 +47,19 @@
       "source_relative_path": "api/BaseballSharp.Enums.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Enums.html",
-          "hash": "OBxGL75NeuX2eb5oveTDttV8jGttalRr6N1wLxMyMPA="
+          "relative_path": "api/BaseballSharp.Enums.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.IMLBClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.IMLBClient.html"
+        }
+      },
       "version": ""
     },
     {
@@ -56,11 +67,9 @@
       "source_relative_path": "api/BaseballSharp.MLBClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.MLBClient.html",
-          "hash": "QeUGYeoH51FvpE7xrvpsEQiVZYlgwPbLClU3lB9VF20="
+          "relative_path": "api/BaseballSharp.MLBClient.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -68,11 +77,9 @@
       "source_relative_path": "api/BaseballSharp.Models.DepthChart.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Models.DepthChart.html",
-          "hash": "j1nfmIMM9Pi8rjUYjSgNLnp451BjtAQWOYQSgF3tTvU="
+          "relative_path": "api/BaseballSharp.Models.DepthChart.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -80,11 +87,19 @@
       "source_relative_path": "api/BaseballSharp.Models.Division.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Models.Division.html",
-          "hash": "7+6BKvMj8VNlTHXHrZBMtfDsxwYn9lPwDNDB+jAUAVo="
+          "relative_path": "api/BaseballSharp.Models.Division.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.Models.HttpResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.Models.HttpResponse-1.html"
+        }
+      },
       "version": ""
     },
     {
@@ -92,11 +107,9 @@
       "source_relative_path": "api/BaseballSharp.Models.Linescore.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Models.Linescore.html",
-          "hash": "PnAiV+JXq6Xv54/nl1s5Y5VfFdIOD74Vn1oHuNfs9qw="
+          "relative_path": "api/BaseballSharp.Models.Linescore.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -104,11 +117,9 @@
       "source_relative_path": "api/BaseballSharp.Models.PitchingReport.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Models.PitchingReport.html",
-          "hash": "OeWYWWDeD0w+shvDVdc6uvmdnisK3NydziIaJ2f+mDg="
+          "relative_path": "api/BaseballSharp.Models.PitchingReport.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -116,11 +127,9 @@
       "source_relative_path": "api/BaseballSharp.Models.Schedule.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Models.Schedule.html",
-          "hash": "InOlHyfpu9Lf3x09W55exVCNa4XWO0vSOQaV1YO7AhU="
+          "relative_path": "api/BaseballSharp.Models.Schedule.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -128,11 +137,9 @@
       "source_relative_path": "api/BaseballSharp.Models.Team.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Models.Team.html",
-          "hash": "TArWU3as04sVTrkeFsw0btQsGgIrAgLpHcjvK2j794Q="
+          "relative_path": "api/BaseballSharp.Models.Team.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -140,11 +147,9 @@
       "source_relative_path": "api/BaseballSharp.Models.TeamRoster.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Models.TeamRoster.html",
-          "hash": "7FX9CGllJYYgMNPZyKfxizh97H5Q6ERZ33reHcT4Bkg="
+          "relative_path": "api/BaseballSharp.Models.TeamRoster.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -152,11 +157,9 @@
       "source_relative_path": "api/BaseballSharp.Models.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.Models.html",
-          "hash": "BlBJYNn0uP1c+pTp60NodfxH60/MdH7I0OBaVaJr/gc="
+          "relative_path": "api/BaseballSharp.Models.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -164,11 +167,9 @@
       "source_relative_path": "api/BaseballSharp.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BaseballSharp.html",
-          "hash": "K23Nom2C7x8uXJ5nzj4OlysxxpGqvRXSDSXeeeR/6lw="
+          "relative_path": "api/BaseballSharp.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -176,11 +177,9 @@
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
-          "relative_path": "api/index.html",
-          "hash": "s22fmBedd2xLTt244410ADk5vT+x+lXGZKLJnhye05E="
+          "relative_path": "api/index.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -188,11 +187,12 @@
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "QxlvkzWSJOqkpYiYGhWN1nEwCrPJ5WXX0bJebH2z6GE="
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -200,11 +200,9 @@
       "source_relative_path": "articles/changelog.md",
       "output": {
         ".html": {
-          "relative_path": "articles/changelog.html",
-          "hash": "tBuxgwmargbvXH+HbQjep4MISel/q3x1U4S6YvjKfp8="
+          "relative_path": "articles/changelog.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -212,11 +210,9 @@
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "iHfctDygJf9URSttVzO+3R9JTd8x8zc+VLLUcALnTGU="
+          "relative_path": "articles/intro.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -224,11 +220,12 @@
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "XiffNVD/qQboYWdsDl/kdst0bHevfqfccQGvIzYHejI="
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -236,11 +233,9 @@
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "42BO9WI1kJA16VjQW2Lo9EoZEAbQEJtKThTs0iNgJIs="
+          "relative_path": "index.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -248,56 +243,15 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "eYgkK5GaZ2m5dZmikGKGydbpJpj8GGJatp1LuvPYbRA="
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     }
   ],
-  "incremental_info": [
-    {
-      "status": {
-        "can_incremental": true,
-        "incrementalPhase": "build",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 3
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 13,
-          "skipped_file_count": 2
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        }
-      }
-    },
-    {
-      "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
-        "incrementalPhase": "postProcessing",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {}
-    }
-  ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

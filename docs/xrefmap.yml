@@ -7,198 +7,448 @@ references:
   commentId: N:BaseballSharp
   fullName: BaseballSharp
   nameWithType: BaseballSharp
+- uid: BaseballSharp.Core
+  name: BaseballSharp.Core
+  href: api/BaseballSharp.Core.html
+  commentId: N:BaseballSharp.Core
+  fullName: BaseballSharp.Core
+  nameWithType: BaseballSharp.Core
+- uid: BaseballSharp.Core.HttpRequestHandler
+  name: HttpRequestHandler
+  href: api/BaseballSharp.Core.HttpRequestHandler.html
+  commentId: T:BaseballSharp.Core.HttpRequestHandler
+  fullName: BaseballSharp.Core.HttpRequestHandler
+  nameWithType: HttpRequestHandler
+- uid: BaseballSharp.Core.HttpRequestHandler.GetResponseAsync*
+  name: GetResponseAsync
+  href: api/BaseballSharp.Core.HttpRequestHandler.html#BaseballSharp_Core_HttpRequestHandler_GetResponseAsync_
+  commentId: Overload:BaseballSharp.Core.HttpRequestHandler.GetResponseAsync
+  isSpec: "True"
+  fullName: BaseballSharp.Core.HttpRequestHandler.GetResponseAsync
+  nameWithType: HttpRequestHandler.GetResponseAsync
+- uid: BaseballSharp.Core.HttpRequestHandler.GetResponseAsync``1(System.String,System.Threading.CancellationToken)
+  name: GetResponseAsync<T>(string, CancellationToken)
+  href: api/BaseballSharp.Core.HttpRequestHandler.html#BaseballSharp_Core_HttpRequestHandler_GetResponseAsync__1_System_String_System_Threading_CancellationToken_
+  commentId: M:BaseballSharp.Core.HttpRequestHandler.GetResponseAsync``1(System.String,System.Threading.CancellationToken)
+  name.vb: GetResponseAsync(Of T)(String, CancellationToken)
+  fullName: BaseballSharp.Core.HttpRequestHandler.GetResponseAsync<T>(string, System.Threading.CancellationToken)
+  fullName.vb: BaseballSharp.Core.HttpRequestHandler.GetResponseAsync(Of T)(String, System.Threading.CancellationToken)
+  nameWithType: HttpRequestHandler.GetResponseAsync<T>(string, CancellationToken)
+  nameWithType.vb: HttpRequestHandler.GetResponseAsync(Of T)(String, CancellationToken)
 - uid: BaseballSharp.Enums
   name: BaseballSharp.Enums
   href: api/BaseballSharp.Enums.html
   commentId: N:BaseballSharp.Enums
   fullName: BaseballSharp.Enums
   nameWithType: BaseballSharp.Enums
-- uid: BaseballSharp.Enums.eTeamId
-  name: eTeamId
-  href: api/BaseballSharp.Enums.eTeamId.html
-  commentId: T:BaseballSharp.Enums.eTeamId
-  fullName: BaseballSharp.Enums.eTeamId
-  nameWithType: eTeamId
-- uid: BaseballSharp.Enums.eTeamId.Angels
+- uid: BaseballSharp.Enums.eTeamIdEnum
+  name: eTeamIdEnum
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html
+  commentId: T:BaseballSharp.Enums.eTeamIdEnum
+  fullName: BaseballSharp.Enums.eTeamIdEnum
+  nameWithType: eTeamIdEnum
+- uid: BaseballSharp.Enums.eTeamIdEnum.Angels
   name: Angels
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Angels
-  commentId: F:BaseballSharp.Enums.eTeamId.Angels
-  fullName: BaseballSharp.Enums.eTeamId.Angels
-  nameWithType: eTeamId.Angels
-- uid: BaseballSharp.Enums.eTeamId.Astros
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Angels
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Angels
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Angels
+  nameWithType: eTeamIdEnum.Angels
+- uid: BaseballSharp.Enums.eTeamIdEnum.Angels*
+  name: Angels
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Angels_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Angels
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Angels
+  nameWithType: eTeamIdEnum.Angels
+- uid: BaseballSharp.Enums.eTeamIdEnum.Astros
   name: Astros
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Astros
-  commentId: F:BaseballSharp.Enums.eTeamId.Astros
-  fullName: BaseballSharp.Enums.eTeamId.Astros
-  nameWithType: eTeamId.Astros
-- uid: BaseballSharp.Enums.eTeamId.Athletics
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Astros
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Astros
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Astros
+  nameWithType: eTeamIdEnum.Astros
+- uid: BaseballSharp.Enums.eTeamIdEnum.Astros*
+  name: Astros
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Astros_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Astros
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Astros
+  nameWithType: eTeamIdEnum.Astros
+- uid: BaseballSharp.Enums.eTeamIdEnum.Athletics
   name: Athletics
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Athletics
-  commentId: F:BaseballSharp.Enums.eTeamId.Athletics
-  fullName: BaseballSharp.Enums.eTeamId.Athletics
-  nameWithType: eTeamId.Athletics
-- uid: BaseballSharp.Enums.eTeamId.BlueJays
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Athletics
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Athletics
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Athletics
+  nameWithType: eTeamIdEnum.Athletics
+- uid: BaseballSharp.Enums.eTeamIdEnum.Athletics*
+  name: Athletics
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Athletics_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Athletics
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Athletics
+  nameWithType: eTeamIdEnum.Athletics
+- uid: BaseballSharp.Enums.eTeamIdEnum.BlueJays
   name: BlueJays
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_BlueJays
-  commentId: F:BaseballSharp.Enums.eTeamId.BlueJays
-  fullName: BaseballSharp.Enums.eTeamId.BlueJays
-  nameWithType: eTeamId.BlueJays
-- uid: BaseballSharp.Enums.eTeamId.Braves
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_BlueJays
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.BlueJays
+  fullName: BaseballSharp.Enums.eTeamIdEnum.BlueJays
+  nameWithType: eTeamIdEnum.BlueJays
+- uid: BaseballSharp.Enums.eTeamIdEnum.BlueJays*
+  name: BlueJays
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_BlueJays_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.BlueJays
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.BlueJays
+  nameWithType: eTeamIdEnum.BlueJays
+- uid: BaseballSharp.Enums.eTeamIdEnum.Braves
   name: Braves
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Braves
-  commentId: F:BaseballSharp.Enums.eTeamId.Braves
-  fullName: BaseballSharp.Enums.eTeamId.Braves
-  nameWithType: eTeamId.Braves
-- uid: BaseballSharp.Enums.eTeamId.Brewers
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Braves
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Braves
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Braves
+  nameWithType: eTeamIdEnum.Braves
+- uid: BaseballSharp.Enums.eTeamIdEnum.Braves*
+  name: Braves
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Braves_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Braves
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Braves
+  nameWithType: eTeamIdEnum.Braves
+- uid: BaseballSharp.Enums.eTeamIdEnum.Brewers
   name: Brewers
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Brewers
-  commentId: F:BaseballSharp.Enums.eTeamId.Brewers
-  fullName: BaseballSharp.Enums.eTeamId.Brewers
-  nameWithType: eTeamId.Brewers
-- uid: BaseballSharp.Enums.eTeamId.Cardinals
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Brewers
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Brewers
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Brewers
+  nameWithType: eTeamIdEnum.Brewers
+- uid: BaseballSharp.Enums.eTeamIdEnum.Brewers*
+  name: Brewers
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Brewers_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Brewers
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Brewers
+  nameWithType: eTeamIdEnum.Brewers
+- uid: BaseballSharp.Enums.eTeamIdEnum.Cardinals
   name: Cardinals
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Cardinals
-  commentId: F:BaseballSharp.Enums.eTeamId.Cardinals
-  fullName: BaseballSharp.Enums.eTeamId.Cardinals
-  nameWithType: eTeamId.Cardinals
-- uid: BaseballSharp.Enums.eTeamId.Cubs
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Cardinals
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Cardinals
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Cardinals
+  nameWithType: eTeamIdEnum.Cardinals
+- uid: BaseballSharp.Enums.eTeamIdEnum.Cardinals*
+  name: Cardinals
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Cardinals_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Cardinals
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Cardinals
+  nameWithType: eTeamIdEnum.Cardinals
+- uid: BaseballSharp.Enums.eTeamIdEnum.Cubs
   name: Cubs
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Cubs
-  commentId: F:BaseballSharp.Enums.eTeamId.Cubs
-  fullName: BaseballSharp.Enums.eTeamId.Cubs
-  nameWithType: eTeamId.Cubs
-- uid: BaseballSharp.Enums.eTeamId.DBacks
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Cubs
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Cubs
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Cubs
+  nameWithType: eTeamIdEnum.Cubs
+- uid: BaseballSharp.Enums.eTeamIdEnum.Cubs*
+  name: Cubs
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Cubs_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Cubs
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Cubs
+  nameWithType: eTeamIdEnum.Cubs
+- uid: BaseballSharp.Enums.eTeamIdEnum.DBacks
   name: DBacks
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_DBacks
-  commentId: F:BaseballSharp.Enums.eTeamId.DBacks
-  fullName: BaseballSharp.Enums.eTeamId.DBacks
-  nameWithType: eTeamId.DBacks
-- uid: BaseballSharp.Enums.eTeamId.Dodgers
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_DBacks
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.DBacks
+  fullName: BaseballSharp.Enums.eTeamIdEnum.DBacks
+  nameWithType: eTeamIdEnum.DBacks
+- uid: BaseballSharp.Enums.eTeamIdEnum.DBacks*
+  name: DBacks
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_DBacks_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.DBacks
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.DBacks
+  nameWithType: eTeamIdEnum.DBacks
+- uid: BaseballSharp.Enums.eTeamIdEnum.Dodgers
   name: Dodgers
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Dodgers
-  commentId: F:BaseballSharp.Enums.eTeamId.Dodgers
-  fullName: BaseballSharp.Enums.eTeamId.Dodgers
-  nameWithType: eTeamId.Dodgers
-- uid: BaseballSharp.Enums.eTeamId.Giants
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Dodgers
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Dodgers
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Dodgers
+  nameWithType: eTeamIdEnum.Dodgers
+- uid: BaseballSharp.Enums.eTeamIdEnum.Dodgers*
+  name: Dodgers
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Dodgers_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Dodgers
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Dodgers
+  nameWithType: eTeamIdEnum.Dodgers
+- uid: BaseballSharp.Enums.eTeamIdEnum.Giants
   name: Giants
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Giants
-  commentId: F:BaseballSharp.Enums.eTeamId.Giants
-  fullName: BaseballSharp.Enums.eTeamId.Giants
-  nameWithType: eTeamId.Giants
-- uid: BaseballSharp.Enums.eTeamId.Indians
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Giants
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Giants
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Giants
+  nameWithType: eTeamIdEnum.Giants
+- uid: BaseballSharp.Enums.eTeamIdEnum.Giants*
+  name: Giants
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Giants_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Giants
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Giants
+  nameWithType: eTeamIdEnum.Giants
+- uid: BaseballSharp.Enums.eTeamIdEnum.Id
+  name: Id
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Id
+  commentId: F:BaseballSharp.Enums.eTeamIdEnum.Id
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Id
+  nameWithType: eTeamIdEnum.Id
+- uid: BaseballSharp.Enums.eTeamIdEnum.Indians
   name: Indians
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Indians
-  commentId: F:BaseballSharp.Enums.eTeamId.Indians
-  fullName: BaseballSharp.Enums.eTeamId.Indians
-  nameWithType: eTeamId.Indians
-- uid: BaseballSharp.Enums.eTeamId.Mariners
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Indians
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Indians
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Indians
+  nameWithType: eTeamIdEnum.Indians
+- uid: BaseballSharp.Enums.eTeamIdEnum.Indians*
+  name: Indians
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Indians_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Indians
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Indians
+  nameWithType: eTeamIdEnum.Indians
+- uid: BaseballSharp.Enums.eTeamIdEnum.Mariners
   name: Mariners
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Mariners
-  commentId: F:BaseballSharp.Enums.eTeamId.Mariners
-  fullName: BaseballSharp.Enums.eTeamId.Mariners
-  nameWithType: eTeamId.Mariners
-- uid: BaseballSharp.Enums.eTeamId.Marlins
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Mariners
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Mariners
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Mariners
+  nameWithType: eTeamIdEnum.Mariners
+- uid: BaseballSharp.Enums.eTeamIdEnum.Mariners*
+  name: Mariners
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Mariners_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Mariners
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Mariners
+  nameWithType: eTeamIdEnum.Mariners
+- uid: BaseballSharp.Enums.eTeamIdEnum.Marlins
   name: Marlins
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Marlins
-  commentId: F:BaseballSharp.Enums.eTeamId.Marlins
-  fullName: BaseballSharp.Enums.eTeamId.Marlins
-  nameWithType: eTeamId.Marlins
-- uid: BaseballSharp.Enums.eTeamId.Mets
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Marlins
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Marlins
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Marlins
+  nameWithType: eTeamIdEnum.Marlins
+- uid: BaseballSharp.Enums.eTeamIdEnum.Marlins*
+  name: Marlins
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Marlins_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Marlins
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Marlins
+  nameWithType: eTeamIdEnum.Marlins
+- uid: BaseballSharp.Enums.eTeamIdEnum.Mets
   name: Mets
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Mets
-  commentId: F:BaseballSharp.Enums.eTeamId.Mets
-  fullName: BaseballSharp.Enums.eTeamId.Mets
-  nameWithType: eTeamId.Mets
-- uid: BaseballSharp.Enums.eTeamId.Nationals
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Mets
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Mets
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Mets
+  nameWithType: eTeamIdEnum.Mets
+- uid: BaseballSharp.Enums.eTeamIdEnum.Mets*
+  name: Mets
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Mets_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Mets
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Mets
+  nameWithType: eTeamIdEnum.Mets
+- uid: BaseballSharp.Enums.eTeamIdEnum.Nationals
   name: Nationals
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Nationals
-  commentId: F:BaseballSharp.Enums.eTeamId.Nationals
-  fullName: BaseballSharp.Enums.eTeamId.Nationals
-  nameWithType: eTeamId.Nationals
-- uid: BaseballSharp.Enums.eTeamId.Orioles
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Nationals
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Nationals
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Nationals
+  nameWithType: eTeamIdEnum.Nationals
+- uid: BaseballSharp.Enums.eTeamIdEnum.Nationals*
+  name: Nationals
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Nationals_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Nationals
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Nationals
+  nameWithType: eTeamIdEnum.Nationals
+- uid: BaseballSharp.Enums.eTeamIdEnum.Orioles
   name: Orioles
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Orioles
-  commentId: F:BaseballSharp.Enums.eTeamId.Orioles
-  fullName: BaseballSharp.Enums.eTeamId.Orioles
-  nameWithType: eTeamId.Orioles
-- uid: BaseballSharp.Enums.eTeamId.Padres
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Orioles
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Orioles
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Orioles
+  nameWithType: eTeamIdEnum.Orioles
+- uid: BaseballSharp.Enums.eTeamIdEnum.Orioles*
+  name: Orioles
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Orioles_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Orioles
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Orioles
+  nameWithType: eTeamIdEnum.Orioles
+- uid: BaseballSharp.Enums.eTeamIdEnum.Padres
   name: Padres
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Padres
-  commentId: F:BaseballSharp.Enums.eTeamId.Padres
-  fullName: BaseballSharp.Enums.eTeamId.Padres
-  nameWithType: eTeamId.Padres
-- uid: BaseballSharp.Enums.eTeamId.Phillies
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Padres
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Padres
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Padres
+  nameWithType: eTeamIdEnum.Padres
+- uid: BaseballSharp.Enums.eTeamIdEnum.Padres*
+  name: Padres
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Padres_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Padres
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Padres
+  nameWithType: eTeamIdEnum.Padres
+- uid: BaseballSharp.Enums.eTeamIdEnum.Phillies
   name: Phillies
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Phillies
-  commentId: F:BaseballSharp.Enums.eTeamId.Phillies
-  fullName: BaseballSharp.Enums.eTeamId.Phillies
-  nameWithType: eTeamId.Phillies
-- uid: BaseballSharp.Enums.eTeamId.Pirates
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Phillies
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Phillies
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Phillies
+  nameWithType: eTeamIdEnum.Phillies
+- uid: BaseballSharp.Enums.eTeamIdEnum.Phillies*
+  name: Phillies
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Phillies_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Phillies
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Phillies
+  nameWithType: eTeamIdEnum.Phillies
+- uid: BaseballSharp.Enums.eTeamIdEnum.Pirates
   name: Pirates
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Pirates
-  commentId: F:BaseballSharp.Enums.eTeamId.Pirates
-  fullName: BaseballSharp.Enums.eTeamId.Pirates
-  nameWithType: eTeamId.Pirates
-- uid: BaseballSharp.Enums.eTeamId.Rangers
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Pirates
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Pirates
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Pirates
+  nameWithType: eTeamIdEnum.Pirates
+- uid: BaseballSharp.Enums.eTeamIdEnum.Pirates*
+  name: Pirates
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Pirates_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Pirates
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Pirates
+  nameWithType: eTeamIdEnum.Pirates
+- uid: BaseballSharp.Enums.eTeamIdEnum.Rangers
   name: Rangers
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Rangers
-  commentId: F:BaseballSharp.Enums.eTeamId.Rangers
-  fullName: BaseballSharp.Enums.eTeamId.Rangers
-  nameWithType: eTeamId.Rangers
-- uid: BaseballSharp.Enums.eTeamId.Rays
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Rangers
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Rangers
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Rangers
+  nameWithType: eTeamIdEnum.Rangers
+- uid: BaseballSharp.Enums.eTeamIdEnum.Rangers*
+  name: Rangers
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Rangers_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Rangers
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Rangers
+  nameWithType: eTeamIdEnum.Rangers
+- uid: BaseballSharp.Enums.eTeamIdEnum.Rays
   name: Rays
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Rays
-  commentId: F:BaseballSharp.Enums.eTeamId.Rays
-  fullName: BaseballSharp.Enums.eTeamId.Rays
-  nameWithType: eTeamId.Rays
-- uid: BaseballSharp.Enums.eTeamId.Reds
-  name: Reds
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Reds
-  commentId: F:BaseballSharp.Enums.eTeamId.Reds
-  fullName: BaseballSharp.Enums.eTeamId.Reds
-  nameWithType: eTeamId.Reds
-- uid: BaseballSharp.Enums.eTeamId.RedSox
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Rays
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Rays
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Rays
+  nameWithType: eTeamIdEnum.Rays
+- uid: BaseballSharp.Enums.eTeamIdEnum.Rays*
+  name: Rays
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Rays_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Rays
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Rays
+  nameWithType: eTeamIdEnum.Rays
+- uid: BaseballSharp.Enums.eTeamIdEnum.RedSox
   name: RedSox
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_RedSox
-  commentId: F:BaseballSharp.Enums.eTeamId.RedSox
-  fullName: BaseballSharp.Enums.eTeamId.RedSox
-  nameWithType: eTeamId.RedSox
-- uid: BaseballSharp.Enums.eTeamId.Rockies
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_RedSox
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.RedSox
+  fullName: BaseballSharp.Enums.eTeamIdEnum.RedSox
+  nameWithType: eTeamIdEnum.RedSox
+- uid: BaseballSharp.Enums.eTeamIdEnum.RedSox*
+  name: RedSox
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_RedSox_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.RedSox
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.RedSox
+  nameWithType: eTeamIdEnum.RedSox
+- uid: BaseballSharp.Enums.eTeamIdEnum.Reds
+  name: Reds
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Reds
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Reds
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Reds
+  nameWithType: eTeamIdEnum.Reds
+- uid: BaseballSharp.Enums.eTeamIdEnum.Reds*
+  name: Reds
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Reds_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Reds
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Reds
+  nameWithType: eTeamIdEnum.Reds
+- uid: BaseballSharp.Enums.eTeamIdEnum.Rockies
   name: Rockies
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Rockies
-  commentId: F:BaseballSharp.Enums.eTeamId.Rockies
-  fullName: BaseballSharp.Enums.eTeamId.Rockies
-  nameWithType: eTeamId.Rockies
-- uid: BaseballSharp.Enums.eTeamId.Royals
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Rockies
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Rockies
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Rockies
+  nameWithType: eTeamIdEnum.Rockies
+- uid: BaseballSharp.Enums.eTeamIdEnum.Rockies*
+  name: Rockies
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Rockies_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Rockies
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Rockies
+  nameWithType: eTeamIdEnum.Rockies
+- uid: BaseballSharp.Enums.eTeamIdEnum.Royals
   name: Royals
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Royals
-  commentId: F:BaseballSharp.Enums.eTeamId.Royals
-  fullName: BaseballSharp.Enums.eTeamId.Royals
-  nameWithType: eTeamId.Royals
-- uid: BaseballSharp.Enums.eTeamId.Tigers
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Royals
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Royals
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Royals
+  nameWithType: eTeamIdEnum.Royals
+- uid: BaseballSharp.Enums.eTeamIdEnum.Royals*
+  name: Royals
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Royals_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Royals
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Royals
+  nameWithType: eTeamIdEnum.Royals
+- uid: BaseballSharp.Enums.eTeamIdEnum.TeamName
+  name: TeamName
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_TeamName
+  commentId: F:BaseballSharp.Enums.eTeamIdEnum.TeamName
+  fullName: BaseballSharp.Enums.eTeamIdEnum.TeamName
+  nameWithType: eTeamIdEnum.TeamName
+- uid: BaseballSharp.Enums.eTeamIdEnum.Tigers
   name: Tigers
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Tigers
-  commentId: F:BaseballSharp.Enums.eTeamId.Tigers
-  fullName: BaseballSharp.Enums.eTeamId.Tigers
-  nameWithType: eTeamId.Tigers
-- uid: BaseballSharp.Enums.eTeamId.Twins
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Tigers
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Tigers
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Tigers
+  nameWithType: eTeamIdEnum.Tigers
+- uid: BaseballSharp.Enums.eTeamIdEnum.Tigers*
+  name: Tigers
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Tigers_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Tigers
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Tigers
+  nameWithType: eTeamIdEnum.Tigers
+- uid: BaseballSharp.Enums.eTeamIdEnum.Twins
   name: Twins
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Twins
-  commentId: F:BaseballSharp.Enums.eTeamId.Twins
-  fullName: BaseballSharp.Enums.eTeamId.Twins
-  nameWithType: eTeamId.Twins
-- uid: BaseballSharp.Enums.eTeamId.WhiteSox
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Twins
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Twins
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Twins
+  nameWithType: eTeamIdEnum.Twins
+- uid: BaseballSharp.Enums.eTeamIdEnum.Twins*
+  name: Twins
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Twins_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Twins
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Twins
+  nameWithType: eTeamIdEnum.Twins
+- uid: BaseballSharp.Enums.eTeamIdEnum.WhiteSox
   name: WhiteSox
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_WhiteSox
-  commentId: F:BaseballSharp.Enums.eTeamId.WhiteSox
-  fullName: BaseballSharp.Enums.eTeamId.WhiteSox
-  nameWithType: eTeamId.WhiteSox
-- uid: BaseballSharp.Enums.eTeamId.Yankees
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_WhiteSox
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.WhiteSox
+  fullName: BaseballSharp.Enums.eTeamIdEnum.WhiteSox
+  nameWithType: eTeamIdEnum.WhiteSox
+- uid: BaseballSharp.Enums.eTeamIdEnum.WhiteSox*
+  name: WhiteSox
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_WhiteSox_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.WhiteSox
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.WhiteSox
+  nameWithType: eTeamIdEnum.WhiteSox
+- uid: BaseballSharp.Enums.eTeamIdEnum.Yankees
   name: Yankees
-  href: api/BaseballSharp.Enums.eTeamId.html#BaseballSharp_Enums_eTeamId_Yankees
-  commentId: F:BaseballSharp.Enums.eTeamId.Yankees
-  fullName: BaseballSharp.Enums.eTeamId.Yankees
-  nameWithType: eTeamId.Yankees
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Yankees
+  commentId: P:BaseballSharp.Enums.eTeamIdEnum.Yankees
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Yankees
+  nameWithType: eTeamIdEnum.Yankees
+- uid: BaseballSharp.Enums.eTeamIdEnum.Yankees*
+  name: Yankees
+  href: api/BaseballSharp.Enums.eTeamIdEnum.html#BaseballSharp_Enums_eTeamIdEnum_Yankees_
+  commentId: Overload:BaseballSharp.Enums.eTeamIdEnum.Yankees
+  isSpec: "True"
+  fullName: BaseballSharp.Enums.eTeamIdEnum.Yankees
+  nameWithType: eTeamIdEnum.Yankees
 - uid: BaseballSharp.Enums.rosterType
   name: rosterType
   href: api/BaseballSharp.Enums.rosterType.html
@@ -223,6 +473,118 @@ references:
   commentId: F:BaseballSharp.Enums.rosterType.rosterFull
   fullName: BaseballSharp.Enums.rosterType.rosterFull
   nameWithType: rosterType.rosterFull
+- uid: BaseballSharp.IMLBClient
+  name: IMLBClient
+  href: api/BaseballSharp.IMLBClient.html
+  commentId: T:BaseballSharp.IMLBClient
+  fullName: BaseballSharp.IMLBClient
+  nameWithType: IMLBClient
+- uid: BaseballSharp.IMLBClient.GetDepthChartAsync(System.Int32)
+  name: GetDepthChartAsync(int)
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetDepthChartAsync_System_Int32_
+  commentId: M:BaseballSharp.IMLBClient.GetDepthChartAsync(System.Int32)
+  name.vb: GetDepthChartAsync(Integer)
+  fullName: BaseballSharp.IMLBClient.GetDepthChartAsync(int)
+  fullName.vb: BaseballSharp.IMLBClient.GetDepthChartAsync(Integer)
+  nameWithType: IMLBClient.GetDepthChartAsync(int)
+  nameWithType.vb: IMLBClient.GetDepthChartAsync(Integer)
+- uid: BaseballSharp.IMLBClient.GetDepthChartAsync*
+  name: GetDepthChartAsync
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetDepthChartAsync_
+  commentId: Overload:BaseballSharp.IMLBClient.GetDepthChartAsync
+  isSpec: "True"
+  fullName: BaseballSharp.IMLBClient.GetDepthChartAsync
+  nameWithType: IMLBClient.GetDepthChartAsync
+- uid: BaseballSharp.IMLBClient.GetDivisionsAsync
+  name: GetDivisionsAsync()
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetDivisionsAsync
+  commentId: M:BaseballSharp.IMLBClient.GetDivisionsAsync
+  fullName: BaseballSharp.IMLBClient.GetDivisionsAsync()
+  nameWithType: IMLBClient.GetDivisionsAsync()
+- uid: BaseballSharp.IMLBClient.GetDivisionsAsync*
+  name: GetDivisionsAsync
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetDivisionsAsync_
+  commentId: Overload:BaseballSharp.IMLBClient.GetDivisionsAsync
+  isSpec: "True"
+  fullName: BaseballSharp.IMLBClient.GetDivisionsAsync
+  nameWithType: IMLBClient.GetDivisionsAsync
+- uid: BaseballSharp.IMLBClient.GetLineScoreAsync(System.Int32)
+  name: GetLineScoreAsync(int)
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetLineScoreAsync_System_Int32_
+  commentId: M:BaseballSharp.IMLBClient.GetLineScoreAsync(System.Int32)
+  name.vb: GetLineScoreAsync(Integer)
+  fullName: BaseballSharp.IMLBClient.GetLineScoreAsync(int)
+  fullName.vb: BaseballSharp.IMLBClient.GetLineScoreAsync(Integer)
+  nameWithType: IMLBClient.GetLineScoreAsync(int)
+  nameWithType.vb: IMLBClient.GetLineScoreAsync(Integer)
+- uid: BaseballSharp.IMLBClient.GetLineScoreAsync*
+  name: GetLineScoreAsync
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetLineScoreAsync_
+  commentId: Overload:BaseballSharp.IMLBClient.GetLineScoreAsync
+  isSpec: "True"
+  fullName: BaseballSharp.IMLBClient.GetLineScoreAsync
+  nameWithType: IMLBClient.GetLineScoreAsync
+- uid: BaseballSharp.IMLBClient.GetPitchingReportsAsync(System.DateTime)
+  name: GetPitchingReportsAsync(DateTime)
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetPitchingReportsAsync_System_DateTime_
+  commentId: M:BaseballSharp.IMLBClient.GetPitchingReportsAsync(System.DateTime)
+  name.vb: GetPitchingReportsAsync(Date)
+  fullName: BaseballSharp.IMLBClient.GetPitchingReportsAsync(System.DateTime)
+  fullName.vb: BaseballSharp.IMLBClient.GetPitchingReportsAsync(Date)
+  nameWithType: IMLBClient.GetPitchingReportsAsync(DateTime)
+  nameWithType.vb: IMLBClient.GetPitchingReportsAsync(Date)
+- uid: BaseballSharp.IMLBClient.GetPitchingReportsAsync*
+  name: GetPitchingReportsAsync
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetPitchingReportsAsync_
+  commentId: Overload:BaseballSharp.IMLBClient.GetPitchingReportsAsync
+  isSpec: "True"
+  fullName: BaseballSharp.IMLBClient.GetPitchingReportsAsync
+  nameWithType: IMLBClient.GetPitchingReportsAsync
+- uid: BaseballSharp.IMLBClient.GetScheduleAsync(System.DateTime)
+  name: GetScheduleAsync(DateTime)
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetScheduleAsync_System_DateTime_
+  commentId: M:BaseballSharp.IMLBClient.GetScheduleAsync(System.DateTime)
+  name.vb: GetScheduleAsync(Date)
+  fullName: BaseballSharp.IMLBClient.GetScheduleAsync(System.DateTime)
+  fullName.vb: BaseballSharp.IMLBClient.GetScheduleAsync(Date)
+  nameWithType: IMLBClient.GetScheduleAsync(DateTime)
+  nameWithType.vb: IMLBClient.GetScheduleAsync(Date)
+- uid: BaseballSharp.IMLBClient.GetScheduleAsync*
+  name: GetScheduleAsync
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetScheduleAsync_
+  commentId: Overload:BaseballSharp.IMLBClient.GetScheduleAsync
+  isSpec: "True"
+  fullName: BaseballSharp.IMLBClient.GetScheduleAsync
+  nameWithType: IMLBClient.GetScheduleAsync
+- uid: BaseballSharp.IMLBClient.GetTeamDataAsync
+  name: GetTeamDataAsync()
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetTeamDataAsync
+  commentId: M:BaseballSharp.IMLBClient.GetTeamDataAsync
+  fullName: BaseballSharp.IMLBClient.GetTeamDataAsync()
+  nameWithType: IMLBClient.GetTeamDataAsync()
+- uid: BaseballSharp.IMLBClient.GetTeamDataAsync*
+  name: GetTeamDataAsync
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetTeamDataAsync_
+  commentId: Overload:BaseballSharp.IMLBClient.GetTeamDataAsync
+  isSpec: "True"
+  fullName: BaseballSharp.IMLBClient.GetTeamDataAsync
+  nameWithType: IMLBClient.GetTeamDataAsync
+- uid: BaseballSharp.IMLBClient.GetTeamRosterAsync(System.Int32,System.Int32,System.DateTime,BaseballSharp.Enums.rosterType)
+  name: GetTeamRosterAsync(int, int, DateTime, rosterType)
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetTeamRosterAsync_System_Int32_System_Int32_System_DateTime_BaseballSharp_Enums_rosterType_
+  commentId: M:BaseballSharp.IMLBClient.GetTeamRosterAsync(System.Int32,System.Int32,System.DateTime,BaseballSharp.Enums.rosterType)
+  name.vb: GetTeamRosterAsync(Integer, Integer, Date, rosterType)
+  fullName: BaseballSharp.IMLBClient.GetTeamRosterAsync(int, int, System.DateTime, BaseballSharp.Enums.rosterType)
+  fullName.vb: BaseballSharp.IMLBClient.GetTeamRosterAsync(Integer, Integer, Date, BaseballSharp.Enums.rosterType)
+  nameWithType: IMLBClient.GetTeamRosterAsync(int, int, DateTime, rosterType)
+  nameWithType.vb: IMLBClient.GetTeamRosterAsync(Integer, Integer, Date, rosterType)
+- uid: BaseballSharp.IMLBClient.GetTeamRosterAsync*
+  name: GetTeamRosterAsync
+  href: api/BaseballSharp.IMLBClient.html#BaseballSharp_IMLBClient_GetTeamRosterAsync_
+  commentId: Overload:BaseballSharp.IMLBClient.GetTeamRosterAsync
+  isSpec: "True"
+  fullName: BaseballSharp.IMLBClient.GetTeamRosterAsync
+  nameWithType: IMLBClient.GetTeamRosterAsync
 - uid: BaseballSharp.MLBClient
   name: MLBClient
   href: api/BaseballSharp.MLBClient.html
@@ -230,11 +592,14 @@ references:
   fullName: BaseballSharp.MLBClient
   nameWithType: MLBClient
 - uid: BaseballSharp.MLBClient.GetDepthChartAsync(System.Int32)
-  name: GetDepthChartAsync(Int32)
+  name: GetDepthChartAsync(int)
   href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_GetDepthChartAsync_System_Int32_
   commentId: M:BaseballSharp.MLBClient.GetDepthChartAsync(System.Int32)
-  fullName: BaseballSharp.MLBClient.GetDepthChartAsync(System.Int32)
-  nameWithType: MLBClient.GetDepthChartAsync(Int32)
+  name.vb: GetDepthChartAsync(Integer)
+  fullName: BaseballSharp.MLBClient.GetDepthChartAsync(int)
+  fullName.vb: BaseballSharp.MLBClient.GetDepthChartAsync(Integer)
+  nameWithType: MLBClient.GetDepthChartAsync(int)
+  nameWithType.vb: MLBClient.GetDepthChartAsync(Integer)
 - uid: BaseballSharp.MLBClient.GetDepthChartAsync*
   name: GetDepthChartAsync
   href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_GetDepthChartAsync_
@@ -256,11 +621,14 @@ references:
   fullName: BaseballSharp.MLBClient.GetDivisionsAsync
   nameWithType: MLBClient.GetDivisionsAsync
 - uid: BaseballSharp.MLBClient.GetLineScoreAsync(System.Int32)
-  name: GetLineScoreAsync(Int32)
+  name: GetLineScoreAsync(int)
   href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_GetLineScoreAsync_System_Int32_
   commentId: M:BaseballSharp.MLBClient.GetLineScoreAsync(System.Int32)
-  fullName: BaseballSharp.MLBClient.GetLineScoreAsync(System.Int32)
-  nameWithType: MLBClient.GetLineScoreAsync(Int32)
+  name.vb: GetLineScoreAsync(Integer)
+  fullName: BaseballSharp.MLBClient.GetLineScoreAsync(int)
+  fullName.vb: BaseballSharp.MLBClient.GetLineScoreAsync(Integer)
+  nameWithType: MLBClient.GetLineScoreAsync(int)
+  nameWithType.vb: MLBClient.GetLineScoreAsync(Integer)
 - uid: BaseballSharp.MLBClient.GetLineScoreAsync*
   name: GetLineScoreAsync
   href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_GetLineScoreAsync_
@@ -272,8 +640,11 @@ references:
   name: GetPitchingReportsAsync(DateTime)
   href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_GetPitchingReportsAsync_System_DateTime_
   commentId: M:BaseballSharp.MLBClient.GetPitchingReportsAsync(System.DateTime)
+  name.vb: GetPitchingReportsAsync(Date)
   fullName: BaseballSharp.MLBClient.GetPitchingReportsAsync(System.DateTime)
+  fullName.vb: BaseballSharp.MLBClient.GetPitchingReportsAsync(Date)
   nameWithType: MLBClient.GetPitchingReportsAsync(DateTime)
+  nameWithType.vb: MLBClient.GetPitchingReportsAsync(Date)
 - uid: BaseballSharp.MLBClient.GetPitchingReportsAsync*
   name: GetPitchingReportsAsync
   href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_GetPitchingReportsAsync_
@@ -281,6 +652,22 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.MLBClient.GetPitchingReportsAsync
   nameWithType: MLBClient.GetPitchingReportsAsync
+- uid: BaseballSharp.MLBClient.GetScheduleAsync(System.DateTime)
+  name: GetScheduleAsync(DateTime)
+  href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_GetScheduleAsync_System_DateTime_
+  commentId: M:BaseballSharp.MLBClient.GetScheduleAsync(System.DateTime)
+  name.vb: GetScheduleAsync(Date)
+  fullName: BaseballSharp.MLBClient.GetScheduleAsync(System.DateTime)
+  fullName.vb: BaseballSharp.MLBClient.GetScheduleAsync(Date)
+  nameWithType: MLBClient.GetScheduleAsync(DateTime)
+  nameWithType.vb: MLBClient.GetScheduleAsync(Date)
+- uid: BaseballSharp.MLBClient.GetScheduleAsync*
+  name: GetScheduleAsync
+  href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_GetScheduleAsync_
+  commentId: Overload:BaseballSharp.MLBClient.GetScheduleAsync
+  isSpec: "True"
+  fullName: BaseballSharp.MLBClient.GetScheduleAsync
+  nameWithType: MLBClient.GetScheduleAsync
 - uid: BaseballSharp.MLBClient.GetTeamDataAsync
   name: GetTeamDataAsync()
   href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_GetTeamDataAsync
@@ -295,11 +682,14 @@ references:
   fullName: BaseballSharp.MLBClient.GetTeamDataAsync
   nameWithType: MLBClient.GetTeamDataAsync
 - uid: BaseballSharp.MLBClient.GetTeamRosterAsync(System.Int32,System.Int32,System.DateTime,BaseballSharp.Enums.rosterType)
-  name: GetTeamRosterAsync(Int32, Int32, DateTime, rosterType)
+  name: GetTeamRosterAsync(int, int, DateTime, rosterType)
   href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_GetTeamRosterAsync_System_Int32_System_Int32_System_DateTime_BaseballSharp_Enums_rosterType_
   commentId: M:BaseballSharp.MLBClient.GetTeamRosterAsync(System.Int32,System.Int32,System.DateTime,BaseballSharp.Enums.rosterType)
-  fullName: BaseballSharp.MLBClient.GetTeamRosterAsync(System.Int32, System.Int32, System.DateTime, BaseballSharp.Enums.rosterType)
-  nameWithType: MLBClient.GetTeamRosterAsync(Int32, Int32, DateTime, rosterType)
+  name.vb: GetTeamRosterAsync(Integer, Integer, Date, rosterType)
+  fullName: BaseballSharp.MLBClient.GetTeamRosterAsync(int, int, System.DateTime, BaseballSharp.Enums.rosterType)
+  fullName.vb: BaseballSharp.MLBClient.GetTeamRosterAsync(Integer, Integer, Date, BaseballSharp.Enums.rosterType)
+  nameWithType: MLBClient.GetTeamRosterAsync(int, int, DateTime, rosterType)
+  nameWithType.vb: MLBClient.GetTeamRosterAsync(Integer, Integer, Date, rosterType)
 - uid: BaseballSharp.MLBClient.GetTeamRosterAsync*
   name: GetTeamRosterAsync
   href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_GetTeamRosterAsync_
@@ -307,19 +697,6 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.MLBClient.GetTeamRosterAsync
   nameWithType: MLBClient.GetTeamRosterAsync
-- uid: BaseballSharp.MLBClient.Schedule(System.DateTime)
-  name: Schedule(DateTime)
-  href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_Schedule_System_DateTime_
-  commentId: M:BaseballSharp.MLBClient.Schedule(System.DateTime)
-  fullName: BaseballSharp.MLBClient.Schedule(System.DateTime)
-  nameWithType: MLBClient.Schedule(DateTime)
-- uid: BaseballSharp.MLBClient.Schedule*
-  name: Schedule
-  href: api/BaseballSharp.MLBClient.html#BaseballSharp_MLBClient_Schedule_
-  commentId: Overload:BaseballSharp.MLBClient.Schedule
-  isSpec: "True"
-  fullName: BaseballSharp.MLBClient.Schedule
-  nameWithType: MLBClient.Schedule
 - uid: BaseballSharp.Models
   name: BaseballSharp.Models
   href: api/BaseballSharp.Models.html
@@ -546,6 +923,117 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.Division.ShortDivisionName
   nameWithType: Division.ShortDivisionName
+- uid: BaseballSharp.Models.HttpResponse`1
+  name: HttpResponse<T>
+  href: api/BaseballSharp.Models.HttpResponse-1.html
+  commentId: T:BaseballSharp.Models.HttpResponse`1
+  name.vb: HttpResponse(Of T)
+  fullName: BaseballSharp.Models.HttpResponse<T>
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T)
+  nameWithType: HttpResponse<T>
+  nameWithType.vb: HttpResponse(Of T)
+- uid: BaseballSharp.Models.HttpResponse`1.AdditionalInformation
+  name: AdditionalInformation
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_AdditionalInformation
+  commentId: P:BaseballSharp.Models.HttpResponse`1.AdditionalInformation
+  fullName: BaseballSharp.Models.HttpResponse<T>.AdditionalInformation
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).AdditionalInformation
+  nameWithType: HttpResponse<T>.AdditionalInformation
+  nameWithType.vb: HttpResponse(Of T).AdditionalInformation
+- uid: BaseballSharp.Models.HttpResponse`1.AdditionalInformation*
+  name: AdditionalInformation
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_AdditionalInformation_
+  commentId: Overload:BaseballSharp.Models.HttpResponse`1.AdditionalInformation
+  isSpec: "True"
+  fullName: BaseballSharp.Models.HttpResponse<T>.AdditionalInformation
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).AdditionalInformation
+  nameWithType: HttpResponse<T>.AdditionalInformation
+  nameWithType.vb: HttpResponse(Of T).AdditionalInformation
+- uid: BaseballSharp.Models.HttpResponse`1.ExceptionMsg
+  name: ExceptionMsg
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_ExceptionMsg
+  commentId: P:BaseballSharp.Models.HttpResponse`1.ExceptionMsg
+  fullName: BaseballSharp.Models.HttpResponse<T>.ExceptionMsg
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).ExceptionMsg
+  nameWithType: HttpResponse<T>.ExceptionMsg
+  nameWithType.vb: HttpResponse(Of T).ExceptionMsg
+- uid: BaseballSharp.Models.HttpResponse`1.ExceptionMsg*
+  name: ExceptionMsg
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_ExceptionMsg_
+  commentId: Overload:BaseballSharp.Models.HttpResponse`1.ExceptionMsg
+  isSpec: "True"
+  fullName: BaseballSharp.Models.HttpResponse<T>.ExceptionMsg
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).ExceptionMsg
+  nameWithType: HttpResponse<T>.ExceptionMsg
+  nameWithType.vb: HttpResponse(Of T).ExceptionMsg
+- uid: BaseballSharp.Models.HttpResponse`1.IsError
+  name: IsError
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_IsError
+  commentId: P:BaseballSharp.Models.HttpResponse`1.IsError
+  fullName: BaseballSharp.Models.HttpResponse<T>.IsError
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).IsError
+  nameWithType: HttpResponse<T>.IsError
+  nameWithType.vb: HttpResponse(Of T).IsError
+- uid: BaseballSharp.Models.HttpResponse`1.IsError*
+  name: IsError
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_IsError_
+  commentId: Overload:BaseballSharp.Models.HttpResponse`1.IsError
+  isSpec: "True"
+  fullName: BaseballSharp.Models.HttpResponse<T>.IsError
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).IsError
+  nameWithType: HttpResponse<T>.IsError
+  nameWithType.vb: HttpResponse(Of T).IsError
+- uid: BaseballSharp.Models.HttpResponse`1.StatusCode
+  name: StatusCode
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_StatusCode
+  commentId: P:BaseballSharp.Models.HttpResponse`1.StatusCode
+  fullName: BaseballSharp.Models.HttpResponse<T>.StatusCode
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).StatusCode
+  nameWithType: HttpResponse<T>.StatusCode
+  nameWithType.vb: HttpResponse(Of T).StatusCode
+- uid: BaseballSharp.Models.HttpResponse`1.StatusCode*
+  name: StatusCode
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_StatusCode_
+  commentId: Overload:BaseballSharp.Models.HttpResponse`1.StatusCode
+  isSpec: "True"
+  fullName: BaseballSharp.Models.HttpResponse<T>.StatusCode
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).StatusCode
+  nameWithType: HttpResponse<T>.StatusCode
+  nameWithType.vb: HttpResponse(Of T).StatusCode
+- uid: BaseballSharp.Models.HttpResponse`1.deserializedObject
+  name: deserializedObject
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_deserializedObject
+  commentId: P:BaseballSharp.Models.HttpResponse`1.deserializedObject
+  fullName: BaseballSharp.Models.HttpResponse<T>.deserializedObject
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).deserializedObject
+  nameWithType: HttpResponse<T>.deserializedObject
+  nameWithType.vb: HttpResponse(Of T).deserializedObject
+- uid: BaseballSharp.Models.HttpResponse`1.deserializedObject*
+  name: deserializedObject
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_deserializedObject_
+  commentId: Overload:BaseballSharp.Models.HttpResponse`1.deserializedObject
+  isSpec: "True"
+  fullName: BaseballSharp.Models.HttpResponse<T>.deserializedObject
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).deserializedObject
+  nameWithType: HttpResponse<T>.deserializedObject
+  nameWithType.vb: HttpResponse(Of T).deserializedObject
+- uid: BaseballSharp.Models.HttpResponse`1.jsonResponse
+  name: jsonResponse
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_jsonResponse
+  commentId: P:BaseballSharp.Models.HttpResponse`1.jsonResponse
+  fullName: BaseballSharp.Models.HttpResponse<T>.jsonResponse
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).jsonResponse
+  nameWithType: HttpResponse<T>.jsonResponse
+  nameWithType.vb: HttpResponse(Of T).jsonResponse
+- uid: BaseballSharp.Models.HttpResponse`1.jsonResponse*
+  name: jsonResponse
+  href: api/BaseballSharp.Models.HttpResponse-1.html#BaseballSharp_Models_HttpResponse_1_jsonResponse_
+  commentId: Overload:BaseballSharp.Models.HttpResponse`1.jsonResponse
+  isSpec: "True"
+  fullName: BaseballSharp.Models.HttpResponse<T>.jsonResponse
+  fullName.vb: BaseballSharp.Models.HttpResponse(Of T).jsonResponse
+  nameWithType: HttpResponse<T>.jsonResponse
+  nameWithType.vb: HttpResponse(Of T).jsonResponse
 - uid: BaseballSharp.Models.Linescore
   name: Linescore
   href: api/BaseballSharp.Models.Linescore.html
@@ -1279,19 +1767,6 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.Schedule.Ballpark
   nameWithType: Schedule.Ballpark
-- uid: BaseballSharp.Models.Schedule.gameID
-  name: gameID
-  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_gameID
-  commentId: P:BaseballSharp.Models.Schedule.gameID
-  fullName: BaseballSharp.Models.Schedule.gameID
-  nameWithType: Schedule.gameID
-- uid: BaseballSharp.Models.Schedule.gameID*
-  name: gameID
-  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_gameID_
-  commentId: Overload:BaseballSharp.Models.Schedule.gameID
-  isSpec: "True"
-  fullName: BaseballSharp.Models.Schedule.gameID
-  nameWithType: Schedule.gameID
 - uid: BaseballSharp.Models.Schedule.HomeTeam
   name: HomeTeam
   href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_HomeTeam
@@ -1318,6 +1793,19 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.Schedule.ScheduledInnings
   nameWithType: Schedule.ScheduledInnings
+- uid: BaseballSharp.Models.Schedule.gameID
+  name: gameID
+  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_gameID
+  commentId: P:BaseballSharp.Models.Schedule.gameID
+  fullName: BaseballSharp.Models.Schedule.gameID
+  nameWithType: Schedule.gameID
+- uid: BaseballSharp.Models.Schedule.gameID*
+  name: gameID
+  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_gameID_
+  commentId: Overload:BaseballSharp.Models.Schedule.gameID
+  isSpec: "True"
+  fullName: BaseballSharp.Models.Schedule.gameID
+  nameWithType: Schedule.gameID
 - uid: BaseballSharp.Models.Team
   name: Team
   href: api/BaseballSharp.Models.Team.html
