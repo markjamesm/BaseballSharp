@@ -21,6 +21,7 @@ namespace BaseballSharp
     {
         private static HttpClient _httpClient = new HttpClient();
         private static readonly string _baseUrl = "https://statsapi.mlb.com/api/v1";
+        private static readonly short _outsInCompletedInning = 3;
 
         private async Task<string> GetResponseAsync(string endpoint)
         {
@@ -197,6 +198,10 @@ namespace BaseballSharp
                 {
                     CurrentInning = lineScoresJson?.currentInning,
                     InningHalf = lineScoresJson?.inningHalf,
+                    // If it's the last inning, use outs from the dto.  Otherwise, use the number 
+                    // of outs in an inning.  In the v1 api, "outs" at the root is the current number
+                    // of outs in the current inning; it should not be extrapolated to all innings.
+                    Outs = inning?.num == lineScoresJson?.currentInning ? lineScoresJson?.outs : _outsInCompletedInning,
                     ScheduledInnings = lineScoresJson?.scheduledInnings,
                     HometeamRuns = lineScoresJson?.teams?.home?.runs,
                     HometeamHits = lineScoresJson?.teams?.home?.hits,

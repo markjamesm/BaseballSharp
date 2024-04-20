@@ -13,7 +13,12 @@ public class Linescore
     public string? InningHalf { get; set; }
 
     /// <summary>
-    /// The number of innings scheduled for the game..
+    /// The number of outs in this half of the inning.
+    /// </summary>
+    public int? Outs { get; set; }
+
+    /// <summary>
+    /// The number of innings scheduled for the game.
     /// </summary>
     public int? ScheduledInnings { get; set; }
 
