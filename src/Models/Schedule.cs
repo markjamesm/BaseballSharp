@@ -17,7 +17,7 @@ public class Schedule
     public int? ScheduledInnings { get; set; }
 
     /// <summary>
-    /// The status of the game.  Some possible codes are "F" for Final, "I" for In Progress, 
+    /// The status of the game.  A few possible codes are "F" for Final, "I" for In Progress, 
     /// "IR" for Delayed, "P" for Pre-game, and "S" for Sceduled.
     /// </summary>
     public string? StatusCode { get; set; }
