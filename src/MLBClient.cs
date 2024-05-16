@@ -52,7 +52,7 @@ namespace BaseballSharp
                         AwayTeam = game.teams?.away?.team?.name,
                         HomeTeam = game.teams?.home?.team?.name,
                         ScheduledInnings = game.scheduledInnings,
-                        StatusCode = game.status?.statusCode
+                        StatusCode = Schedule.GetStatusCode(game.status?.statusCode)
                     });
                 }
             }
