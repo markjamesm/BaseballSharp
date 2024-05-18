@@ -52,7 +52,8 @@ namespace BaseballSharp
                         gameID = game.gamePk,
                         AwayTeam = game.teams?.away?.team?.name,
                         HomeTeam = game.teams?.home?.team?.name,
-                        ScheduledInnings = game.scheduledInnings
+                        ScheduledInnings = game.scheduledInnings,
+                        StatusCode = Schedule.GetStatusCode(game.status?.statusCode)
                     });
                 }
             }
