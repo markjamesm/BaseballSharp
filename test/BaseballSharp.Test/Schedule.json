@@ -1,0 +1,93 @@
+{
+    "copyright": "Copyright 2024 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+    "totalItems": 15,
+    "totalEvents": 0,
+    "totalGames": 15,
+    "totalGamesInProgress": 0,
+    "dates": [
+        {
+            "date": "2024-05-25",
+            "totalItems": 15,
+            "totalEvents": 0,
+            "totalGames": 15,
+            "totalGamesInProgress": 0,
+            "games": [
+                {
+                    "gamePk": 746470,
+                    "gameGuid": "02f1258c-fe62-41ae-ab53-374dec7bca3d",
+                    "link": "/api/v1.1/game/746470/feed/live",
+                    "gameType": "R",
+                    "season": "2024",
+                    "gameDate": "2024-05-25T17:10:00Z",
+                    "officialDate": "2024-05-25",
+                    "status": {
+                        "abstractGameState": "Preview",
+                        "codedGameState": "P",
+                        "detailedState": "Pre-Game",
+                        "statusCode": "P",
+                        "startTimeTBD": false,
+                        "abstractGameCode": "P"
+                    },
+                    "teams": {
+                        "away": {
+                            "leagueRecord": {
+                                "wins": 23,
+                                "losses": 27,
+                                "pct": ".460"
+                            },
+                            "score": 0,
+                            "team": {
+                                "id": 141,
+                                "name": "Toronto Blue Jays",
+                                "link": "/api/v1/teams/141"
+                            },
+                            "splitSquad": false,
+                            "seriesNumber": 17
+                        },
+                        "home": {
+                            "leagueRecord": {
+                                "wins": 24,
+                                "losses": 27,
+                                "pct": ".471"
+                            },
+                            "score": 0,
+                            "team": {
+                                "id": 116,
+                                "name": "Detroit Tigers",
+                                "link": "/api/v1/teams/116"
+                            },
+                            "splitSquad": false,
+                            "seriesNumber": 17
+                        }
+                    },
+                    "venue": {
+                        "id": 2394,
+                        "name": "Comerica Park",
+                        "link": "/api/v1/venues/2394"
+                    },
+                    "content": {
+                        "link": "/api/v1/game/746470/content"
+                    },
+                    "gameNumber": 1,
+                    "publicFacing": true,
+                    "doubleHeader": "N",
+                    "gamedayType": "P",
+                    "tiebreaker": "N",
+                    "calendarEventID": "14-746470-2024-05-25",
+                    "seasonDisplay": "2024",
+                    "dayNight": "day",
+                    "scheduledInnings": 9,
+                    "reverseHomeAwayStatus": false,
+                    "inningBreakLength": 120,
+                    "gamesInSeries": 4,
+                    "seriesGameNumber": 3,
+                    "seriesDescription": "Regular Season",
+                    "recordSource": "S",
+                    "ifNecessary": "N",
+                    "ifNecessaryDescription": "Normal Game"
+                }
+            ],
+            "events": []
+        }
+    ]
+}

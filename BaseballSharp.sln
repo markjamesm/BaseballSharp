@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseballSharpCli", "samples
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseballSharp", "src\BaseballSharp.csproj", "{B188B5BF-0708-4F12-BD6A-3A0664BE9172}"
 EndProject
-Global
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseballSharp.Test", "test\BaseballSharp.Test\BaseballSharp.Test.csproj", "{DB0661A1-F7C0-4D43-8BE3-DF66BF9FAF4A}"
+EndProject
+Global5206EC59-0954-4355-B48B-B014E0E79032
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -29,6 +31,10 @@ Global
 		{B188B5BF-0708-4F12-BD6A-3A0664BE9172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B188B5BF-0708-4F12-BD6A-3A0664BE9172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B188B5BF-0708-4F12-BD6A-3A0664BE9172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB0661A1-F7C0-4D43-8BE3-DF66BF9FAF4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0661A1-F7C0-4D43-8BE3-DF66BF9FAF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0661A1-F7C0-4D43-8BE3-DF66BF9FAF4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0661A1-F7C0-4D43-8BE3-DF66BF9FAF4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

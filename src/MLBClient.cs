@@ -8,9 +8,12 @@ using BaseballSharp.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Team = BaseballSharp.DTO.Teams.Team;
+
+[assembly: InternalsVisibleTo("BaseballSharp.Test")]
 
 namespace BaseballSharp
 {
@@ -19,9 +22,17 @@ namespace BaseballSharp
     /// </summary>
     public class MLBClient : IMLBClient
     {
-        private static HttpClient _httpClient = new HttpClient();
+        private HttpClient _httpClient = new HttpClient();
         private static readonly string _baseUrl = "https://statsapi.mlb.com/api/v1";
         private static readonly short _outsInCompletedInning = 3;
+
+        internal HttpClient HttpClient
+        {
+            set 
+            {
+                _httpClient = value;
+            }
+        }
 
         private async Task<string> GetResponseAsync(string endpoint)
         {
@@ -52,6 +63,7 @@ namespace BaseballSharp
                         gameID = game.gamePk,
                         AwayTeam = game.teams?.away?.team?.name,
                         HomeTeam = game.teams?.home?.team?.name,
+                        Ballpark = game.venue?.name,
                         ScheduledInnings = game.scheduledInnings,
                         StatusCode = Schedule.GetStatusCode(game.status?.statusCode)
                     });
