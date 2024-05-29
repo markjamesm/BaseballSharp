@@ -1,0 +1,38 @@
+{
+    "dates": [
+        {
+            "date": "2024-05-28",
+            "games": [
+                {
+                    "gamePk": 745818,
+                    "gameDate": "2024-05-28T20:10:00Z",
+                    "status": {
+                        "abstractGameState": "Final"
+                    },
+                    "teams": {
+                        "away": {
+                            "team": {
+                                "id": 119,
+                                "name": "Los Angeles Dodgers"
+                            },
+                            "probablePitcher": {
+                                "id": 607192,
+                                "fullName": "Tyler Glasnow"
+                            }
+                        },
+                        "home": {
+                            "team": {
+                                "id": 121,
+                                "name": "New York Mets"
+                            },
+                            "probablePitcher": {
+                                "id": 656731,
+                                "fullName": "Tylor Megill"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -123,7 +123,8 @@ namespace BaseballSharp
             {
                 teamsList.Add(new Models.Team()
                 {
-                    Name = team.name,
+                    FullName = team.name,
+                    Name = team.teamName,
                     Location = team.locationName,
                     Id = team.id,
                     LeagueId = team.league?.id,

@@ -47,5 +47,48 @@ namespace BaseballSharp.Test
             Assert.Equal(9, game.ScheduledInnings);
             Assert.Equal(Enums.GameStatus.PreGame, game.StatusCode);
         }
+
+        [Fact]
+        public async void ReturnAValidPitchingReportGivenAValidDate()
+        {
+            var sut = new MLBClient
+            {
+                HttpClient = BuildMockedHttpClient(File.ReadAllText("PitchingReports.json")),
+            };
+
+            var pitchingReport = (await sut.GetPitchingReportsAsync(DateTime.Now)).ToList().Single();
+            
+            Assert.Equal(607192, pitchingReport.AwayProbablePitcherId);
+            Assert.Equal("Tyler Glasnow", pitchingReport.AwayProbablePitcherName);
+            Assert.Equal("", pitchingReport.AwayProbablePitcherNotes);
+            Assert.Equal("Los Angeles Dodgers", pitchingReport.AwayTeam);
+            Assert.Equal(656731, pitchingReport.HomeProbablePitcherId);
+            Assert.Equal("Tylor Megill", pitchingReport.HomeProbablePitcherName);
+            Assert.Equal("", pitchingReport.HomeProbablePitcherNotes);
+            Assert.Equal("New York Mets", pitchingReport.HomeTeam);
+        }
+
+        [Fact]
+        public async void ReturnValidTeamData()
+        {
+            var sut = new MLBClient
+            {
+                HttpClient = BuildMockedHttpClient(File.ReadAllText("TeamData.json")),
+            };
+
+            var teamData = (await sut.GetTeamDataAsync()).ToList().Single();
+            
+            Assert.Equal("OAK", teamData.Abbreviation);
+            Assert.Equal(200, teamData.DivisionId);
+            Assert.Equal("American League West", teamData.DivisionName);
+            Assert.Equal("Oakland Athletics", teamData.FullName);
+            Assert.Equal(133, teamData.Id);
+            Assert.Equal(103, teamData.LeagueId);
+            Assert.Equal("American League", teamData.LeagueName);
+            Assert.Equal("Oakland", teamData.Location);
+            Assert.Equal("Athletics", teamData.Name);
+            Assert.Equal(10, teamData.VenueId);
+            Assert.Equal("Oakland Coliseum", teamData.VenueName);
+        }
     }
 }
