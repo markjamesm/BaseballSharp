@@ -1,5 +1,5 @@
 {
-  "source_base_path": "/home/markjames/Git-Pulls/Baseball-Sharp/docfx",
+  "source_base_path": "/home/markjames/Git-Pulls/BaseballSharp/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,6 +18,16 @@
       "output": {
         ".html": {
           "relative_path": "api/BaseballSharp.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BaseballSharp.Enums.GameStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BaseballSharp.Enums.GameStatus.html"
         }
       },
       "version": ""

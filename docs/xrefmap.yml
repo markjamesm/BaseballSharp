@@ -41,6 +41,42 @@ references:
   commentId: N:BaseballSharp.Enums
   fullName: BaseballSharp.Enums
   nameWithType: BaseballSharp.Enums
+- uid: BaseballSharp.Enums.GameStatus
+  name: GameStatus
+  href: api/BaseballSharp.Enums.GameStatus.html
+  commentId: T:BaseballSharp.Enums.GameStatus
+  fullName: BaseballSharp.Enums.GameStatus
+  nameWithType: GameStatus
+- uid: BaseballSharp.Enums.GameStatus.Delayed
+  name: Delayed
+  href: api/BaseballSharp.Enums.GameStatus.html#BaseballSharp_Enums_GameStatus_Delayed
+  commentId: F:BaseballSharp.Enums.GameStatus.Delayed
+  fullName: BaseballSharp.Enums.GameStatus.Delayed
+  nameWithType: GameStatus.Delayed
+- uid: BaseballSharp.Enums.GameStatus.Final
+  name: Final
+  href: api/BaseballSharp.Enums.GameStatus.html#BaseballSharp_Enums_GameStatus_Final
+  commentId: F:BaseballSharp.Enums.GameStatus.Final
+  fullName: BaseballSharp.Enums.GameStatus.Final
+  nameWithType: GameStatus.Final
+- uid: BaseballSharp.Enums.GameStatus.InProgress
+  name: InProgress
+  href: api/BaseballSharp.Enums.GameStatus.html#BaseballSharp_Enums_GameStatus_InProgress
+  commentId: F:BaseballSharp.Enums.GameStatus.InProgress
+  fullName: BaseballSharp.Enums.GameStatus.InProgress
+  nameWithType: GameStatus.InProgress
+- uid: BaseballSharp.Enums.GameStatus.PreGame
+  name: PreGame
+  href: api/BaseballSharp.Enums.GameStatus.html#BaseballSharp_Enums_GameStatus_PreGame
+  commentId: F:BaseballSharp.Enums.GameStatus.PreGame
+  fullName: BaseballSharp.Enums.GameStatus.PreGame
+  nameWithType: GameStatus.PreGame
+- uid: BaseballSharp.Enums.GameStatus.Scheduled
+  name: Scheduled
+  href: api/BaseballSharp.Enums.GameStatus.html#BaseballSharp_Enums_GameStatus_Scheduled
+  commentId: F:BaseballSharp.Enums.GameStatus.Scheduled
+  fullName: BaseballSharp.Enums.GameStatus.Scheduled
+  nameWithType: GameStatus.Scheduled
 - uid: BaseballSharp.Enums.eTeamIdEnum
   name: eTeamIdEnum
   href: api/BaseballSharp.Enums.eTeamIdEnum.html
@@ -1508,6 +1544,19 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.Linescore.OffensiveTeamPitcherName
   nameWithType: Linescore.OffensiveTeamPitcherName
+- uid: BaseballSharp.Models.Linescore.Outs
+  name: Outs
+  href: api/BaseballSharp.Models.Linescore.html#BaseballSharp_Models_Linescore_Outs
+  commentId: P:BaseballSharp.Models.Linescore.Outs
+  fullName: BaseballSharp.Models.Linescore.Outs
+  nameWithType: Linescore.Outs
+- uid: BaseballSharp.Models.Linescore.Outs*
+  name: Outs
+  href: api/BaseballSharp.Models.Linescore.html#BaseballSharp_Models_Linescore_Outs_
+  commentId: Overload:BaseballSharp.Models.Linescore.Outs
+  isSpec: "True"
+  fullName: BaseballSharp.Models.Linescore.Outs
+  nameWithType: Linescore.Outs
 - uid: BaseballSharp.Models.Linescore.RightFielderId
   name: RightFielderId
   href: api/BaseballSharp.Models.Linescore.html#BaseballSharp_Models_Linescore_RightFielderId
@@ -1767,6 +1816,22 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.Schedule.Ballpark
   nameWithType: Schedule.Ballpark
+- uid: BaseballSharp.Models.Schedule.GetStatusCode(System.String)
+  name: GetStatusCode(string?)
+  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_GetStatusCode_System_String_
+  commentId: M:BaseballSharp.Models.Schedule.GetStatusCode(System.String)
+  name.vb: GetStatusCode(String)
+  fullName: BaseballSharp.Models.Schedule.GetStatusCode(string?)
+  fullName.vb: BaseballSharp.Models.Schedule.GetStatusCode(String)
+  nameWithType: Schedule.GetStatusCode(string?)
+  nameWithType.vb: Schedule.GetStatusCode(String)
+- uid: BaseballSharp.Models.Schedule.GetStatusCode*
+  name: GetStatusCode
+  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_GetStatusCode_
+  commentId: Overload:BaseballSharp.Models.Schedule.GetStatusCode
+  isSpec: "True"
+  fullName: BaseballSharp.Models.Schedule.GetStatusCode
+  nameWithType: Schedule.GetStatusCode
 - uid: BaseballSharp.Models.Schedule.HomeTeam
   name: HomeTeam
   href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_HomeTeam
@@ -1793,6 +1858,19 @@ references:
   isSpec: "True"
   fullName: BaseballSharp.Models.Schedule.ScheduledInnings
   nameWithType: Schedule.ScheduledInnings
+- uid: BaseballSharp.Models.Schedule.StatusCode
+  name: StatusCode
+  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_StatusCode
+  commentId: P:BaseballSharp.Models.Schedule.StatusCode
+  fullName: BaseballSharp.Models.Schedule.StatusCode
+  nameWithType: Schedule.StatusCode
+- uid: BaseballSharp.Models.Schedule.StatusCode*
+  name: StatusCode
+  href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_StatusCode_
+  commentId: Overload:BaseballSharp.Models.Schedule.StatusCode
+  isSpec: "True"
+  fullName: BaseballSharp.Models.Schedule.StatusCode
+  nameWithType: Schedule.StatusCode
 - uid: BaseballSharp.Models.Schedule.gameID
   name: gameID
   href: api/BaseballSharp.Models.Schedule.html#BaseballSharp_Models_Schedule_gameID

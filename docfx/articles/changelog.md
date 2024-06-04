@@ -1,5 +1,12 @@
 # Changelog
 
+#### 0.2.1
+
+- Added "StatusCode" to the Schedule model
+- Fixed issue where 'Ballpark' was not being populated
+- Fixed issue where FullName was not being populated
+- Extended CI to show code coverage
+
 #### 0.2.0
 
 - Expanded json serializer option to make deserialization less sensitive for malformed json.
